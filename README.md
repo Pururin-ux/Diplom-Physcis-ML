@@ -10,10 +10,10 @@ The rectangular quantum dot is used as a validation/control benchmark only.  The
 current main research path is the fixed discrete-`n` superellipse quantum-dot
 family, where shape variation is richer than in the rectangular control case.
 
-The current completed result is Milestone 06c: consolidation of a
-physics-informed Ridge baseline for the fixed discrete-`n` superellipse path.
-MLP ablation studies and inverse design remain next/future work, not completed
-claims.
+The current completed results are Milestone 06c, a physics-informed Ridge
+baseline for the fixed discrete-`n` superellipse path, and Milestone 07,
+physical sanity checks before MLP ablation. Next is the 08 tiny MLP ablation,
+followed by residual analysis and optional Kwant-validated inverse screening.
 
 ## Scope
 
@@ -104,10 +104,15 @@ Completed benchmark/control work:
 Current completed main-path result:
 - Milestone 06c consolidates a physics-informed Ridge baseline for fixed
   discrete-`n` superellipse quantum dots.
+- Milestone 07 completes physical sanity checks before MLP ablation.
 
 Next/future work:
-- MLP ablation as a prepared but not yet completed notebook milestone,
-- inverse design as future work only.
+- 08 tiny MLP ablation,
+- residual analysis,
+- optional Kwant-validated inverse screening.
+
+For the current MLP ablation, `dE2` is diagnostic-only and is not a main MLP
+target.
 
 The rectangular benchmark is validation/control only and should not be presented
 as methodological novelty.

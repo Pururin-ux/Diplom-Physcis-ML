@@ -82,19 +82,22 @@ def build_baseline_model(name: str) -> RegressorMixin:
             regressor=Pipeline(
                 steps=[
                     ("scale", StandardScaler()),
-                    ("model", MLPRegressor(
-                        hidden_layer_sizes=(16,),
-                        activation="tanh",
-                        solver="lbfgs",
-                        alpha=1e-3,
-                        early_stopping=False,
-                        random_state=42,
-                        max_iter=5000,
-                 )),
+                    (
+                        "model",
+                        MLPRegressor(
+                            hidden_layer_sizes=(4,),
+                            activation="tanh",
+                            solver="lbfgs",
+                            alpha=1e-3,
+                            early_stopping=False,
+                            random_state=42,
+                            max_iter=5000,
+                        ),
+                    ),
                 ]
-        ),
-        transformer=StandardScaler(),
-    )
+            ),
+            transformer=StandardScaler(),
+        )
     raise ValueError(f"Unsupported baseline model: {name}")
 
 
@@ -223,6 +226,10 @@ def make_ablation_feature_matrix(
 
     if a.shape != ar.shape:
         raise ValueError("a_values and aspect_ratio_values must have identical shapes.")
+    if np.any(a <= 0.0):
+        raise ValueError("All a_values must be strictly positive.")
+    if np.any(ar <= 0.0):
+        raise ValueError("All aspect_ratio_values must be strictly positive.")
 
     try:
         feature_builder = _ABLATION_FEATURE_BUILDERS[feature_set]

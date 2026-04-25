@@ -3,6 +3,10 @@
 from __future__ import annotations
 
 import numpy as np
+from sklearn.compose import TransformedTargetRegressor
+from sklearn.neural_network import MLPRegressor
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 
 from src.model import (
     BASELINE_MODEL_NAMES,
@@ -22,6 +26,25 @@ def test_build_baseline_model_supported_names() -> None:
     for name in BASELINE_MODEL_NAMES:
         model = build_baseline_model(name)
         assert model is not None
+
+
+def test_build_baseline_model_mlp_uses_preregistered_tiny_config() -> None:
+    """MLP control model should match the pre-registered tiny ablation setup."""
+    model = build_baseline_model("mlp")
+
+    assert isinstance(model, TransformedTargetRegressor)
+    assert isinstance(model.transformer, StandardScaler)
+    assert isinstance(model.regressor, Pipeline)
+    assert isinstance(model.regressor.named_steps["scale"], StandardScaler)
+
+    inner_model = model.regressor.named_steps["model"]
+    assert isinstance(inner_model, MLPRegressor)
+    assert inner_model.hidden_layer_sizes == (4,)
+    assert inner_model.activation == "tanh"
+    assert inner_model.solver == "lbfgs"
+    assert inner_model.alpha == 1e-3
+    assert inner_model.max_iter == 5000
+    assert inner_model.random_state == 42
 
 
 def test_regression_metrics_values() -> None:
@@ -133,6 +156,32 @@ def test_make_ablation_feature_matrix_shapes_and_values() -> None:
         assert "Unsupported ablation feature set" in str(exc)
     else:
         raise AssertionError("Expected ValueError for unsupported ablation set.")
+
+
+def test_make_ablation_feature_matrix_rejects_nonpositive_a() -> None:
+    """Ablation features should reject invalid inverse-size inputs."""
+    a = np.array([10.0, 0.0], dtype=float)
+    ar = np.array([1.0, 0.5], dtype=float)
+
+    try:
+        make_ablation_feature_matrix(a, ar, feature_set="physics_informed")
+    except ValueError as exc:
+        assert "a_values must be strictly positive" in str(exc)
+    else:
+        raise AssertionError("Expected ValueError for nonpositive a_values.")
+
+
+def test_make_ablation_feature_matrix_rejects_nonpositive_aspect_ratio() -> None:
+    """Ablation features should reject invalid inverse-area inputs."""
+    a = np.array([10.0, 20.0], dtype=float)
+    ar = np.array([1.0, 0.0], dtype=float)
+
+    try:
+        make_ablation_feature_matrix(a, ar, feature_set="physics_informed")
+    except ValueError as exc:
+        assert "aspect_ratio_values must be strictly positive" in str(exc)
+    else:
+        raise AssertionError("Expected ValueError for nonpositive aspect_ratio_values.")
 
 
 def test_evaluate_ridge_feature_sets_exposes_loao_and_loaro() -> None:
