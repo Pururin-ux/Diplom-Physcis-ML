@@ -3,3 +3,17 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 data/*.npz
+# Local editor settings
+.vscode/
+
+# Temporary local checks
+check_env.py
+hello_test.py
+
+# Root-level temporary screenshots/plots
+/*.png
+
+# Notebook/system cache
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
