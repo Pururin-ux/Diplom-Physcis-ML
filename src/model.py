@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from collections.abc import Iterable
+from collections.abc import Callable, Iterable
 from dataclasses import dataclass
 
 import numpy as np
@@ -25,6 +25,21 @@ BASELINE_MODEL_NAMES: tuple[str, ...] = (
 
 PHYSICAL_FEATURE_SET_NAMES: tuple[str, ...] = ("A", "B", "C")
 ABLATION_FEATURE_SETS: tuple[str, ...] = ("raw", "physics_informed")
+
+_FeatureBuilder = Callable[[np.ndarray, np.ndarray], np.ndarray]
+
+_PHYSICAL_FIRST_FEATURE_BUILDERS: dict[str, _FeatureBuilder] = {
+    "A": lambda a, ar: a,
+    "B": lambda a, ar: 1.0 / (a**2),
+    "C": lambda a, ar: 1.0 / (a**2 * ar),
+}
+
+_ABLATION_FEATURE_BUILDERS: dict[str, _FeatureBuilder] = {
+    "raw": lambda a, ar: np.column_stack([a, ar]),
+    "physics_informed": lambda a, ar: np.column_stack(
+        [1.0 / (a**2), 1.0 / (a**2 * ar), ar]
+    ),
+}
 
 
 @dataclass(frozen=True)
@@ -185,18 +200,15 @@ def make_physical_feature_matrix(
     if np.any(ar <= 0.0):
         raise ValueError("All aspect_ratio_values must be strictly positive.")
 
-    if feature_set == "A":
-        first_feature = a
-    elif feature_set == "B":
-        first_feature = 1.0 / (a**2)
-    elif feature_set == "C":
-        first_feature = 1.0 / (a**2 * ar)
-    else:
+    try:
+        first_feature_builder = _PHYSICAL_FIRST_FEATURE_BUILDERS[feature_set]
+    except KeyError:
         raise ValueError(
             f"Unsupported feature set: {feature_set}. "
             f"Supported values: {PHYSICAL_FEATURE_SET_NAMES}"
-        )
+        ) from None
 
+    first_feature = first_feature_builder(a, ar)
     return np.column_stack([first_feature, ar])
 
 
@@ -212,15 +224,15 @@ def make_ablation_feature_matrix(
     if a.shape != ar.shape:
         raise ValueError("a_values and aspect_ratio_values must have identical shapes.")
 
-    if feature_set == "raw":
-        return np.column_stack([a, ar])
-    elif feature_set == "physics_informed":
-        return np.column_stack([1.0 / (a**2), 1.0 / (a**2 * ar), ar])
-    else:
+    try:
+        feature_builder = _ABLATION_FEATURE_BUILDERS[feature_set]
+    except KeyError:
         raise ValueError(
             f"Unsupported ablation feature set: {feature_set}. "
             f"Supported values: {ABLATION_FEATURE_SETS}"
-        )
+        ) from None
+
+    return feature_builder(a, ar)
 
 
 def evaluate_ridge_feature_sets(
