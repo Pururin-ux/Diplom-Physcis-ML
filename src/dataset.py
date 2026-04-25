@@ -1,4 +1,4 @@
-"""Minimal dataset generation for rectangular quantum-dot energies."""
+"""Dataset utilities for rectangular and superellipse quantum-dot energies."""
 
 from __future__ import annotations
 

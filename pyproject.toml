@@ -5,13 +5,17 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "diplom-physics-ml"
 version = "0.1.0"
-description = "Minimal Kwant tight-binding spectra for a 2D rectangular quantum dot."
+description = "Minimal Kwant tight-binding spectra and checked surrogates for rectangular and superellipse quantum dots."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "numpy>=1.24",
     "scipy>=1.10",
     "kwant>=1.4",
+    "scikit-learn>=1.2",
+    "matplotlib>=3.7",
+    "pytest>=7.0",
+    "notebook>=7.0",
 ]
 
 [tool.setuptools.packages.find]

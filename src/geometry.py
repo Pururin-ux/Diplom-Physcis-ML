@@ -1,4 +1,4 @@
-"""Closed 2D rectangular quantum dot on a square tight-binding lattice (Kwant)."""
+"""Kwant geometry builders for rectangular and superellipse quantum dots."""
 
 from __future__ import annotations
 

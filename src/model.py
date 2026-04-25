@@ -1,4 +1,4 @@
-"""Lightweight non-neural baseline utilities for tabular regression stress tests."""
+"""Lightweight tabular regression utilities for baselines and prepared surrogates."""
 
 from __future__ import annotations
 
@@ -37,7 +37,7 @@ class RegressionMetrics:
 
 
 def build_baseline_model(name: str) -> RegressorMixin:
-    """Build one supported non-neural baseline regressor by name."""
+    """Build one supported baseline or prepared surrogate regressor by name."""
     if name == "linear":
         return LinearRegression()
     if name == "ridge":
