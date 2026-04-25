@@ -99,21 +99,40 @@ def _superellipse_levels_and_site_count(a: float, b: float, n: float) -> tuple[n
     return vals, n_sites
 
 
-def generate_superellipse_pilot_dataset(save_path: str | Path | None = None) -> DatasetDict:
-    """Generate a deterministic superellipse pilot dataset on a fixed 3D grid.
+def generate_superellipse_grid_dataset(
+    a_values: Iterable[float],
+    ratio_values: Iterable[float],
+    n_values: Iterable[float],
+    save_path: str | Path | None = None,
+) -> DatasetDict:
+    """Generate a superellipse dataset on an explicit ``a``, aspect-ratio, ``n`` grid.
 
-    Grid definition (pilot-v2):
-    - ``a`` in [24, 30, 36]
-    - ``aspect_ratio = b/a`` in [0.67, 0.75, 0.83, 0.92, 1.0]
-    - ``n`` in [1.2, 1.5, 1.8, 2.1, 2.4, 2.8, 3.2, 3.6, 4.0]
+    For each sample, ``b`` is computed deterministically as
+    ``b = aspect_ratio * a``. The returned dictionary keeps the established
+    superellipse dataset schema: ``a``, ``b``, ``aspect_ratio``, ``n``,
+    ``N_sites``, ``E0``-``E3``, and spacing targets ``dE1``-``dE3``.
 
-    For each sample, ``b`` is computed deterministically as ``b = aspect_ratio * a``.
+    Parameters
+    ----------
+    a_values
+        Iterable of semi-axis scales along x (lattice units).
+    ratio_values
+        Iterable of aspect ratios ``b/a``.
+    n_values
+        Iterable of superellipse exponent values.
+    save_path
+        Optional output path for `.npz` saving. If provided, the dataset is saved.
+
+    Returns
+    -------
+    dict[str, numpy.ndarray]
+        Flat arrays with one row per ``(a, aspect_ratio, n)`` grid point.
     """
-    a_values = np.array([24.0, 30.0, 36.0], dtype=float)
-    ratio_values = np.array([0.67, 0.75, 0.83, 0.92, 1.0], dtype=float)
-    n_values = np.array([1.2, 1.5, 1.8, 2.1, 2.4, 2.8, 3.2, 3.6, 4.0], dtype=float)
+    a_arr = np.asarray(list(a_values), dtype=float)
+    ratio_arr = np.asarray(list(ratio_values), dtype=float)
+    n_arr = np.asarray(list(n_values), dtype=float)
 
-    n_points = a_values.size * ratio_values.size * n_values.size
+    n_points = a_arr.size * ratio_arr.size * n_arr.size
     a_flat = np.empty(n_points, dtype=float)
     b_flat = np.empty(n_points, dtype=float)
     ratio_flat = np.empty(n_points, dtype=float)
@@ -122,10 +141,10 @@ def generate_superellipse_pilot_dataset(save_path: str | Path | None = None) -> 
     energies = np.empty((n_points, 4), dtype=float)
 
     idx = 0
-    for a in a_values:
-        for ratio in ratio_values:
+    for a in a_arr:
+        for ratio in ratio_arr:
             b = ratio * a
-            for n in n_values:
+            for n in n_arr:
                 vals, n_sites = _superellipse_levels_and_site_count(a=a, b=b, n=n)
                 a_flat[idx] = a
                 b_flat[idx] = b
@@ -157,6 +176,28 @@ def generate_superellipse_pilot_dataset(save_path: str | Path | None = None) -> 
     if save_path is not None:
         save_dataset_npz(dataset, save_path)
     return dataset
+
+
+def generate_superellipse_pilot_dataset(save_path: str | Path | None = None) -> DatasetDict:
+    """Generate a deterministic superellipse pilot dataset on a fixed 3D grid.
+
+    Grid definition (pilot-v2):
+    - ``a`` in [24, 30, 36]
+    - ``aspect_ratio = b/a`` in [0.67, 0.75, 0.83, 0.92, 1.0]
+    - ``n`` in [1.2, 1.5, 1.8, 2.1, 2.4, 2.8, 3.2, 3.6, 4.0]
+
+    For each sample, ``b`` is computed deterministically as ``b = aspect_ratio * a``.
+    """
+    a_values = np.array([24.0, 30.0, 36.0], dtype=float)
+    ratio_values = np.array([0.67, 0.75, 0.83, 0.92, 1.0], dtype=float)
+    n_values = np.array([1.2, 1.5, 1.8, 2.1, 2.4, 2.8, 3.2, 3.6, 4.0], dtype=float)
+
+    return generate_superellipse_grid_dataset(
+        a_values=a_values,
+        ratio_values=ratio_values,
+        n_values=n_values,
+        save_path=save_path,
+    )
 
 
 def generate_superellipse_discrete_n_pilot_dataset(
@@ -173,50 +214,12 @@ def generate_superellipse_discrete_n_pilot_dataset(
     ratio_values = np.array([0.67, 0.75, 0.83, 0.92, 1.0], dtype=float)
     n_values = np.array([1.2, 2.0, 3.0, 4.0], dtype=float)
 
-    n_points = a_values.size * ratio_values.size * n_values.size
-    a_flat = np.empty(n_points, dtype=float)
-    b_flat = np.empty(n_points, dtype=float)
-    ratio_flat = np.empty(n_points, dtype=float)
-    n_flat = np.empty(n_points, dtype=float)
-    n_sites_flat = np.empty(n_points, dtype=int)
-    energies = np.empty((n_points, 4), dtype=float)
-
-    idx = 0
-    for a in a_values:
-        for ratio in ratio_values:
-            b = ratio * a
-            for n in n_values:
-                vals, n_sites = _superellipse_levels_and_site_count(a=a, b=b, n=n)
-                a_flat[idx] = a
-                b_flat[idx] = b
-                ratio_flat[idx] = ratio
-                n_flat[idx] = n
-                n_sites_flat[idx] = n_sites
-                energies[idx] = vals
-                idx += 1
-
-    dE1 = energies[:, 1] - energies[:, 0]
-    dE2 = energies[:, 2] - energies[:, 1]
-    dE3 = energies[:, 3] - energies[:, 2]
-
-    dataset: DatasetDict = {
-        "a": a_flat,
-        "b": b_flat,
-        "aspect_ratio": ratio_flat,
-        "n": n_flat,
-        "N_sites": n_sites_flat,
-        "E0": energies[:, 0],
-        "E1": energies[:, 1],
-        "E2": energies[:, 2],
-        "E3": energies[:, 3],
-        "dE1": dE1,
-        "dE2": dE2,
-        "dE3": dE3,
-    }
-
-    if save_path is not None:
-        save_dataset_npz(dataset, save_path)
-    return dataset
+    return generate_superellipse_grid_dataset(
+        a_values=a_values,
+        ratio_values=ratio_values,
+        n_values=n_values,
+        save_path=save_path,
+    )
 
 
 def generate_superellipse_discrete_n_dense_dataset(
@@ -233,47 +236,9 @@ def generate_superellipse_discrete_n_dense_dataset(
     ratio_values = np.array([0.67, 0.72, 0.78, 0.83, 0.89, 0.94, 1.0], dtype=float)
     n_values = np.array([1.2, 2.0, 3.0, 4.0], dtype=float)
 
-    n_points = a_values.size * ratio_values.size * n_values.size
-    a_flat = np.empty(n_points, dtype=float)
-    b_flat = np.empty(n_points, dtype=float)
-    ratio_flat = np.empty(n_points, dtype=float)
-    n_flat = np.empty(n_points, dtype=float)
-    n_sites_flat = np.empty(n_points, dtype=int)
-    energies = np.empty((n_points, 4), dtype=float)
-
-    idx = 0
-    for a in a_values:
-        for ratio in ratio_values:
-            b = ratio * a
-            for n in n_values:
-                vals, n_sites = _superellipse_levels_and_site_count(a=a, b=b, n=n)
-                a_flat[idx] = a
-                b_flat[idx] = b
-                ratio_flat[idx] = ratio
-                n_flat[idx] = n
-                n_sites_flat[idx] = n_sites
-                energies[idx] = vals
-                idx += 1
-
-    dE1 = energies[:, 1] - energies[:, 0]
-    dE2 = energies[:, 2] - energies[:, 1]
-    dE3 = energies[:, 3] - energies[:, 2]
-
-    dataset: DatasetDict = {
-        "a": a_flat,
-        "b": b_flat,
-        "aspect_ratio": ratio_flat,
-        "n": n_flat,
-        "N_sites": n_sites_flat,
-        "E0": energies[:, 0],
-        "E1": energies[:, 1],
-        "E2": energies[:, 2],
-        "E3": energies[:, 3],
-        "dE1": dE1,
-        "dE2": dE2,
-        "dE3": dE3,
-    }
-
-    if save_path is not None:
-        save_dataset_npz(dataset, save_path)
-    return dataset
+    return generate_superellipse_grid_dataset(
+        a_values=a_values,
+        ratio_values=ratio_values,
+        n_values=n_values,
+        save_path=save_path,
+    )
