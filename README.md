@@ -1,23 +1,28 @@
 # Diploma Physics ML
 
-This project is a diploma prototype for building a surrogate machine learning model
-that predicts the first low-energy levels of a simple 2D rectangular quantum dot
-computed with Kwant.
+This project is a diploma prototype for building and evaluating surrogate modeling
+workflows for low-energy spectra of 2D quantum dots computed with Kwant.
 
 ## Project goal
 
-The goal is to compare direct numerical calculation in Kwant with simple surrogate models
-that predict the first 4 eigenenergies of the system from geometric parameters.
+The near-term goal is to establish a reliable validation benchmark on a simple
+rectangular quantum dot. The future main nontrivial target is a superellipse
+geometry family, where shape variation is richer and scientifically more
+informative for surrogate modeling.
 
 ## Scope
 
 This project is intentionally narrow and minimal.
 
-We study:
+Current benchmark case:
 - a simple closed 2D rectangular quantum dot,
 - a square-lattice tight-binding model in Kwant,
 - 2 input parameters: `Lx` and `Ly`,
 - 4 output energy levels: `E0`, `E1`, `E2`, `E3`.
+
+Future main nontrivial case:
+- a superellipse geometry family (parameterized shape beyond a pure rectangle),
+- same conservative low-energy focus before any model-complexity increase.
 
 Preferred output encoding:
 - `E0`
@@ -42,7 +47,9 @@ The project has three possible model levels:
 2. Direct surrogate model  
 3. Residual surrogate model
 
-The direct surrogate is the main minimal ML target.
+For the rectangular benchmark, ML is not the main scientific goal.
+It is used as a conservative validation check of data/solver quality and
+baseline workflow behavior.
 
 The residual surrogate is an optional research extension:
 it learns the correction between the analytical baseline and the Kwant result.
@@ -84,6 +91,9 @@ The first milestone is:
 - compute the first 4 eigenenergies,
 - verify physical sanity checks,
 - create one notebook with basic parameter sweeps.
+
+This milestone is benchmark/validation only and should not be presented as
+methodological novelty.
 
 ## Sanity checks
 

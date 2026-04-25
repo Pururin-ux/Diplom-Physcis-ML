@@ -1,9 +1,10 @@
 # Project Instructions
 
 ## Goal
-Build a minimal, defendable diploma project:
-a surrogate ML model for predicting the first 4 low-energy levels
-of a simple 2D rectangular quantum dot computed in Kwant.
+Build a minimal, defendable diploma project with two clear stages:
+1) rectangular quantum dot as a validation/benchmark case,
+2) superellipse-family quantum dots as the future main nontrivial target.
+Use surrogate ML as a tool, not as an end in itself.
 
 ## Hard Constraints
 - The project must stay realistic for one student in ~6 weeks.
@@ -15,7 +16,10 @@ of a simple 2D rectangular quantum dot computed in Kwant.
 - Do NOT expand scope without explicit user approval.
 
 ## Physics Scope
-- System: simple closed 2D rectangular quantum dot in Kwant.
+- Rectangular case: simple closed 2D rectangular quantum dot in Kwant
+  used for validation and benchmarking.
+- Future main case: superellipse geometry family in Kwant as the primary
+  nontrivial target after the rectangular benchmark is stable.
 - Lattice: square lattice, tight-binding model.
 - Inputs: exactly 2 parameters — Lx (width) and Ly (height) in lattice units.
 - Outputs: first 4 eigenenergies only: E0, E1, E2, E3.
@@ -39,7 +43,10 @@ of a simple 2D rectangular quantum dot computed in Kwant.
 
 ## Model Strategy
 - Treat the analytical baseline as the simplest reference model.
-- Treat the direct surrogate as the default ML model.
+- For the rectangular benchmark, do not position ML as the main scientific goal;
+  use it conservatively to validate pipeline consistency and error metrics.
+- Treat the direct surrogate as the default minimal ML model once benchmark
+  validation is complete.
 - Treat the residual surrogate as an optional hypothesis, not as a guaranteed improvement.
 - Do NOT assume delta-learning is novel by itself.
 - Do NOT assume residual learning must outperform the direct model.
@@ -89,6 +96,7 @@ of a simple 2D rectangular quantum dot computed in Kwant.
   - error relative to level spacing.
 - If residual learning does not provide a clear improvement, say so explicitly.
 - Never overclaim novelty or performance.
+- Do not claim novelty for the rectangular benchmark case; it is a control/validation setup.
 
 ## Coding Rules
 - Put all reusable logic in `src/`.

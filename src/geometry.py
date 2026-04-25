@@ -39,3 +39,40 @@ def build_rectangular_dot(Lx: int, Ly: int) -> kwant.system.FiniteSystem:
     syst[lat.shape(in_rectangle, (0, 0))] = 0
     syst[lat.neighbors()] = -1
     return syst.finalized()
+
+
+def build_superellipse_dot(a: float, b: float, n: float) -> kwant.system.FiniteSystem:
+    """Build a finalized closed superellipse dot centered at ``(0, 0)``.
+
+    The shape is defined by
+    ``|x / a|**n + |y / b|**n <= 1``
+    on a square lattice with zero onsite potential and nearest-neighbor
+    hopping ``-1``.
+
+    Parameters
+    ----------
+    a
+        Semi-axis scale along x (lattice units), must be positive.
+    b
+        Semi-axis scale along y (lattice units), must be positive.
+    n
+        Superellipse exponent, must be positive.
+
+    Returns
+    -------
+    kwant.system.FiniteSystem
+        Finalized finite tight-binding system.
+    """
+    if a <= 0 or b <= 0 or n <= 0:
+        raise ValueError("a, b, and n must be positive.")
+
+    lat = kwant.lattice.square(a=1, norbs=1)
+
+    def in_superellipse(pos: tuple[float, float]) -> bool:
+        x, y = pos
+        return abs(x / a) ** n + abs(y / b) ** n <= 1.0
+
+    syst = Builder()
+    syst[lat.shape(in_superellipse, (0, 0))] = 0
+    syst[lat.neighbors()] = -1
+    return syst.finalized()
