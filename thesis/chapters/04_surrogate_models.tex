@@ -1,0 +1,35 @@
+\chapter{ФИЗИЧЕСКИ МОТИВИРОВАННАЯ СУРРОГАТНАЯ МОДЕЛЬ}
+
+\section{Выбор признаков на основе scaling $1/a^2$}
+
+\begin{equation}
+  \phi_1 = \frac{1}{a^2}, \qquad
+  \phi_2 = \frac{1}{a^2 \cdot \mathrm{aspect\_ratio}}, \qquad
+  \phi_3 = \mathrm{aspect\_ratio}.
+\end{equation}
+
+\todo{Объяснить физическую мотивацию признаков через низкоэнергетическое масштабирование, не утверждая глобальную оптимальность.}
+
+\section{Ridge-регрессия как интерпретируемый baseline}
+\todo{Описать Ridge как простой, стабильный и интерпретируемый baseline.}
+\todo{Указать, что модель использует scaling признаков и фиксированные hyperparameters без tuning.}
+
+\section{Протоколы структурированной валидации LOAO и LOARO}
+\todo{Explain why random split is avoided.}
+\todo{Explain LOAO: leave one $a$ value out.}
+\todo{Explain LOARO: leave one aspect_ratio value out.}
+\todo{Cite structured cross-validation reference~\cite{roberts2017crossvalidation}.}
+
+\section{Tiny MLP ablation}
+\todo{Explain MLP is a nonlinear ablation/control experiment, not the main model.}
+\todo{Mention tiny MLP config: hidden_layer_sizes=(4,), tanh, lbfgs, alpha=1e-3, max_iter=5000, random_state=42, with feature scaling and target scaling.}
+\todo{Avoid implying that physical laws were inferred by the neural model.}
+
+\section{Предрегистрация критериев сравнения моделей}
+\todo{Explain pre-registered success criterion: MLP must improve by >= 15\% in enough cells and pass both protocols independently.}
+\todo{Указать, что при невыполнении критерия Ridge остаётся предпочтительной моделью.}
+
+\section{Выводы по главе 4}
+\todo{Сформулировать выводы после финализации результатов главы 5.}
+
+\clearpage

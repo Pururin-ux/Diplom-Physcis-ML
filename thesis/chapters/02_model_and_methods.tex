@@ -1,0 +1,62 @@
+\chapter{ФИЗИЧЕСКАЯ МОДЕЛЬ И ЧИСЛЕННАЯ МЕТОДИКА}
+
+\section{Гамильтониан квадратной tight-binding решётки}
+\todo{Verify exact notation against src/geometry.py and src/dataset.py.}
+\todo{Explain onsite = 0, hopping = -1 convention.}
+
+\begin{equation}
+  H = -t \sum_{\langle i,j\rangle} \left( |i\rangle\langle j| + |j\rangle\langle i| \right).
+\end{equation}
+
+\section{Энергетическая конвенция и низкоэнергетический предел}
+
+\begin{equation}
+  E(k_x,k_y) = -2t\left(\cos k_x + \cos k_y\right).
+\end{equation}
+
+For $t=1$ and low $k$:
+\begin{equation}
+  E + 4 \approx k_x^2 + k_y^2.
+\end{equation}
+
+\begin{equation}
+  E_{\mathrm{kin}} = E_0 + 4.
+\end{equation}
+
+\todo{Пояснить, что $E_{\mathrm{kin}} = E_0 + 4$ используется для continuum-like checks при onsite = 0 и hopping = -1.}
+
+\section{Геометрия прямоугольника и суперэллипса}
+
+\begin{equation}
+  \left|\frac{x}{a}\right|^n + \left|\frac{y}{b}\right|^n \leq 1.
+\end{equation}
+
+\begin{equation}
+  b = a \cdot \mathrm{aspect\_ratio}.
+\end{equation}
+
+\todo{Описать прямоугольник как validation/control benchmark.}
+\todo{Описать фиксированные классы $n = 1.2, 2.0, 3.0, 4.0$.}
+\todo{Не описывать $n=1.2$ как concave или topology change; использовать rhombus-like convex shape.}
+
+\section{Расчёт спектра конечной системы в Kwant}
+\todo{Описать построение конечной системы, открытые hard-wall boundaries и расчёт первых четырёх уровней.}
+\todo{Подчеркнуть, что прямой расчёт Kwant остаётся source of truth.}
+
+\section{Целевые спектральные характеристики}
+
+\begin{equation}
+  dE_1 = E_1 - E_0.
+\end{equation}
+
+\begin{equation}
+  dE_2 = E_2 - E_1.
+\end{equation}
+
+\todo{Explain why E0 and dE1 are the main targets.}
+\todo{Explain why dE2 is diagnostic-only because of degeneracy/level-crossing issues.}
+
+\section{Выводы по главе 2}
+\todo{Сформулировать выводы после завершения описания модели и методики.}
+
+\clearpage

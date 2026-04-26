@@ -1,0 +1,81 @@
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{russian}
+\setotherlanguages{english,belarusian}
+
+\IfFontExistsTF{Times New Roman}
+  {\setmainfont{Times New Roman}}
+  {\setmainfont{TeX Gyre Termes}}
+% TODO: If required by the department, compile locally with Times New Roman installed.
+
+\usepackage[a4paper,left=30mm,right=15mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{graphicx}
+\graphicspath{{figures/}{../reports/assets/}}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\usepackage{tocloft}
+
+\usepackage[
+  backend=biber,
+  style=numeric,
+  sorting=none,
+  giveninits=true,
+  maxbibnames=6
+]{biblatex}
+
+\usepackage[
+  unicode=true,
+  colorlinks=false,
+  pdfborder={0 0 0}
+]{hyperref}
+
+\setlength{\parindent}{1.25cm}
+\setlength{\parskip}{0pt}
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+
+\renewcommand{\contentsname}{СОДЕРЖАНИЕ}
+\renewcommand{\chaptername}{ГЛАВА}
+\renewcommand{\appendixname}{ПРИЛОЖЕНИЕ}
+\renewcommand{\figurename}{Рисунок}
+\renewcommand{\tablename}{Таблица}
+\renewcommand{\bibname}{СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ}
+
+\DeclareCaptionLabelSeparator{dash}{ -- }
+\captionsetup{
+  labelsep=dash,
+  justification=centering,
+  singlelinecheck=false
+}
+
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries\centering}
+  {\chaptername\ \thechapter}
+  {0.5em}
+  {\MakeUppercase}
+\titlespacing*{\chapter}{0pt}{-10pt}{20pt}
+
+\titleformat{\section}
+  {\normalfont\bfseries}
+  {\thesection}
+  {1em}
+  {}
+\titleformat{\subsection}
+  {\normalfont\bfseries}
+  {\thesubsection}
+  {1em}
+  {}
+
+\newcommand{\todo}[1]{\par\noindent\textbf{TODO:} #1\par}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\Ekin}{E_{\mathrm{kin}}}
+\newcommand{\Nsites}{N_{\mathrm{sites}}}
