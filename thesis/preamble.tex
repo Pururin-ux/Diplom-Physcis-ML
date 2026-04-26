@@ -3,10 +3,19 @@
 \setmainlanguage{russian}
 \setotherlanguages{english,belarusian}
 
+\defaultfontfeatures{Ligatures=TeX}
 \IfFontExistsTF{Times New Roman}
   {\setmainfont{Times New Roman}}
   {\setmainfont{TeX Gyre Termes}}
 % TODO: If required by the department, compile locally with Times New Roman installed.
+
+\IfFontExistsTF{Consolas}
+  {\setmonofont{Consolas}\newfontfamily\cyrillicfonttt{Consolas}}
+  {%
+    \IfFontExistsTF{DejaVu Sans Mono}
+      {\setmonofont{DejaVu Sans Mono}\newfontfamily\cyrillicfonttt{DejaVu Sans Mono}}
+      {\setmonofont{TeX Gyre Termes}\newfontfamily\cyrillicfonttt{TeX Gyre Termes}}%
+  }
 
 \usepackage[a4paper,left=30mm,right=15mm,top=20mm,bottom=20mm]{geometry}
 \usepackage{setspace}
@@ -17,6 +26,7 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage[table]{xcolor}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{indentfirst}
@@ -39,7 +49,9 @@
 
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{2em}
 
+% Plain page style places page numbers centered at the bottom.
 \pagestyle{plain}
 \pagenumbering{arabic}
 
@@ -54,28 +66,60 @@
 \captionsetup{
   labelsep=dash,
   justification=centering,
-  singlelinecheck=false
+  singlelinecheck=false,
+  font=small,
+  labelfont=bf
 }
 
 \titleformat{\chapter}[display]
   {\normalfont\bfseries\centering}
   {\chaptername\ \thechapter}
-  {0.5em}
+  {0.7em}
   {\MakeUppercase}
-\titlespacing*{\chapter}{0pt}{-10pt}{20pt}
+\titlespacing*{\chapter}{0pt}{18pt}{24pt}
+
+\titleformat{name=\chapter,numberless}[block]
+  {\normalfont\bfseries\centering}
+  {}
+  {0pt}
+  {\MakeUppercase}
+\titlespacing*{name=\chapter,numberless}{0pt}{18pt}{24pt}
 
 \titleformat{\section}
   {\normalfont\bfseries}
   {\thesection}
   {1em}
   {}
+\titlespacing*{\section}{0pt}{18pt}{8pt}
+
 \titleformat{\subsection}
   {\normalfont\bfseries}
   {\thesubsection}
   {1em}
   {}
+\titlespacing*{\subsection}{0pt}{14pt}{6pt}
 
-\newcommand{\todo}[1]{\par\noindent\textbf{TODO:} #1\par}
+\renewcommand{\cftchapfont}{\normalfont\bfseries}
+\renewcommand{\cftchappagefont}{\normalfont\bfseries}
+\setlength{\cftbeforechapskip}{4pt}
+
+\definecolor{todoBackground}{RGB}{255,248,220}
+\definecolor{todoFrame}{RGB}{180,120,0}
+\newcommand{\todo}[1]{%
+  \par\smallskip
+  \noindent
+  \begingroup
+  \setlength{\fboxsep}{6pt}%
+  \fcolorbox{todoFrame}{todoBackground}{%
+    \parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule\relax}{%
+      \textbf{TODO:} #1%
+    }%
+  }%
+  \endgroup
+  \par\smallskip
+}
+
+\newcommand{\placeholder}[1]{\textit{[#1]}}
 \newcommand{\dd}{\mathrm{d}}
 \newcommand{\Ekin}{E_{\mathrm{kin}}}
 \newcommand{\Nsites}{N_{\mathrm{sites}}}

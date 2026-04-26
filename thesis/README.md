@@ -53,4 +53,6 @@ system package manager or compile on a machine with a full TeX distribution.
 - Verify all bibliography metadata and DOIs.
 - Decide whether to copy final figures into `thesis/figures/` or reference
   generated report figures from `../reports/assets/`.
+- Final submission may require copying all referenced report figures into
+  `thesis/figures/` for portability and archival review.
 - Re-check every scientific claim against the final notebooks and reports.
