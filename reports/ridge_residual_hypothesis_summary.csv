@@ -1,0 +1,17 @@
+target,protocol,n,max_abs_rho_discretization,best_discretization_variable,max_abs_rho_smooth,best_smooth_variable,discretization_dominates,meaningful_effect,meaningful_discretization_support,high_collinearity_in_predictors,winning_discretization_collinear_with_smooth,interpretation_label,primary_num_n_classes_where_discretization_dominates,primary_num_n_classes_with_meaningful_discretization_support,primary_num_n_classes_with_high_collinearity,primary_num_n_classes_with_winning_discretization_collinear_with_smooth,primary_hypothesis_supported
+E0,LOAO,1.2,0.415686274509804,imbalance_ratio,0.12306119462710094,aspect_ratio,True,True,True,False,False,meaningful_discretization_support,3,1,0,0,False
+E0,LOAO,2.0,0.1008403361344538,edge_area_error_abs,0.18105555071573473,aspect_ratio,False,False,False,False,False,not_supported,3,1,0,0,False
+E0,LOAO,3.0,0.12605042016806722,imbalance_ratio,0.10750173323746749,aspect_ratio,True,False,False,False,False,not_supported,3,1,0,0,False
+E0,LOAO,4.0,0.2296918767507003,imbalance_ratio,0.1740348104434812,a,True,False,False,False,False,not_supported,3,1,0,0,False
+E0,LOARO,1.2,0.49243697478991594,imbalance_ratio,0.058011603481160405,a,True,True,True,False,False,meaningful_discretization_support,NaN,NaN,NaN,NaN,NaN
+E0,LOARO,2.0,0.09159663865546218,imbalance_ratio,0.11802360708236083,a,False,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
+E0,LOARO,3.0,0.27815126050420175,imbalance_ratio,0.12202440732244085,a,True,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
+E0,LOARO,4.0,0.13445378151260504,edge_area_error_abs,0.19603921176392136,a,False,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
+dE1,LOAO,1.2,0.38994327429472875,edge_area_error_abs,0.19095702614550147,aspect_ratio,True,True,True,False,False,meaningful_discretization_support,NaN,NaN,NaN,NaN,NaN
+dE1,LOAO,2.0,0.15182072829131654,edge_area_error_abs,0.38191405229100295,aspect_ratio,False,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
+dE1,LOAO,3.0,0.2941176470588236,imbalance_ratio,0.5375086661873375,aspect_ratio,False,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
+dE1,LOAO,4.0,0.06722689075630252,edge_area_error_abs,0.49224477850840376,aspect_ratio,False,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
+dE1,LOARO,1.2,0.4695006664640557,edge_area_error_abs,0.3880776232877627,a,True,True,True,False,False,meaningful_discretization_support,NaN,NaN,NaN,NaN,NaN
+dE1,LOARO,2.0,0.1392156862745098,edge_area_error_abs,0.34655164004183603,aspect_ratio,False,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
+dE1,LOARO,3.0,0.18123249299719887,imbalance_ratio,0.40171700315053643,aspect_ratio,False,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
+dE1,LOARO,4.0,0.17254901960784316,imbalance_ratio,0.26026735415386865,aspect_ratio,False,False,False,False,False,not_supported,NaN,NaN,NaN,NaN,NaN
