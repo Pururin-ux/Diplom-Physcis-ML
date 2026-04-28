@@ -1,162 +1,88 @@
 # Diploma Physics ML
 
-This project is a diploma prototype for computing and conservatively evaluating
-surrogate approximations for low-energy spectra of 2D quantum dots computed with
-Kwant.
+This repository contains the code, notebooks, reports, and thesis draft for a
+physics diploma project on conservative surrogate approximation of low-energy
+spectra of model quantum dots computed with Kwant.
 
-## Project goal
+## Current status
 
-The rectangular quantum dot is used as a validation/control benchmark only.  The
-current main research path is the fixed discrete-`n` superellipse quantum-dot
-family, where shape variation is richer than in the rectangular control case.
+The main superellipse workflow is complete through:
 
-The current completed results are Milestone 06c, a physics-informed Ridge
-baseline for the fixed discrete-`n` superellipse path, and Milestone 07,
-physical sanity checks before MLP ablation. Next is the 08 tiny MLP ablation,
-followed by residual analysis and optional Kwant-validated inverse screening.
+- Stage 07: physical sanity checks.
+- Stage 08: tiny MLP ablation/control experiment.
+- Stage 09: Ridge residual analysis against edge-discretization diagnostics.
+
+The LaTeX thesis draft/PDF scaffold is assembled under `thesis/`.
+
+The current dense superellipse dataset contains 140 geometries:
+
+- `n = {1.2, 2.0, 3.0, 4.0}`
+- `a = {24, 27, 30, 33, 36}`
+- `aspect_ratio = {0.67, 0.72, 0.78, 0.83, 0.89, 0.94, 1.0}`
+
+Main generated reports and audit outputs are in `reports/`.
+
+## Scientific conclusion
+
+Within the verified parameter range, the low-energy spectra are largely
+captured by physically motivated confinement descriptors. The
+physics-informed Ridge model remains the preferred surrogate: it is simpler,
+stable, interpretable, and physically grounded.
+
+The small MLP ablation does not meet the pre-registered robust-success
+criterion. It improves some cells, especially for `E0` and LOARO, but it does
+not provide a robust advantage over physics-informed Ridge under structured
+LOAO/LOARO validation.
+
+The residual analysis does not support a global claim that simple
+edge-discretization diagnostics explain the remaining Ridge residuals.
 
 ## Scope
 
-This project is intentionally narrow and minimal.
+The project uses:
 
-Validation/control benchmark:
-- a simple closed 2D rectangular quantum dot,
-- a square-lattice tight-binding model in Kwant,
-- 2 input parameters: `Lx` and `Ly`,
-- 4 output energy levels: `E0`, `E1`, `E2`, `E3`.
+- square-lattice tight-binding Hamiltonians with onsite energy `0` and
+  nearest-neighbor hopping `-1`;
+- direct Kwant calculations as the reference spectra;
+- fixed discrete-`n` superellipse quantum dots as the main geometry family;
+- `E0` and `dE1 = E1 - E0` as the main targets;
+- `dE2` only as a diagnostic quantity because of degeneracy and level-ordering
+  sensitivity.
 
-Current main nontrivial path:
-- fixed discrete-`n` superellipse quantum dots,
-- the same square-lattice tight-binding convention,
-- the same conservative low-energy focus before any model-complexity increase.
-
-Preferred output encoding:
-- `E0`
-- `Δ1 = E1 - E0`
-- `Δ2 = E2 - E1`
-- `Δ3 = E3 - E2`
-
-We do not include:
-- full density of states (DOS),
-- inverse design,
-- PINNs,
-- transformers,
-- CNN/ResNet,
-- HDF5/Dask,
-- complex MLOps infrastructure.
-
-## Main idea
-
-The project has conservative model levels:
-
-1. Analytical baseline  
-2. Physics-informed Ridge baseline / checked direct surrogate approximations  
-3. Optional residual or neural surrogate studies, only if validated honestly
-
-For the rectangular benchmark, ML is not the main scientific goal. It is used as
-a conservative validation check of data/solver quality and baseline workflow
-behavior. For the superellipse path, ML models are treated as checked surrogate
-approximations, not as sources of physical knowledge. All conclusions must be
-checked against direct numerical calculations, control cases, reproducibility
-checks, and honest validation protocols.
-
-The residual surrogate is an optional research extension:
-it learns the correction between the analytical baseline and the Kwant result.
-It should only be kept if it improves performance over both:
-- the analytical baseline,
-- the direct surrogate model.
+The rectangular quantum dot is used only as a validation/control calculation,
+not as the main research object.
 
 ## Repository structure
 
-- `src/` — core reusable Python code
-- `notebooks/` — exploratory and presentation notebooks
-- `tests/` — tests and sanity checks
-- `data/` — generated datasets
-- `models/` — saved surrogate models or artifacts
+- `src/` - reusable Python code.
+- `notebooks/` - executed analysis notebooks.
+- `tests/` - unit and sanity tests.
+- `data/` - generated datasets.
+- `reports/` - CSV reports, plots, and integrity audits.
+- `thesis/` - LaTeX thesis draft and build files.
 
-## Physics setup
+## Reproducibility
 
-Default physical setup:
-- closed 2D quantum dot, with the rectangle as the control case and fixed
-  discrete-`n` superellipses as the current main path,
-- square lattice,
-- tight-binding Hamiltonian,
-- first 4 low-energy eigenvalues only.
+Tests pass in the `diplom-kwant` environment:
 
-Current energy/sign convention in code:
-- onsite energy is `0`,
-- nearest-neighbor hopping is `-1`,
-- low-energy levels correspond to the smallest algebraic eigenvalues (`which='SA'`).
-- for square-like geometries (`Lx == Ly`), equal or nearly equal level pairs are expected from symmetry (degeneracy / near-degeneracy).
+```powershell
+conda run -n diplom-kwant python -m pytest tests -q
+```
 
-Default dataset setup:
-- regular grid over `Lx` and `Ly`,
-- default size: `20 x 20 = 400` configurations,
-- default range: `Lx, Ly in [10, 30]` lattice units.
+Current result: `30 passed` in the configured environment.
 
-## Current milestone state
+If `conda` is not on `PATH` on Windows, use the local Miniforge/Conda path or
+activate the environment manually before running the command.
 
-Completed benchmark/control work:
-- simple rectangular quantum dot in Kwant,
-- first 4 low-energy eigenenergies,
-- physical sanity checks and basic parameter sweeps.
+## Not completed / future work
 
-Current completed main-path result:
-- Milestone 06c consolidates a physics-informed Ridge baseline for fixed
-  discrete-`n` superellipse quantum dots.
-- Milestone 07 completes physical sanity checks before MLP ablation.
+The following are future extensions, not completed thesis results:
 
-Next/future work:
-- 08 tiny MLP ablation,
-- residual analysis,
-- optional Kwant-validated inverse screening.
+- inverse design or inverse geometry search;
+- DFT/OpenMX or other material-specific calibration;
+- continuous-`n` generalization;
+- arbitrary-shape generalization;
+- claims that a surrogate replaces direct Kwant calculation.
 
-For the current MLP ablation, `dE2` is diagnostic-only and is not a main MLP
-target.
-
-The rectangular benchmark is validation/control only and should not be presented
-as methodological novelty.
-
-## Sanity checks
-
-The generated spectra should satisfy:
-- energies are finite real numbers,
-- energies are sorted in nondecreasing order,
-- no NaN or Inf values,
-- energies change when `Lx` or `Ly` changes,
-- when both `Lx` and `Ly` increase together, low-energy levels generally decrease,
-- repeated calculations with the same parameters reproduce the same result.
-
-## Metrics
-
-The project should evaluate model quality using:
-- MAE or RMSE for the energy levels,
-- relative error in percent,
-- error relative to the characteristic level spacing.
-
-The preferred comparison is:
-- analytical baseline vs physics-informed Ridge/direct surrogate,
-- analytical baseline vs residual surrogate if implemented,
-- direct surrogate vs residual surrogate if implemented.
-
-## Success criteria
-
-The project is considered successful if:
-- Kwant spectra are generated reliably,
-- the dataset passes sanity checks,
-- a simple checked surrogate approximation predicts low-energy levels reasonably well,
-- any surrogate is validated against direct Kwant computation and control cases,
-- the results are clear enough for a diploma defense.
-
-Practical target quality:
-- excellent: about 1–2% relative test error,
-- good: about 2–5% relative test error,
-- acceptable for defense: about 5–8% if the methodology is clear, stable, and physically sensible.
-
-## Notes
-
-This is a minimal and defendable diploma project.
-Simplicity, reproducibility, and scientific clarity are more important than sophistication.
-
-The residual / delta-learning approach is not assumed to be automatically better.
-It must be validated experimentally and only kept if it gives a clear advantage.
+The project should be interpreted as a controlled model-nanostructure study,
+not as a material-specific prediction pipeline.
