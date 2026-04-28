@@ -11,6 +11,8 @@ from collections import defaultdict
 from pathlib import Path
 
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
+from matplotlib.patches import Patch
 import numpy as np
 
 
@@ -126,18 +128,9 @@ def plot_bessel(phys: list[dict]) -> None:
     ax.plot(column(data, "a"), column(data, "E_kin"), marker="o", label=r"$E_{\mathrm{kin}}$")
     ax.plot(column(data, "a"), column(data, "E_Bessel"), marker="s", label="оценка Бесселя")
     ax.set_xlabel(r"$a$")
-    ax.set_ylabel(r"Энергия, $t$")
+    ax.set_ylabel(r"Энергия, $|t|$")
     ax.grid(True, alpha=0.3)
     ax.legend()
-    if any(np.isfinite(row.get("bessel_relative_error", np.nan)) for row in data):
-        row = max(data, key=lambda item: item["a"])
-        ax.annotate(
-            f"отн. ошибка при $a={int(row['a'])}$: {100 * row['bessel_relative_error']:.2f}%",
-            xy=(row["a"], row["E_kin"]),
-            xytext=(-110, 30),
-            textcoords="offset points",
-            arrowprops={"arrowstyle": "->", "lw": 0.8},
-        )
     save(fig, "circle_bessel_e0_check.png")
 
 
@@ -149,7 +142,7 @@ def plot_de2(phys: list[dict]) -> None:
     fig, ax = plt.subplots(figsize=(7.2, 4.0))
     ax.plot(column(data, "a"), column(data, "dE2"), marker="o")
     ax.set_xlabel(r"$a$")
-    ax.set_ylabel(r"$dE_2$, $t$")
+    ax.set_ylabel(r"$dE_2$, $|t|$")
     ax.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
     ax.grid(True, alpha=0.3)
     save(fig, "de2_near_degeneracy_n2_ar1.png")
@@ -188,15 +181,23 @@ def plot_sublattice_imbalance(phys: list[dict]) -> None:
 def plot_mlp_improvement(summary: list[dict]) -> None:
     data = sorted_summary(summary)
     x = np.arange(len(data))
-    colors = ["#4C72B0" if row["cell_success"] else "#B0B0B0" for row in data]
+    success_color = "#4C72B0"
+    fail_color = "#B0B0B0"
+    colors = [success_color if row["cell_success"] else fail_color for row in data]
     fig, ax = plt.subplots(figsize=(11.5, 4.8))
     ax.bar(x, column(data, "improvement_percent"), color=colors)
-    ax.axhline(15.0, color="0.25", lw=1.0, ls="--", label="критерий 15%")
+    ax.axhline(15.0, color="0.25", lw=1.0, ls="--")
     ax.axhline(0.0, color="0.4", lw=0.8)
     ax.set_xticks(x)
     ax.set_xticklabels([cell_label(row) for row in data], rotation=0, fontsize=8)
     ax.set_ylabel(r"$\Delta \mathrm{MAE}$, %")
-    ax.legend()
+    ax.legend(
+        handles=[
+            Patch(facecolor=success_color, label="успех по критерию"),
+            Patch(facecolor=fail_color, label="критерий не выполнен"),
+            Line2D([0], [0], color="0.25", lw=1.0, ls="--", label="порог 15%"),
+        ]
+    )
     save(fig, "mlp_ablation_improvement_by_cell.png")
 
 
@@ -209,7 +210,7 @@ def plot_ridge_vs_mlp(summary: list[dict]) -> None:
     ax.bar(x + width / 2, column(data, "mlp_physics_mae_mean"), width, label="МП + физические признаки")
     ax.set_xticks(x)
     ax.set_xticklabels([cell_label(row) for row in data], rotation=0, fontsize=8)
-    ax.set_ylabel(r"$\mathrm{MAE}$, $t$")
+    ax.set_ylabel(r"$\mathrm{MAE}$, $|t|$")
     ax.legend()
     ax.grid(True, axis="y", alpha=0.25)
     save(fig, "mlp_ablation_ridge_vs_mlp_physics_mae.png")
@@ -230,7 +231,7 @@ def plot_seed_stability(summary: list[dict]) -> None:
     ax.scatter(x, column(data, "ridge_mae"), marker="s", label="гребневая регрессия")
     ax.set_xticks(x)
     ax.set_xticklabels([cell_label(row) for row in data], rotation=0, fontsize=8)
-    ax.set_ylabel(r"$\mathrm{MAE}$, $t$")
+    ax.set_ylabel(r"$\mathrm{MAE}$, $|t|$")
     ax.legend()
     ax.grid(True, axis="y", alpha=0.25)
     save(fig, "mlp_ablation_seed_stability.png")
@@ -245,7 +246,7 @@ def plot_raw_vs_physics(summary: list[dict]) -> None:
     ax.bar(x + width / 2, column(data, "mlp_physics_mae_mean"), width, label="МП + физические признаки")
     ax.set_xticks(x)
     ax.set_xticklabels([cell_label(row) for row in data], rotation=0, fontsize=8)
-    ax.set_ylabel(r"$\mathrm{MAE}$, $t$")
+    ax.set_ylabel(r"$\mathrm{MAE}$, $|t|$")
     ax.legend()
     ax.grid(True, axis="y", alpha=0.25)
     save(fig, "mlp_raw_vs_physics_features.png")
@@ -257,7 +258,7 @@ def plot_residual_edge(resid: list[dict]) -> None:
     for (n,), group in sorted(group_by(data, "n").items()):
         ax.scatter(column(group, "edge_area_error_abs"), column(group, "abs_residual"), s=28, alpha=0.75, label=fr"$n={n:.1f}$")
     ax.set_xlabel("Ошибка дискретизации площади")
-    ax.set_ylabel(r"$|y_{\mathrm{pred}}-y_{\mathrm{true}}|$, $t$")
+    ax.set_ylabel(r"$|y_{\mathrm{pred}}-y_{\mathrm{true}}|$, $|t|$")
     ax.grid(True, alpha=0.3)
     ax.legend(title="Класс формы")
     save(fig, "ridge_e0_loao_abs_residual_vs_edge_error.png")
@@ -272,7 +273,7 @@ def plot_residual_macro(resid: list[dict]) -> None:
         axes[1].scatter(column(group, "aspect_ratio"), column(group, "abs_residual"), s=26, alpha=0.75, label=label)
     axes[0].set_xlabel(r"$a$")
     axes[1].set_xlabel(r"$r_{\mathrm{AR}}$")
-    axes[0].set_ylabel(r"$|y_{\mathrm{pred}}-y_{\mathrm{true}}|$, $t$")
+    axes[0].set_ylabel(r"$|y_{\mathrm{pred}}-y_{\mathrm{true}}|$, $|t|$")
     for ax in axes:
         ax.grid(True, alpha=0.3)
     axes[1].legend(title="Класс формы")
