@@ -97,7 +97,7 @@ Possible concern:
 
 ### Energy ordering and band bottom
 
-Verdict: **OK, with one validation-safety concern in the superellipse path.**
+Verdict: **OK. A validation-safety concern was found during the audit and has since been fixed.**
 
 Evidence:
 
@@ -321,7 +321,7 @@ Possible concern:
 
 ## Report and thesis-number consistency
 
-Verdict: **Mostly consistent; one wording issue needs correction.**
+Verdict: **Consistent after the Chapter 5 wording clarification.**
 
 Checked numbers that match saved reports:
 
@@ -353,7 +353,7 @@ Checked numbers that match saved reports:
 
 Wording mismatch:
 
-- `thesis/chapters/05_results_and_discussion.tex` states that for `E0` under LOAO, MLP with physical features improves Ridge in `3 of 4` `n` classes. The CSV shows positive MAE improvement in all 4 `E0`/LOAO classes, but only 3 of 4 satisfy the success criterion because the `n=4.0` improvement is `1.94%`, below the 15% threshold. Recommended wording: "criterion-successful/practically significant improvement in 3 of 4", or "formal MAE reduction in 4 of 4, with the pre-registered success criterion met in 3 of 4."
+- `thesis/chapters/05_results_and_discussion.tex` states that for `E0` under LOAO, MLP with physical features improves Ridge in `3 of 4` `n` classes. The CSV shows positive MAE improvement in all 4 `E0`/LOAO classes, but only 3 of 4 satisfy the success criterion because the `n=4.0` improvement is `1.94%`, below the 15% threshold. Recommended wording: "criterion-successful/practically significant improvement in 3 of 4", or "formal MAE reduction in 4 of 4, with the pre-registered success criterion met in 3 of 4." This wording issue has been fixed in the current main branch
 
 This is a thesis wording issue, not a numerical result change.
 
@@ -419,9 +419,9 @@ The warning is the existing OpenMP/threadpool warning about Intel OpenMP and LLV
 
 ## Required actions before final PDF
 
-1. Confirmed fixed; no rerun required
-2. Clarify the Chapter 5 wording around `E0`/LOAO: distinguish formal positive MAE improvement in 4 of 4 classes from pre-registered criterion success in 3 of 4 classes.
-3. Avoid rerunning older notebooks over final thesis figures unless their plot labels are synchronized with the Russian-label regeneration script.
+  - Confirmed fixed: superellipse eigenvalue validation path.
+   - Confirmed fixed: Chapter 5 E0/LOAO wording.
+   - Avoid rerunning older notebooks over final thesis figures unless plot labels are synchronized.
 
 No current thesis numerical conclusion appears to require change based on this audit.
 
