@@ -38,9 +38,12 @@
   backend=biber,
   style=numeric,
   sorting=nyt,
+  autolang=other,
   giveninits=true,
   maxbibnames=6
 ]{biblatex}
+
+\DeclareFieldFormat{labelnumberwidth}{#1\adddot}
 
 \usepackage[
   unicode=true,
@@ -74,6 +77,7 @@
   font=small,
   labelfont=bf
 }
+\captionsetup[table]{justification=raggedright}
 
 \titleformat{\chapter}[display]
   {\normalfont\bfseries\centering}
