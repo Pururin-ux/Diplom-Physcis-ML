@@ -9,7 +9,7 @@ import numpy as np
 from scipy.sparse.linalg import eigsh
 
 from .geometry import build_superellipse_dot
-from .kwant_solver import lowest_four_energies
+from .kwant_solver import _as_sorted_real_finite, lowest_four_energies
 
 
 DatasetDict = dict[str, np.ndarray]
@@ -93,7 +93,7 @@ def _superellipse_levels_and_site_count(a: float, b: float, n: float) -> tuple[n
         vals = np.linalg.eigvalsh(h.toarray())[: min(4, n_sites)]
     else:
         vals, _ = eigsh(h, k=4, which="SA")
-    vals = np.sort(np.asarray(vals, dtype=float))
+    vals = _as_sorted_real_finite(vals)
     if vals.shape != (4,):
         raise ValueError(f"Expected exactly 4 energies, got shape {vals.shape}.")
     return vals, n_sites
