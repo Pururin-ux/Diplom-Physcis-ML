@@ -6,7 +6,7 @@
 
 No evidence was found that the stated physical problem is computed dishonestly, that the main spectra are taken from the wrong part of the band, that LOAO/LOARO validation leaks held-out groups, or that MLP/residual results are cherry-picked. The saved dense dataset and the generated report CSVs are internally consistent with the stated grid, target definitions, metrics, and decision rules.
 
-The main issue is a validation/DRY weakness in `src/dataset.py::_superellipse_levels_and_site_count`: the primary superellipse dataset path validates eigenvalues by `np.sort(np.asarray(vals, dtype=float))` instead of reusing `src.kwant_solver._as_sorted_real_finite`. This does not by itself show that any reported number is wrong, but it is a real validation-safety issue and should be fixed with a dataset-equivalence check before final archival.
+The main issue is a validation/DRY weakness in `src/dataset.py::_superellipse_levels_and_site_count`: the primary superellipse dataset path validates eigenvalues by `np.sort(np.asarray(vals, dtype=float))` instead of reusing `src.kwant_solver._as_sorted_real_finite`. This does not by itself show that any reported number is wrong, but it is a real validation-safety issue and was found and has been fixed with a dataset-equivalence check before final archival.
 
 ## Scope
 
@@ -419,7 +419,7 @@ The warning is the existing OpenMP/threadpool warning about Intel OpenMP and LLV
 
 ## Required actions before final PDF
 
-1. Fix the superellipse eigenvalue-validation path in `src/dataset.py::_superellipse_levels_and_site_count` to reuse `_as_sorted_real_finite`, then run tests and compare fixed-code dense-grid outputs against `data/superellipse_discrete_n_dense_dataset.npz` before deciding whether any reports need rerun.
+1. Confirmed fixed; no rerun required
 2. Clarify the Chapter 5 wording around `E0`/LOAO: distinguish formal positive MAE improvement in 4 of 4 classes from pre-registered criterion success in 3 of 4 classes.
 3. Avoid rerunning older notebooks over final thesis figures unless their plot labels are synchronized with the Russian-label regeneration script.
 

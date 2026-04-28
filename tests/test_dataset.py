@@ -52,3 +52,13 @@ def test_save_dataset_npz_writes_readable_file(tmp_path) -> None:
     assert set(loaded.files) == {"Lx", "Ly", "E0", "E1", "E2", "E3"}
     for key, values in dataset.items():
         assert np.array_equal(loaded[key], values)
+
+
+def test_superellipse_levels_and_site_count_returns_sorted_finite_four_levels() -> None:
+    """Representative superellipse spectrum path should validate four sorted energies."""
+    levels, n_sites = dataset_module._superellipse_levels_and_site_count(a=8.0, b=6.0, n=2.0)
+
+    assert n_sites >= 5
+    assert levels.shape == (4,)
+    assert np.all(np.isfinite(levels))
+    assert np.all(np.diff(levels) >= 0.0)
