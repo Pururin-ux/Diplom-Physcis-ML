@@ -6,7 +6,8 @@
 - preregistration_commit: `7e28542fda40db288ad2613b49f17b1248f6f2ce`
 - implementation_commit: `6b256287820ed29811460051855700e9b923a92f`
 - pre_execution_note_commit: `4fbb954`
-- execution_commit: pending at audit-writing time
+- execution_commit: `60517c8a4e880ef30cee59dd3774cd0c246d6f44`
+- post_execution_audit_update: provenance-only; no final CSV/result values modified
 - conda_environment: `diplom-kwant`
 
 ## Commands Run
@@ -118,3 +119,13 @@ The appropriate interpretation is:
 
 > S behaves as a monotonic anisotropy diagnostic rather than demonstrating
 > nontrivial inverse-screening advantage.
+
+## Closure Note
+
+The Q/S inverse-screening line is closed as a negative result under the frozen
+protocol. Q is symmetry-biased toward isotropy. S behaves as a monotonic
+anisotropy diagnostic in the tested superellipse domain. Surrogate-guided
+one-shot screening did not outperform strong physics baselines.
+
+Do not perform S-objective rescue runs without a new explicitly exploratory
+protocol.
