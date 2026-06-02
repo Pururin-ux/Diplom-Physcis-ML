@@ -25,6 +25,7 @@ def _candidate(
     coords,
     h: str | None = None,
     ar: float = 0.8,
+    q_pred: float = 1.0,
 ) -> sobj.SCandidate:
     geom = _geom(coords, h)
     return sobj.SCandidate(
@@ -37,7 +38,7 @@ def _candidate(
         ekin_pred=1.0,
         de1_pred=1.0,
         de2_pred=s_pred,
-        q_pred=1.0,
+        q_pred=q_pred,
         s_pred=s_pred,
         geometry=geom,
     )
@@ -295,6 +296,123 @@ def test_top_5_candidate_budget_and_deduplication() -> None:
     assert len(selected) == 5
     assert [cand.s_pred for cand in selected] == [10.0, 8.0, 7.0, 6.0, 5.0]
     assert [cand.candidate_rank for cand in selected] == [1, 2, 3, 4, 5]
+
+
+def test_alpha_aware_selector_uses_fixed_q_iso_threshold() -> None:
+    """Predicted-Q threshold should be alpha times one fixed Q_iso_pred."""
+    candidates = [
+        _candidate(10.0, [(0, 0)], h="bad", q_pred=0.94),
+        _candidate(9.0, [(1, 0)], h="good", q_pred=0.96),
+    ]
+
+    selected, threshold, failure_mode = sobj.select_alpha_aware_top_k_candidates(
+        candidates,
+        q_iso_pred=1.0,
+        alpha=0.95,
+    )
+
+    assert np.isclose(threshold, 0.95)
+    assert [cand.geometry.geometry_hash for cand in selected] == ["good"]
+    assert failure_mode == "fewer_than_top_k_predicted_q_feasible_candidates"
+
+
+def test_unconstrained_high_s_q_infeasible_candidate_not_selected() -> None:
+    """A high-S candidate below predicted-Q threshold must remain diagnostic only."""
+    candidates = [
+        _candidate(100.0, [(0, 0)], h="high_s_bad_q", q_pred=0.89),
+        _candidate(1.0, [(1, 0)], h="low_s_good_q", q_pred=0.96),
+    ]
+
+    selected, _, _ = sobj.select_alpha_aware_top_k_candidates(candidates, q_iso_pred=1.0, alpha=0.95)
+
+    assert [cand.geometry.geometry_hash for cand in selected] == ["low_s_good_q"]
+
+
+def test_alpha_primary_and_secondary_can_select_different_sets() -> None:
+    """Relaxing alpha from 0.95 to 0.90 can change the selected candidate set."""
+    candidates = [
+        _candidate(10.0, [(0, 0)], h="secondary_only", q_pred=0.92),
+        _candidate(5.0, [(1, 0)], h="primary_ok", q_pred=0.96),
+    ]
+
+    primary, _, _ = sobj.select_alpha_aware_top_k_candidates(candidates, q_iso_pred=1.0, alpha=0.95)
+    secondary, _, _ = sobj.select_alpha_aware_top_k_candidates(candidates, q_iso_pred=1.0, alpha=0.90)
+
+    assert [cand.geometry.geometry_hash for cand in primary] == ["primary_ok"]
+    assert [cand.geometry.geometry_hash for cand in secondary] == ["secondary_only", "primary_ok"]
+
+
+def test_fewer_than_top5_predicted_q_feasible_candidates_reported() -> None:
+    """If fewer than top-k candidates are feasible, only those candidates are returned."""
+    candidates = [
+        _candidate(5.0, [(0, 0)], h="a", q_pred=0.96),
+        _candidate(4.0, [(1, 0)], h="b", q_pred=0.97),
+        _candidate(3.0, [(2, 0)], h="bad", q_pred=0.80),
+    ]
+
+    selected, _, failure_mode = sobj.select_alpha_aware_top_k_candidates(candidates, q_iso_pred=1.0, alpha=0.95)
+
+    assert len(selected) == 2
+    assert failure_mode == "fewer_than_top_k_predicted_q_feasible_candidates"
+
+
+def test_zero_predicted_q_feasible_candidates_reported() -> None:
+    """If no candidates meet predicted-Q threshold, no primary method candidates are returned."""
+    candidates = [
+        _candidate(5.0, [(0, 0)], h="a", q_pred=0.90),
+        _candidate(4.0, [(1, 0)], h="b", q_pred=0.94),
+    ]
+
+    selected, _, failure_mode = sobj.select_alpha_aware_top_k_candidates(candidates, q_iso_pred=1.0, alpha=0.95)
+
+    assert selected == []
+    assert failure_mode == "no_predicted_q_feasible_candidates"
+
+
+def test_generation_returns_alpha_aware_diagnostics_with_fixed_q_iso(monkeypatch) -> None:
+    """Method generation should expose one fixed Q_iso_pred for the proposal context."""
+    raw = [
+        _candidate(8.0, [(0, 0)], h="bad", ar=0.67, q_pred=0.94),
+        _candidate(7.0, [(1, 0)], h="good", ar=0.90, q_pred=0.96),
+    ]
+    iso = _candidate(1.0, [(2, 0)], h="iso", ar=1.0, q_pred=1.0)
+    calls: list[float] = []
+
+    monkeypatch.setattr(
+        sobj,
+        "train_s_surrogates_for_n",
+        lambda dataset, n_value: (object(), object(), object(), {"Ekin": np.array([1.0])}),
+    )
+
+    def fake_solve(n_value, aspect_ratio, ekin_target, model_ekin, model_de1, model_de2, config, candidate_type, candidate_rank=None):
+        calls.append(aspect_ratio)
+        if np.isclose(aspect_ratio, 1.0):
+            return iso
+        return raw.pop(0)
+
+    monkeypatch.setattr(sobj, "solve_candidate_at_aspect_ratio", fake_solve)
+
+    selected, audit_rows, ekin_target, diagnostics = sobj.generate_alpha_aware_method_candidates_for_n(
+        dataset={},
+        n_value=2.0,
+        aspect_ratio_grid=np.array([0.67, 0.90]),
+        alpha=0.95,
+    )
+
+    assert ekin_target == 1.0
+    assert np.isclose(diagnostics.q_iso_pred, 1.0)
+    assert np.isclose(diagnostics.threshold_q_pred, 0.95)
+    assert diagnostics.raw_candidates_generated == 2
+    assert diagnostics.predicted_q_feasible_count == 1
+    assert diagnostics.selected_method_candidate_count == 1
+    assert [cand.geometry.geometry_hash for cand in selected] == ["good"]
+    assert {row["Q_iso_pred"] for row in audit_rows if "Q_iso_pred" in row} == {1.0}
+    assert calls == [1.0, 0.67, 0.9]
+
+
+def test_no_final_output_writing_helper_is_exposed() -> None:
+    """The scaffolding module should not expose final S-output writing."""
+    assert not hasattr(sobj, "write_final_s_outputs")
 
 
 def test_random_best_of_5_summary_uses_median_and_p75() -> None:

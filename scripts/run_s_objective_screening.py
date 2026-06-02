@@ -20,10 +20,12 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.s_objective_screening import (  # noqa: E402
     FUTURE_OUTPUT_SCHEMAS,
     ProtocolConfig,
+    alpha_aware_proposal_diagnostics,
     assert_frozen_protocol_constants,
     compute_ekin_targets,
     default_aspect_ratio_grid,
     generate_method_candidates_for_n,
+    training_q_by_aspect_ratio_diagnostics,
     train_s_surrogates_for_n,
     verify_candidate_kwant,
 )
@@ -53,6 +55,16 @@ def _build_parser() -> argparse.ArgumentParser:
         "--write-implementation-audit",
         action="store_true",
         help="Rewrite reports/article_s_objective/implementation_audit.md with current scaffold status.",
+    )
+    parser.add_argument(
+        "--proposal-diagnostics",
+        action="store_true",
+        help="Print alpha-aware proposal diagnostics without writing final outputs.",
+    )
+    parser.add_argument(
+        "--training-q-diagnostics",
+        action="store_true",
+        help="Print training-data Q(aspect_ratio) diagnostics without new Kwant computation.",
     )
     return parser
 
@@ -138,6 +150,16 @@ def main(argv: list[str] | None = None) -> int:
     if args.write_implementation_audit:
         OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
         (OUTPUT_DIR / "implementation_audit.md").write_text(_implementation_audit_text(config), encoding="utf-8")
+
+    if args.training_q_diagnostics:
+        print("Training Q(aspect_ratio) diagnostics:")
+        for row in training_q_by_aspect_ratio_diagnostics(dataset, config):
+            print(row)
+
+    if args.proposal_diagnostics:
+        print("Alpha-aware proposal diagnostics:")
+        for diag in alpha_aware_proposal_diagnostics(dataset, config):
+            print(diag)
 
     if args.dry_run and args.max_kwant_per_n <= 0:
         return 0

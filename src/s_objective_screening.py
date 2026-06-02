@@ -13,6 +13,7 @@ import hashlib
 from typing import Callable, Iterable, Mapping, Sequence
 
 import numpy as np
+from scipy.stats import spearmanr
 
 from .dataset import DatasetDict, _superellipse_levels_and_site_count
 from .geometry import build_superellipse_dot
@@ -198,6 +199,24 @@ class SingleNPassEvaluation:
     delta_s_min: float
     failure_modes: tuple[str, ...]
     notes: tuple[str, ...]
+
+
+@dataclass(frozen=True)
+class AlphaAwareProposalDiagnostics:
+    """No-output diagnostics for one n/alpha proposal context."""
+
+    n: float
+    alpha: float
+    ekin_target: float
+    q_iso_pred: float
+    threshold_q_pred: float
+    raw_candidates_generated: int
+    predicted_q_feasible_count: int
+    selected_method_candidate_count: int
+    selected_aspect_ratios: tuple[float, ...]
+    selected_s_pred_values: tuple[float, ...]
+    selected_q_pred_values: tuple[float, ...]
+    failure_mode: str
 
 
 REPORT_METADATA_COLUMNS = [
@@ -442,6 +461,24 @@ def select_top_k_diverse_candidates(
     ]
 
 
+def select_alpha_aware_top_k_candidates(
+    candidates: Sequence[SCandidate],
+    q_iso_pred: float,
+    alpha: float,
+    config: ProtocolConfig = ProtocolConfig(),
+) -> tuple[list[SCandidate], float, str]:
+    """Select top-k S candidates from the predicted-Q-feasible pool only."""
+    assert_frozen_protocol_constants(config)
+    threshold_q_pred = float(alpha) * float(q_iso_pred)
+    feasible = [cand for cand in candidates if cand.q_pred >= threshold_q_pred]
+    selected = select_top_k_diverse_candidates(feasible, config)
+    if not feasible:
+        return selected, threshold_q_pred, "no_predicted_q_feasible_candidates"
+    if len(selected) < config.top_k_candidates:
+        return selected, threshold_q_pred, "fewer_than_top_k_predicted_q_feasible_candidates"
+    return selected, threshold_q_pred, "ok"
+
+
 def default_aspect_ratio_grid(config: ProtocolConfig = ProtocolConfig()) -> np.ndarray:
     """Return the established dense aspect-ratio grid for candidate proposals."""
     return np.round(
@@ -450,19 +487,58 @@ def default_aspect_ratio_grid(config: ProtocolConfig = ProtocolConfig()) -> np.n
     )
 
 
-def generate_method_candidates_for_n(
+def generate_alpha_aware_method_candidates_for_n(
     dataset: DatasetDict,
     n_value: float,
     config: ProtocolConfig = ProtocolConfig(),
     aspect_ratio_grid: np.ndarray | None = None,
-) -> tuple[list[SCandidate], list[dict[str, object]], float]:
-    """Generate top-5 diverse S candidates with surrogate iso-Ekin roots."""
+    alpha: float | None = None,
+) -> tuple[list[SCandidate], list[dict[str, object]], float, AlphaAwareProposalDiagnostics]:
+    """Generate alpha-aware top-5 S candidates with surrogate iso-Ekin roots."""
     assert_frozen_protocol_constants(config)
+    alpha_value = config.alpha_primary if alpha is None else float(alpha)
     model_ekin, model_de1, model_de2, rows = train_s_surrogates_for_n(dataset, n_value)
     ekin_target = float(np.median(rows["Ekin"]))
     grid = default_aspect_ratio_grid(config) if aspect_ratio_grid is None else aspect_ratio_grid
     raw_candidates: list[SCandidate] = []
     audit_rows: list[dict[str, object]] = []
+
+    iso_pred = solve_candidate_at_aspect_ratio(
+        n_value=n_value,
+        aspect_ratio=config.random_aspect_ratio_max,
+        ekin_target=ekin_target,
+        model_ekin=model_ekin,
+        model_de1=model_de1,
+        model_de2=model_de2,
+        config=config,
+        candidate_type="isotropic_same_n_pred_reference",
+    )
+    if iso_pred is None:
+        diagnostics = AlphaAwareProposalDiagnostics(
+            n=float(n_value),
+            alpha=alpha_value,
+            ekin_target=ekin_target,
+            q_iso_pred=np.nan,
+            threshold_q_pred=np.nan,
+            raw_candidates_generated=0,
+            predicted_q_feasible_count=0,
+            selected_method_candidate_count=0,
+            selected_aspect_ratios=(),
+            selected_s_pred_values=(),
+            selected_q_pred_values=(),
+            failure_mode="isotropic_pred_reference_unavailable",
+        )
+        audit_rows.append(
+            {
+                "n": n_value,
+                "alpha": alpha_value,
+                "Ekin_target": ekin_target,
+                "failure_mode": diagnostics.failure_mode,
+            }
+        )
+        return [], audit_rows, ekin_target, diagnostics
+
+    q_iso_pred = iso_pred.q_pred
 
     for ar_value in grid:
         cand = solve_candidate_at_aspect_ratio(
@@ -476,23 +552,140 @@ def generate_method_candidates_for_n(
             candidate_type="method_candidate",
         )
         if cand is None:
-            audit_rows.append({"n": n_value, "aspect_ratio": float(ar_value), "failure_mode": "no_ekin_root"})
+            audit_rows.append(
+                {
+                    "n": n_value,
+                    "alpha": alpha_value,
+                    "aspect_ratio": float(ar_value),
+                    "Q_iso_pred": q_iso_pred,
+                    "failure_mode": "no_ekin_root",
+                }
+            )
             continue
         raw_candidates.append(cand)
+
+    selected, threshold_q_pred, failure_mode = select_alpha_aware_top_k_candidates(
+        raw_candidates,
+        q_iso_pred=q_iso_pred,
+        alpha=alpha_value,
+        config=config,
+    )
+    selected_hashes = {cand.geometry.geometry_hash for cand in selected}
+    predicted_q_feasible_count = sum(1 for cand in raw_candidates if cand.q_pred >= threshold_q_pred)
+
+    for cand in raw_candidates:
+        predicted_q_feasible = cand.q_pred >= threshold_q_pred
         audit_rows.append(
             {
                 "n": n_value,
+                "alpha": alpha_value,
                 "aspect_ratio": cand.aspect_ratio,
                 "a": cand.a,
                 "b": cand.b,
+                "Ekin_target": ekin_target,
                 "S_pred": cand.s_pred,
                 "Q_pred": cand.q_pred,
+                "Q_iso_pred": q_iso_pred,
+                "threshold_q_pred": threshold_q_pred,
+                "predicted_q_feasible": predicted_q_feasible,
+                "candidate_role": "selected_method_candidate"
+                if cand.geometry.geometry_hash in selected_hashes
+                else "unconstrained_diagnostic_only",
                 "geometry_hash": cand.geometry.geometry_hash,
-                "failure_mode": "ok",
+                "failure_mode": "ok" if predicted_q_feasible else "predicted_q_infeasible",
             }
         )
 
-    return select_top_k_diverse_candidates(raw_candidates, config), audit_rows, ekin_target
+    diagnostics = AlphaAwareProposalDiagnostics(
+        n=float(n_value),
+        alpha=alpha_value,
+        ekin_target=ekin_target,
+        q_iso_pred=float(q_iso_pred),
+        threshold_q_pred=float(threshold_q_pred),
+        raw_candidates_generated=len(raw_candidates),
+        predicted_q_feasible_count=predicted_q_feasible_count,
+        selected_method_candidate_count=len(selected),
+        selected_aspect_ratios=tuple(cand.aspect_ratio for cand in selected),
+        selected_s_pred_values=tuple(cand.s_pred for cand in selected),
+        selected_q_pred_values=tuple(cand.q_pred for cand in selected),
+        failure_mode=failure_mode,
+    )
+    return selected, audit_rows, ekin_target, diagnostics
+
+
+def generate_method_candidates_for_n(
+    dataset: DatasetDict,
+    n_value: float,
+    config: ProtocolConfig = ProtocolConfig(),
+    aspect_ratio_grid: np.ndarray | None = None,
+    alpha: float | None = None,
+) -> tuple[list[SCandidate], list[dict[str, object]], float]:
+    """Generate alpha-aware top-5 S candidates and preserve the old return shape."""
+    selected, audit_rows, ekin_target, _ = generate_alpha_aware_method_candidates_for_n(
+        dataset=dataset,
+        n_value=n_value,
+        config=config,
+        aspect_ratio_grid=aspect_ratio_grid,
+        alpha=alpha,
+    )
+    return selected, audit_rows, ekin_target
+
+
+def alpha_aware_proposal_diagnostics(
+    dataset: DatasetDict,
+    config: ProtocolConfig = ProtocolConfig(),
+    alphas: Sequence[float] | None = None,
+) -> list[AlphaAwareProposalDiagnostics]:
+    """Return no-output proposal diagnostics for each n and alpha."""
+    alpha_values = (config.alpha_primary, config.alpha_secondary) if alphas is None else tuple(alphas)
+    out: list[AlphaAwareProposalDiagnostics] = []
+    for n_value in config.n_values:
+        for alpha in alpha_values:
+            _, _, _, diagnostics = generate_alpha_aware_method_candidates_for_n(
+                dataset=dataset,
+                n_value=n_value,
+                config=config,
+                alpha=float(alpha),
+            )
+            out.append(diagnostics)
+    return out
+
+
+def training_q_by_aspect_ratio_diagnostics(
+    dataset: DatasetDict,
+    config: ProtocolConfig = ProtocolConfig(),
+) -> list[dict[str, object]]:
+    """Summarize already Kwant-computed training Q values by n and aspect ratio."""
+    n_arr = np.asarray(dataset["n"], dtype=float)
+    ar_arr = np.asarray(dataset["aspect_ratio"], dtype=float)
+    e0_arr = np.asarray(dataset["E0"], dtype=float)
+    de1_arr = np.asarray(dataset["dE1"], dtype=float)
+    q_arr = np.asarray(compute_q(de1_arr, compute_ekin(e0_arr)), dtype=float)
+    out: list[dict[str, object]] = []
+    for n_value in config.n_values:
+        n_mask = np.isclose(n_arr, float(n_value))
+        if not np.any(n_mask):
+            continue
+        rho = float(spearmanr(ar_arr[n_mask], q_arr[n_mask]).statistic)
+        trend = "Q increases with aspect_ratio; Q tends to decrease as aspect_ratio decreases" if rho > 0 else (
+            "Q decreases with aspect_ratio" if rho < 0 else "no monotonic rank trend"
+        )
+        for ar_value in sorted(set(float(value) for value in ar_arr[n_mask])):
+            mask = n_mask & np.isclose(ar_arr, ar_value)
+            q_values = q_arr[mask]
+            out.append(
+                {
+                    "n": float(n_value),
+                    "aspect_ratio": float(ar_value),
+                    "n_rows": int(q_values.size),
+                    "Q_mean": float(np.mean(q_values)),
+                    "Q_min": float(np.min(q_values)),
+                    "Q_max": float(np.max(q_values)),
+                    "spearman_r_ar_Q_for_n": rho,
+                    "interpretation": trend,
+                }
+            )
+    return out
 
 
 def random_seeds(config: ProtocolConfig = ProtocolConfig()) -> list[int]:
