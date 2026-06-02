@@ -30,6 +30,11 @@ implemented. The current article-extension experiment is one-shot screening.
 - Do not treat surrogate predictions as physical truth.
 - Do not claim material-specific relevance without material-specific
   calibration.
+- Future S-objective screening must be pre-registered before implementation or
+  execution.
+- Future S-objective work must include Q preservation constraints and/or Q-S
+  Pareto analysis; bare maximization of S is not sufficient because it can
+  collapse to "maximum anisotropy wins".
 
 ## Exclusions
 
@@ -45,7 +50,8 @@ implemented. The current article-extension experiment is one-shot screening.
 - Put reusable logic in `src/`.
 - Keep scripts and notebooks thin.
 - Add or update tests for important logic.
-- Keep outputs for this branch under `reports/article_inverse_screening/`.
+- Keep article-extension outputs under the specific `reports/article_*`
+  directory for that experiment or protocol.
 - Never hide failure modes or negative results.
 
 ## AI-Research-SKILLs use policy
