@@ -35,6 +35,24 @@ implemented. The current article-extension experiment is one-shot screening.
 - Future S-objective work must include Q preservation constraints and/or Q-S
   Pareto analysis; bare maximization of S is not sufficient because it can
   collapse to "maximum anisotropy wins".
+- S-objective implementation must follow the frozen rules in
+  `reports/article_s_objective/preregistration_protocol.md`. Do not change
+  alpha values, Ekin target definition, Ekin tolerance, baseline hierarchy,
+  random-baseline seeds/repeat count, random sampling domain, top-5 candidate
+  selection rule, diversity criterion, pass definition, or `delta_S_min` after
+  seeing results. Beating isotropic same-`n` alone is not sufficient for
+  inverse-screening success; the candidate must beat the strongest feasible
+  baseline and the simple anisotropy heuristic. Any post-freeze amendment
+  requires a new dated preregistration commit and cannot apply retroactively.
+- For S-objective implementation, `geometry_hash` must be computed from the
+  realized discrete Kwant site set using stable sorted integer lattice
+  coordinates, not from continuous `(a, aspect_ratio, n)` parameters. The
+  preregistered random baseline samples `aspect_ratio` from `Uniform(0.67, 1.0)`
+  and then determines `a` by the same Ekin-target procedure as method
+  candidates; independently sampling `a` is only an explicitly labeled stress
+  test. If the method does not beat the smallest-feasible-`aspect_ratio`
+  heuristic, report S as a monotonic anisotropy diagnostic rather than
+  inverse-design success.
 
 ## Exclusions
 
