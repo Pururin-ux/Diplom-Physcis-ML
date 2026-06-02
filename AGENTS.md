@@ -1,5 +1,11 @@
 # Project Instructions
 
+## Article extension note
+For tasks on branch `article-inverse-screening`, see `ARTICLE_AGENTS.md`.
+The user has explicitly approved a limited article-extension falsification
+experiment for surrogate-guided inverse spectral screening. This does not
+change the completed thesis conclusions.
+
 ## Goal
 Build a minimal, defendable diploma project with two clear stages:
 1) rectangular quantum dot as a validation/benchmark case,
