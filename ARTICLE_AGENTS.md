@@ -47,3 +47,17 @@ implemented. The current article-extension experiment is one-shot screening.
 - Add or update tests for important logic.
 - Keep outputs for this branch under `reports/article_inverse_screening/`.
 - Never hide failure modes or negative results.
+
+## AI-Research-SKILLs use policy
+
+- AI-Research-SKILLs are agent-side aids, not scientific methods.
+- They must not replace direct Kwant verification.
+- They must not weaken the independent audit requirement.
+- They must not be used to inflate claims or turn negative results into
+  positive narratives.
+- Relevant skills may be used for literature search, research planning, rigor
+  review, plotting, experiment tracking, and paper drafting after results are
+  scientifically valid.
+- Irrelevant LLM-engineering skills should not be used for this physics project.
+- Any advice from skills must be checked against the repository, data, and
+  direct solver results.
