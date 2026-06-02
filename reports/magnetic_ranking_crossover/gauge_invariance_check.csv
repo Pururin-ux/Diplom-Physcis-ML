@@ -1,0 +1,2 @@
+shape_id,n,a,b,rAR,alpha,landau_gauge,symmetric_gauge,max_abs_energy_diff,tolerance,passed
+circle_n2_r1,2.0,30.0,30.0,1.0,0.005,landau,symmetric,1.865174681370263e-14,1e-06,True
