@@ -7,12 +7,15 @@ import numpy as np
 from src.inverse_screening import GeometryDiagnostics, compute_q
 from src.symmetry_optimum_analysis import (
     IsoenergyPoint,
+    classify_near_isotropy_optimum,
     classify_doublet_splitting,
     classify_symmetry_optimum,
     compute_s,
     finite_difference_signs,
     jaccard_overlap,
+    local_refinement_candidates,
     local_extrema_indices,
+    select_min_ekin_error_candidate,
     select_representative_points,
 )
 
@@ -135,3 +138,67 @@ def test_jaccard_overlap_for_geometry_sets() -> None:
     """Geometry comparison should expose exact and partial overlaps."""
     assert jaccard_overlap([(0, 0), (1, 0)], [(1, 0), (0, 0)]) == 1.0
     assert np.isclose(jaccard_overlap([(0, 0), (1, 0)], [(1, 0), (2, 0)]), 1.0 / 3.0)
+
+
+def test_local_refinement_candidates_clip_and_sort_domain() -> None:
+    """Local refinement candidates should stay inside the allowed domain."""
+    out = local_refinement_candidates(
+        24.1,
+        deltas=(-0.3, -0.1, 0.0, 0.1, 0.3),
+        a_min=24.0,
+        a_max=36.0,
+    )
+
+    assert out == [24.0, 24.1, 24.2, 24.4]
+
+
+def test_select_min_ekin_error_candidate() -> None:
+    """Selection should minimize absolute Ekin error to the target."""
+    rows = [
+        {"label": "a", "Ekin_Kwant": 0.011},
+        {"label": "b", "Ekin_Kwant": 0.0102},
+        {"label": "c", "Ekin_Kwant": 0.009},
+    ]
+
+    selected = select_min_ekin_error_candidate(rows, ekin_target=0.010)
+
+    assert selected["label"] == "b"
+
+
+def test_classify_near_isotropy_optimum_supports_iso_largest() -> None:
+    """Direct near-isotropy classification should support a clear isotropic optimum."""
+    status, note = classify_near_isotropy_optimum(
+        q_iso=1.5,
+        best_noniso_q=1.45,
+        spearman_q=1.0,
+        tolerance=0.01,
+    )
+
+    assert status == "supports verified near-isotropy optimum"
+    assert "isotropic_largest" in note
+
+
+def test_classify_near_isotropy_optimum_flags_large_noniso_gain() -> None:
+    """A non-isotropic Q gain above threshold should reject the explanation."""
+    status, note = classify_near_isotropy_optimum(
+        q_iso=1.5,
+        best_noniso_q=1.54,
+        spearman_q=0.8,
+        tolerance=0.01,
+    )
+
+    assert status == "not supported"
+    assert "nonisotropic" in note
+
+
+def test_classify_near_isotropy_optimum_ambiguous_within_threshold() -> None:
+    """Near ties should remain ambiguous."""
+    status, note = classify_near_isotropy_optimum(
+        q_iso=1.5,
+        best_noniso_q=1.505,
+        spearman_q=0.8,
+        tolerance=0.01,
+    )
+
+    assert status == "ambiguous"
+    assert "within_threshold" in note

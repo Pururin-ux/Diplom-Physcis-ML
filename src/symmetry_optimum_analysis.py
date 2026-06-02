@@ -25,6 +25,8 @@ from .model import build_baseline_model
 
 
 REPRESENTATIVE_ASPECT_RATIOS = (0.67, 0.75, 0.83, 0.89, 0.94, 1.0)
+NEAR_ISOTROPY_ASPECT_RATIOS = (0.90, 0.94, 0.97, 0.985, 0.995, 1.0)
+LOCAL_REFINEMENT_DELTAS = (-0.30, -0.20, -0.10, -0.05, 0.0, 0.05, 0.10, 0.20, 0.30)
 
 
 @dataclass(frozen=True)
@@ -68,6 +70,49 @@ def compute_s(de2_values: np.ndarray | float, ekin_values: np.ndarray | float) -
     if np.any(ekin <= 0.0):
         raise ValueError("Ekin must be positive to compute S.")
     return de2 / ekin
+
+
+def local_refinement_candidates(
+    a_root: float,
+    deltas: Iterable[float] = LOCAL_REFINEMENT_DELTAS,
+    a_min: float = 24.0,
+    a_max: float = 36.0,
+) -> list[float]:
+    """Return sorted local ``a`` candidates clipped to the valid domain."""
+    values = {
+        round(float(a_root) + float(delta), 12)
+        for delta in deltas
+        if a_min <= float(a_root) + float(delta) <= a_max
+    }
+    return sorted(values)
+
+
+def select_min_ekin_error_candidate(
+    candidates: list[dict[str, object]],
+    ekin_target: float,
+) -> dict[str, object]:
+    """Select the local candidate nearest to the target Ekin."""
+    if not candidates:
+        raise ValueError("Need at least one candidate.")
+    return min(candidates, key=lambda row: abs(float(row["Ekin_Kwant"]) - ekin_target))
+
+
+def classify_near_isotropy_optimum(
+    q_iso: float,
+    best_noniso_q: float,
+    spearman_q: float,
+    tolerance: float,
+) -> tuple[str, str]:
+    """Classify direct near-isotropy Q evidence conservatively."""
+    if not np.isfinite(q_iso) or not np.isfinite(best_noniso_q):
+        return "ambiguous", "missing_iso_or_nonisotropic_value"
+    if best_noniso_q > q_iso + tolerance:
+        return "not supported", "nonisotropic_point_beats_isotropic_above_threshold"
+    if abs(q_iso - best_noniso_q) <= tolerance:
+        return "ambiguous", "isotropic_advantage_within_threshold"
+    if np.isfinite(spearman_q) and spearman_q > 0.0:
+        return "supports verified near-isotropy optimum", "isotropic_largest_and_positive_rank_trend"
+    return "ambiguous", "isotropic_largest_but_rank_trend_not_positive"
 
 
 def train_de2_surrogate_for_n(dataset: DatasetDict, n_value: float) -> object:
