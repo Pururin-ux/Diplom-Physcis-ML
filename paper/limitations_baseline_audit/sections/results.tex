@@ -1,0 +1,214 @@
+\section{Results and discussion}
+
+\subsection{Closed-spectrum surrogate modeling}
+
+The diploma-stage dataset establishes that the direct tight-binding workflow is
+physically calibrated at the level needed for a conservative surrogate study,
+but it does not establish a positive ML novelty claim. The circular Bessel-scale
+check gives an error of about $2.03\%$, and the fixed-shape scaling diagnostic
+finds a maximum deviation of about $2.12\%$ for $(E_0+4)a^2$ across the five
+tested sizes. These checks support the energy convention and the expected
+leading confinement scale, not a nontrivial shape-design rule.
+
+Within this dataset, the physics-informed Ridge model remains the preferred
+surrogate. A small multilayer perceptron with physics-motivated features passes
+the cell-level success rule in $10$ of $16$ main comparison cells, but only in
+$3$ of $8$ leave-one-aspect-out cells and $7$ of $8$ leave-one-aspect-ratio-out
+cells. Thus the preregistered robust-success criterion is not met. The numerical
+scale of the Ridge error is already small: the relative MAE is
+$2.01$--$2.60\%$ of the characteristic $E_{\mathrm{kin}}$ for $E_0$ and
+$0.78$--$1.15\%$ of the characteristic $dE_1$ gap. The MLP has individual
+winning cells, including a large positive improvement for one $E_0$ protocol,
+but it also has strongly negative cells for $dE_1$. The safe conclusion is that
+the MLP does not robustly outperform a physically motivated linear baseline in
+the structured validation used here.
+
+This result matters for later inverse-screening attempts. If the surrogate is
+not a robust positive model result, then surrogate-generated candidates must be
+treated only as proposals. Direct Kwant verification and comparison with
+physics baselines remain the source of any claim.
+
+\subsection{Spectral objectives and inverse-screening limitations}
+
+The first inverse-screening direction used the ratio
+$Q=dE_1/(E_0+4)$ as a one-shot surrogate-guided objective inside the verified
+training-domain ranges. The report explicitly treats Ridge predictions as
+candidate generators only, with final candidate and baseline values coming from
+direct Kwant calculations or already computed training rows. The outcome is
+negative for each fixed $n$ class. The symmetry-optimum follow-up further shows
+that the earlier top inverse-screening candidate and the isotropic same-$n$
+baseline are the same discrete geometry for every tested $n$.
+
+The preregistered S-objective line tests
+$S=(E_2-E_1)/(E_0+4)$ under a frozen rule set. Its own report emphasizes that
+observed doublet splitting is not a discovery: the question is whether
+surrogate-guided screening beats strong baselines. It does not. At the primary
+setting $\alpha=0.95$, $0$ of $4$ fixed $n$ values pass; at the secondary
+setting $\alpha=0.90$, the result also remains $0$ of $4$. The strongest
+baseline is the simple anisotropy heuristic for the reported rows.
+
+Together these results limit a broad class of spectral ratio objectives. Gap
+ratios and doublet-splitting measures can encode obvious geometric trends such
+as isotropy, aspect ratio, and symmetry lifting. Without a stronger baseline
+ladder, they should not be used as evidence for inverse design or new
+shape-dependent physics.
+
+\subsection{Magnetic ranking-crossover limitation}
+
+The magnetic ranking-crossover sprint was a direct-Kwant falsification check,
+not an ML task and not a rescue of the Q/S line. It tested four representative
+geometries at sizes $a=\{30,36\}$, with weak-field flux parameters
+$\alpha=(0.0,0.00125,0.0025,0.005)$ and diagnostic values
+$\alpha=(0.01,0.02,0.04)$. Numerical checks passed: the $\alpha=0$ spectra
+were reproduced, gauge invariance was verified with maximum reported
+difference $1.865174681370263\times10^{-14}$, Hermiticity and finite sorted
+spectra checks passed, and eigenvalue imaginary parts were controlled.
+
+The physical signal did not survive. The report found $0$ thresholded pairwise
+ranking crossovers and $0$ crossovers surviving pre-size filters. Three
+robustness-divergence candidates were identified, but $0$ survived the pre-size
+filters. The final closure attributes the apparent candidates to circle or
+ellipse symmetry-lifting baselines. Magnetic response exists numerically in the
+model, but this tested protocol does not produce a non-baseline geometry
+ranking signal.
+
+\subsection{Continuum-reference limitation}
+
+Path B asked whether tight-binding spectra contain a nontrivial
+superellipse-exponent-dependent finite-lattice convergence residual after
+subtracting ordinary continuum, Weyl, perimeter, pixelation, and discretization
+baselines. The protocol deliberately forbids weak claims based on the leading
+$1/a^2$ scale, generic boundary effects, ML accuracy, or largest-size
+tight-binding extrapolation. Its first gate is a circular Bessel anchor for
+$n=2.0$, $r_{\mathrm{AR}}=1.0$, with sizes
+$a=\{24,30,36,48,60,72,96\}$ and levels $E_0$ through $E_5$.
+
+That anchor passes its stability review, which is useful but narrow. It
+calibrates the low-energy circular case; it does not establish a shape-sensitive
+continuum residual for $n\neq2.0$. The finite-difference reference step then
+validates an embedded-mask Dirichlet Laplacian on grids up to $N_{\mathrm{grid}}=251$,
+where the selected circular ground-state relative error versus the Bessel value
+is $0.0052206740942014095$. This is adequate as an initial reference check, but
+the later $N_{\mathrm{grid}}=501$ convergence gate changes the conclusion for
+shape-sensitive use.
+
+The N501 gate uses the near-geometric refinement triple
+$(126,251,501)$, corresponding approximately to
+$h=\{0.016,0.008,0.004\}$. Although the raw circle ground-state relative error
+versus Bessel improves to $0.0026734921480308575$, the non-circular reference
+uncertainties remain too large for the downstream residual claim:
+$0.0047216251159203785$ for the $n=1.2$ level-zero reference and
+$0.0021923716263753637$ for the $n=4.0$ level-zero reference. Both fail the
+$0.001$ hard gate. The final verdict is
+\texttt{FD\_501\_CONVERGENCE\_INCONCLUSIVE}. The safe conclusion is not that FD
+is generally invalid, but that this embedded-mask FD reference should not be
+treated as continuum truth for the shape-sensitive Path B residual.
+
+\subsection{TB-only finite-size scaling limitation}
+
+After the FD reference was downgraded, the TB-only self-scaling gate tested a
+minimal fallback using direct tight-binding ground-state values and geometric
+diagnostics only. No FD reference values were loaded, no TB-vs-FD residuals were
+computed, and no ML, Q, or S objectives were used. The domain was
+$r_{\mathrm{AR}}=1.0$, $n=(1.2,2.0,4.0)$, and
+$a=(24.0,30.0,36.0,48.0,60.0,72.0,96.0)$.
+
+The circular calibration is good: for $n=2.0$, the effective-radius model gives
+a relative error of $7.21\times10^{-4}$ against
+$j_{01}^2=5.783185962946783$. Fitted effective-radius parameters are also
+reported for the three $n$ values. The limiting coefficients are approximately
+$8.03$, $5.779$, and $5.049$, with offsets approximately $0.279$, $0.277$, and
+$0.130$ for $n=1.2,2.0,4.0$, respectively. These values show ordinary shape
+dependence of continuum-like eigenvalues and finite-size offsets. They are not,
+by themselves, a positive Path B signal.
+
+The potential residual exponent is unstable. The reported power-law values are
+approximately $p_{\mathrm{TB}}=0.10,0.53,1.05$ for $n=1.2,2.0,4.0$, and
+leave-one-size-out stability is not accepted for all $n$. Simple geometric
+baselines do not cleanly explain a robust residual, but the residual itself is
+not stable enough to support a positive claim. The final verdict is
+inconclusive.
+
+\subsection{Open-transport limitation}
+
+The open-transport preflight changes the observable from closed spectra to
+two-terminal conductance. This is physically richer, but it introduces a new
+baseline: contact geometry. The tested setup uses square-lattice strip leads,
+the spinless convention $G=T$, a superellipse dot with $a=30.0$ and
+$r_{\mathrm{AR}}=1.0$, lead widths $W=4$ and $W=10$, and an energy window
+$[-3.8,-3.0]$ sampled at $241$ points.
+
+The central preflight result is that contact width dominates the tested shape
+effect. For $n=2.0$, the raw distance between $W=4$ and $W=10$ conductance
+curves is $0.6589809313045025$. The shape distances are
+$0.5810925658201803$ at $W=4$ and $0.5122909816541278$ at $W=10$. Mode
+thresholds do not explain the features, the straight-channel baseline is
+computed but does not remove the result, and an energy-shift/rescale collapse
+does not remove it either. The limitation is therefore not a trivial numerical
+failure. It is a physical interpretation problem: in this open-dot geometry,
+lead-dot coupling is at least as important as the shape parameter being tested.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.88\textwidth]{contact_preflight_G_vs_E_W4_W10.png}
+    \caption{
+    Existing open-transport preflight plot copied from
+    \texttt{reports/article\_d\_open\_transport/figures}. It illustrates the
+    contact-width comparison used to diagnose lead-coupling dominance. The plot
+    is reused as an existing result; no new transport scan was run for this
+    article draft.
+    }
+    \label{fig:contact-preflight}
+\end{figure*}
+
+\begin{table*}[t]
+\caption{
+Summary of tested hypotheses and limiting baselines. The wording is deliberately
+conservative: each row reports what the existing result can safely support, not
+what a stronger future protocol might find.
+}
+\label{tab:hypothesis-summary}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\tcell{0.16\textwidth}{Direction / hypothesis} &
+\tcell{0.13\textwidth}{Observable} &
+\tcell{0.25\textwidth}{Main baseline or methodological limitation} &
+\tcell{0.13\textwidth}{Verdict} &
+\tcell{0.24\textwidth}{Safe conclusion} \\
+\midrule
+\tcell{0.16\textwidth}{Closed-spectrum Ridge/MLP} & \tcell{0.13\textwidth}{$E_0$, $dE_1$} & \tcell{0.25\textwidth}{Physics-informed Ridge and structured validation} & \tcell{0.13\textwidth}{ML advantage not established} & \tcell{0.24\textwidth}{Ridge remains the preferred conservative surrogate; direct Kwant remains the reference.} \\
+\tcell{0.16\textwidth}{Q inverse screening} & \tcell{0.13\textwidth}{$dE_1/(E_0+4)$} & \tcell{0.25\textwidth}{Isotropy and same-$n$ baselines} & \tcell{0.13\textwidth}{Not supported} & \tcell{0.24\textwidth}{Q candidates do not justify inverse-design claims.} \\
+\tcell{0.16\textwidth}{S objective} & \tcell{0.13\textwidth}{$(E_2-E_1)/(E_0+4)$} & \tcell{0.25\textwidth}{Simple anisotropy and strongest feasible baselines} & \tcell{0.13\textwidth}{Not supported} & \tcell{0.24\textwidth}{S behaves as an anisotropy diagnostic in the tested domain.} \\
+\tcell{0.16\textwidth}{Magnetic ranking crossover} & \tcell{0.13\textwidth}{Weak-field level rankings} & \tcell{0.25\textwidth}{Symmetry lifting and zero-field/aspect-ratio ranking} & \tcell{0.13\textwidth}{Baseline limited} & \tcell{0.24\textwidth}{Magnetic response exists, but no non-baseline design signal survives.} \\
+\tcell{0.16\textwidth}{TB-vs-FD continuum residual} & \tcell{0.13\textwidth}{Shape-sensitive residual to FD reference} & \tcell{0.25\textwidth}{Embedded-mask FD uncertainty} & \tcell{0.13\textwidth}{Inconclusive} & \tcell{0.24\textwidth}{Current FD reference should not be treated as continuum truth.} \\
+\tcell{0.16\textwidth}{TB-only self-scaling} & \tcell{0.13\textwidth}{Ground-state finite-size scaling} & \tcell{0.25\textwidth}{Unstable residual exponent and insufficient surviving signal} & \tcell{0.13\textwidth}{Inconclusive} & \tcell{0.24\textwidth}{The fallback gate does not support a positive Path B claim.} \\
+\tcell{0.16\textwidth}{Open transport contact preflight} & \tcell{0.13\textwidth}{$G(E)$ curves} & \tcell{0.25\textwidth}{Contact-width dependence} & \tcell{0.13\textwidth}{Contact dominated} & \tcell{0.24\textwidth}{Transport interpretation requires tighter lead-dot coupling control.} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\caption{
+Selected numerical gate values used in the audit. All entries are taken from
+the source inventory and existing repository outputs.
+}
+\label{tab:numeric-gates}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\tcell{0.20\textwidth}{Gate} &
+\tcell{0.30\textwidth}{Key value(s)} &
+\tcell{0.20\textwidth}{Internal verdict} &
+\tcell{0.21\textwidth}{Article-level use} \\
+\midrule
+\tcell{0.20\textwidth}{Diploma closed-spectrum scale checks} & \tcell{0.30\textwidth}{Bessel-scale error about $2.03\%$; fixed-shape scaling deviation about $2.12\%$} & \tcell{0.20\textwidth}{calibration checks passed for thesis scope} & \tcell{0.21\textwidth}{Establishes controlled benchmark, not new shape physics.} \\
+\tcell{0.20\textwidth}{Ridge versus small MLP} & \tcell{0.30\textwidth}{Ridge relative MAE $2.01$--$2.60\%$ for $E_0$ and $0.78$--$1.15\%$ for $dE_1$; MLP success $10/16$ cells} & \tcell{0.20\textwidth}{robust MLP criterion not met} & \tcell{0.21\textwidth}{ML advantage not established.} \\
+\tcell{0.20\textwidth}{FD N501 reference gate} & \tcell{0.30\textwidth}{circle raw N501 error $0.00267$; non-circular relative uncertainties $0.00472$ and $0.00219$} & \tcell{0.20\textwidth}{FD N501 inconclusive} & \tcell{0.21\textwidth}{FD is not used as shape-sensitive truth.} \\
+\tcell{0.20\textwidth}{TB self-scaling gate} & \tcell{0.30\textwidth}{best $n=2.0$ Bessel relative error $7.21\times10^{-4}$; $p_{\mathrm{TB}}$ unstable} & \tcell{0.20\textwidth}{TB self-scaling inconclusive} & \tcell{0.21\textwidth}{No positive Path B claim.} \\
+\tcell{0.20\textwidth}{Open transport preflight} & \tcell{0.30\textwidth}{contact effect $0.659$; shape effects $0.581$ and $0.512$} & \tcell{0.20\textwidth}{contact dominated} & \tcell{0.21\textwidth}{Contact width dominates the tested setup.} \\
+\bottomrule
+\end{tabular}
+\end{table*}

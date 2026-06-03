@@ -1,0 +1,80 @@
+\documentclass[
+reprint,
+aps,
+prb,
+amsmath,
+amssymb,
+superscriptaddress,
+longbibliography
+]{revtex4-2}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyhdr}
+
+\newcommand{\tcell}[2]{\begin{minipage}[t]{#1}\raggedright #2\end{minipage}}
+\graphicspath{{figures/}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small Baseline-first limitations draft for square-lattice tight-binding dots}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+\title{
+Limitations of Shape-Based Spectral and Transport Objectives in
+Square-Lattice Tight-Binding Quantum Dots: A Baseline-First Audit
+}
+
+\author{A. A. Alvinsky}
+\affiliation{
+Faculty of Physics,
+Belarusian State University,
+4 Nezavisimosti Ave., 220030 Minsk, Belarus
+}
+
+\date{\today}
+
+\begin{abstract}
+We audit several shape-based objectives in a controlled square-lattice
+tight-binding model of finite superelliptic quantum dots. The study is not a
+new numerical sprint, but a baseline-first synthesis of existing closed-spectrum
+calculations, surrogate-model comparisons, inverse-screening tests,
+continuum-reference checks, a tight-binding-only finite-size scaling gate, and
+an open-transport contact preflight. The model uses superelliptic boundaries,
+direct Kwant spectra, and the low-energy convention
+$E_{\mathrm{kin},k}=E_k+4$. Across these outputs, attractive objectives are
+repeatedly limited by simple or methodological baselines. A small multilayer
+perceptron does not establish a robust advantage over a physics-informed Ridge
+model under structured validation. Spectral inverse-screening objectives based
+on gap ratios and doublet splitting reduce to isotropy, anisotropy, or symmetry
+baselines. A finite-difference continuum reference is useful for calibration but
+not adequate as a high-precision shape-sensitive reference in the tested
+protocol. A tight-binding-only scaling gate remains inconclusive, and the
+tested open-dot conductance is more sensitive to contact width than to
+superellipse shape. The contribution is therefore methodological: a
+reproducible negative audit showing where apparent shape, ML, continuum-residual,
+and transport signals become unreliable before they can justify a positive
+device-design rule.
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/model_and_protocol}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\bibliographystyle{apsrev4-2}
+\bibliography{refs}
+
+\end{document}

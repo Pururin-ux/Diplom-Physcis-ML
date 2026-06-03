@@ -1,0 +1,57 @@
+\section{Introduction}
+
+Shape control is an appealing route for studying and designing quantum-dot
+spectra. In model systems, the confinement boundary can be changed cleanly,
+low-energy levels can be computed directly, and surrogate models can be trained
+on repeated spectral calculations. These ingredients make a square-lattice
+tight-binding model of superelliptic quantum dots a useful controlled benchmark:
+the Hamiltonian is simple, the geometry family is interpretable, and the
+calculated spectra retain the finite-size and boundary effects that motivate
+shape-dependent analysis. At the same time, this simplicity creates a demanding
+test of any proposed shape objective. If an apparent signal is already explained
+by size, area, aspect ratio, symmetry, degeneracy, boundary pixelation, or lead
+coupling, then it should not be presented as inverse design or as a new physical
+effect.
+
+This article is a limitations paper. It summarizes existing outputs from a
+diploma project and subsequent article-extension checks, all within the same
+finite superellipse tight-binding family. The purpose is not to enlarge the
+parameter space, repair failed directions, or promote a new objective. Instead,
+the paper asks what remains after simple physics baselines and methodological
+checks are applied to several attractive routes: closed-spectrum surrogate
+modeling, one-shot spectral inverse screening, magnetic ranking crossover,
+tight-binding to continuum residual analysis, tight-binding-only self-scaling,
+and open transport.
+
+The need for such an audit is practical. Low-energy levels of confined systems
+are strongly governed by dimensional scaling; near the bottom of a square-lattice
+tight-binding band, the dispersion has the expected quadratic form. Classical
+surrogate-modeling practice also warns that flexible models must be compared
+against simple, structured baselines rather than weak or randomly chosen
+alternatives~\cite{bishop2006prml,hastie2009elements,forrester2008surrogate,queipo2005surrogate}.
+For spatially or hierarchically structured data, validation splits must reflect
+the intended extrapolation or interpolation task~\cite{roberts2017crossvalidation}.
+In the present project, these points are not abstract methodological concerns:
+they decide whether a shape-dependent claim survives at all.
+
+The main message is therefore conservative. In the tested square-lattice
+tight-binding model of finite superelliptic quantum dots, several plausible
+shape, ML, continuum-reference, and transport objectives do not support positive
+claims after baseline checks. This does not imply that geometry-based quantum
+design, machine learning, finite-size analysis, or transport studies are useless
+in general. It says only that, in this controlled family and with the tested
+protocols, baseline-first tests are necessary and often decisive.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.95\textwidth]{baseline_audit_flow.pdf}
+    \caption{
+    Baseline-first audit path used in this draft. Each stage is based on
+    existing repository outputs rather than new calculations. The safe outcome
+    of the combined evidence is a limitations analysis: ML advantage is not
+    established, Q/S-style spectral objectives are killed by simple baselines,
+    continuum-reference and tight-binding-only scaling gates remain inconclusive,
+    and the tested open-transport setup is contact dominated.
+    }
+    \label{fig:audit-flow}
+\end{figure*}

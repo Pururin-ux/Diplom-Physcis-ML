@@ -1,0 +1,52 @@
+\section{General lessons}
+
+The common lesson is not that shape is irrelevant. The spectra and conductance
+curves do change with geometry, and the direct calculations are useful for
+controlled numerical physics. The lesson is that a shape-dependent observable is
+not automatically a shape-design rule. In this project, the strongest
+interpretation is often removed by a baseline that is simpler than the proposed
+objective.
+
+The first layer is confinement scale. Because $E_{\mathrm{kin}}$ near the
+bottom of the band follows a continuum-like quadratic dispersion, many low
+levels and gaps inherit a leading size dependence. Any residual objective must
+show that it is not merely reporting this scale. The second layer is geometry
+compression: area, perimeter, aspect ratio, and site count can all absorb
+substantial variation before one reaches a shape-exponent-specific claim. The
+third layer is symmetry and degeneracy. Q, S, and magnetic ranking ideas all
+encounter this issue in different forms; isotropy and degeneracy lifting can be
+physically real while still being too simple to count as inverse design.
+
+The fourth layer is boundary realization. A smooth superellipse becomes a
+finite set of lattice sites, so boundary pixelation, area error, and sublattice
+imbalance can produce finite-size structure. These effects are not nuisances to
+hide; they are part of the model and must be included in the baseline ladder.
+The fifth layer is reference-solver uncertainty. The FD-reference sequence shows
+that passing a circular sanity check is not enough for a shape-sensitive
+continuum residual. A reference can be useful for calibration and still be too
+uncertain for the intended residual analysis.
+
+Transport adds one more layer: contacts. Conductance is not only a property of
+the isolated dot shape. It depends on the coupling between the finite dot and
+the leads, on lead width, and on mode structure. The preflight therefore does
+what a preflight should do: it blocks a large shape-transport campaign until
+the lead-dot coupling baseline is controlled.
+
+These lessons also clarify the role of ML. A surrogate can be valuable for
+compression, interpolation, and candidate generation, especially when direct
+Kwant calculations are more expensive than model evaluation. But in the present
+dataset, a flexible model is not automatically more scientific than a Ridge
+baseline tied to confinement descriptors. ML should enter after the physical
+question survives baseline subtraction, not as a substitute for that survival.
+
+The resulting baseline hierarchy is:
+\begin{enumerate}
+    \item check size, area, perimeter, and aspect-ratio scaling;
+    \item check isotropy, symmetry, and degeneracy;
+    \item check lattice boundary realization, pixelation, and effective radius;
+    \item check reference-solver uncertainty before using residuals;
+    \item check contact geometry before interpreting transport;
+    \item only then use ML or inverse screening for positive claims.
+\end{enumerate}
+Applied to the existing outputs, this hierarchy supports a reproducible
+negative benchmark rather than a new device-design rule.

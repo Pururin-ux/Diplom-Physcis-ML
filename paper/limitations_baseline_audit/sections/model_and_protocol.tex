@@ -1,0 +1,60 @@
+\section{Model and numerical protocol}
+
+The common model is a spinless nearest-neighbor tight-binding Hamiltonian on a
+square lattice,
+\begin{equation}
+    H = \sum_i \epsilon_i c_i^\dagger c_i
+        + \sum_{\langle i,j\rangle} t
+        \left(c_i^\dagger c_j+c_j^\dagger c_i\right),
+\end{equation}
+with onsite energy $\epsilon_i=0$ and hopping $t=-1$. The bottom of the
+infinite square-lattice band is at $E=-4$, so low-energy spectral quantities are
+reported with the kinetic convention
+\begin{equation}
+    E_{\mathrm{kin},k}=E_k+4 .
+\end{equation}
+Closed-dot spectra are computed by direct sparse diagonalization of finalized
+Kwant Hamiltonians~\cite{groth2014kwant,lehoucq1998arpack,virtanen2020scipy}.
+The same tight-binding convention underlies the transport preflight, where
+two-terminal spinless conductance is written as $G=T$ in Landauer units, with
+lead self-energies handled by Kwant~\cite{datta2005quantumtransport}.
+
+The geometry family is the lattice realization of a superellipse,
+\begin{equation}
+    \left|\frac{x}{a}\right|^n+
+    \left|\frac{y}{b}\right|^n \leq 1,
+    \qquad b=a r_{\mathrm{AR}},
+\end{equation}
+where $a$ sets the major size, $r_{\mathrm{AR}}$ is the aspect ratio, and $n$
+controls the boundary shape. The completed closed-spectrum dataset contains
+$140$ geometries with
+$n=\{1.2,2.0,3.0,4.0\}$,
+$a=\{24,27,30,33,36\}$, and
+$r_{\mathrm{AR}}\in\{0.67,0.72,0.78,0.83,0.89,0.94,1.0\}$.
+The primary spectral targets in the diploma analysis are $E_0$ and
+$dE_1=E_1-E_0$; higher gaps are retained as diagnostics because degeneracies
+and level ordering make them less stable targets.
+
+The audit uses only pre-existing outputs listed in
+\texttt{source\_inventory.md}. It does not run new physics calculations or new
+ML training. The evidence is grouped by protocol:
+
+\begin{enumerate}
+    \item a diploma-stage closed-spectrum dataset and Ridge versus small-MLP
+    comparison;
+    \item one-shot Q inverse screening and preregistered S-objective screening;
+    \item a direct-Kwant magnetic ranking-crossover check;
+    \item a strict Path B continuum-residual protocol, including a circular
+    Bessel anchor and finite-difference reference checks;
+    \item a tight-binding-only self-scaling gate after the FD reference became
+    insufficient for shape-sensitive residuals;
+    \item an open-transport contact-width preflight.
+\end{enumerate}
+
+The shared analysis rule is baseline first. Before interpreting an observable
+as shape physics or inverse-design evidence, the observable must be compared
+against the simplest competing explanations: confinement scale, area, perimeter,
+aspect ratio, isotropy, symmetry and degeneracy, lattice boundary realization,
+reference-solver uncertainty, and, for transport, lead-dot coupling. Machine
+learning is treated as a candidate generator or surrogate approximation tool,
+not as physical truth.
