@@ -12,6 +12,7 @@ from typing import Sequence
 
 import numpy as np
 from scipy import sparse as sp
+from scipy.optimize import brentq
 from scipy.sparse.linalg import eigsh
 from scipy.special import jn_zeros
 
@@ -20,6 +21,9 @@ N_VALUES = (1.2, 2.0, 4.0)
 ASPECT_RATIO = 1.0
 GRID_VALUES = (101, 151, 201, 251)
 N_LEVELS = 6
+FD501_NEW_GRID_VALUES = (126, 501)
+FD501_PRIMARY_TRIPLE = (126, 251, 501)
+FD501_CONSISTENCY_TRIPLE = (151, 201, 251)
 
 
 @dataclass(frozen=True)
@@ -183,6 +187,185 @@ def grid_convergence_rows(
                     }
                 )
     return rows
+
+
+def add_grid_source(
+    rows: Sequence[dict[str, object]],
+    new_grid_values: Sequence[int] = FD501_NEW_GRID_VALUES,
+) -> list[dict[str, object]]:
+    """Return rows with a source label for existing or new grids."""
+    new_grids = {int(value) for value in new_grid_values}
+    sourced: list[dict[str, object]] = []
+    for row in rows:
+        item = dict(row)
+        item["source"] = "new_grid" if int(item["N_grid"]) in new_grids else "existing_grid"
+        sourced.append(item)
+    return sourced
+
+
+def observed_order_from_three_values(
+    h_values: Sequence[float],
+    lambda_values: Sequence[float],
+    p_min: float = 0.1,
+    p_max: float = 6.0,
+) -> float | None:
+    """Estimate p from unequal-step lambda(h)=lambda_inf+C*h**p data."""
+    if len(h_values) != 3 or len(lambda_values) != 3:
+        raise ValueError("Exactly three h and lambda values are required.")
+    h1, h2, h3 = [float(value) for value in h_values]
+    y1, y2, y3 = [float(value) for value in lambda_values]
+    if not (h1 > h2 > h3 > 0.0):
+        raise ValueError("h values must be positive and ordered coarse to fine.")
+    d12 = y1 - y2
+    d23 = y2 - y3
+    if not np.isfinite([d12, d23]).all() or abs(d23) < 1e-15:
+        return None
+    observed_ratio = d12 / d23
+    if observed_ratio <= 0.0:
+        return None
+
+    def residual(p_value: float) -> float:
+        expected_ratio = (h1**p_value - h2**p_value) / (h2**p_value - h3**p_value)
+        return expected_ratio - observed_ratio
+
+    try:
+        low = residual(float(p_min))
+        high = residual(float(p_max))
+        if not np.isfinite([low, high]).all():
+            return None
+        if low == 0.0:
+            return float(p_min)
+        if high == 0.0:
+            return float(p_max)
+        if low * high > 0.0:
+            return None
+        return float(brentq(residual, float(p_min), float(p_max)))
+    except (ValueError, FloatingPointError, ZeroDivisionError):
+        return None
+
+
+def richardson_extrapolate(
+    lambda_coarse: float,
+    lambda_fine: float,
+    h_coarse: float,
+    h_fine: float,
+    p_value: float,
+) -> float:
+    """Return two-grid lambda_inf for lambda(h)=lambda_inf+C*h**p."""
+    ratio = float(h_coarse) / float(h_fine)
+    denominator = ratio ** float(p_value) - 1.0
+    if denominator <= 0.0:
+        raise ValueError("Need h_coarse > h_fine and positive p_value.")
+    return float(lambda_fine) + (float(lambda_fine) - float(lambda_coarse)) / denominator
+
+
+def reference_uncertainty(lambda_candidates: Sequence[float], lambda_recommended: float) -> tuple[float, float]:
+    """Return absolute and relative spread across plausible reference candidates."""
+    finite = [float(value) for value in lambda_candidates if np.isfinite(float(value))]
+    if not finite:
+        return float("inf"), float("inf")
+    spread = max(finite) - min(finite)
+    relative = spread / abs(float(lambda_recommended)) if float(lambda_recommended) != 0.0 else float("inf")
+    return float(spread), float(relative)
+
+
+def _row_for_level(
+    rows: Sequence[dict[str, object]],
+    n_value: float,
+    n_grid: int,
+    level_index: int,
+) -> dict[str, object]:
+    """Return a single row for n, grid, and level."""
+    matches = [
+        row
+        for row in rows
+        if np.isclose(float(row["n"]), float(n_value))
+        and int(row["N_grid"]) == int(n_grid)
+        and int(row["level_index"]) == int(level_index)
+    ]
+    if len(matches) != 1:
+        raise ValueError(f"Expected one row for n={n_value}, N={n_grid}, level={level_index}; found {len(matches)}.")
+    return matches[0]
+
+
+def estimate_order_rows(
+    rows: Sequence[dict[str, object]],
+    triples: Sequence[tuple[str, Sequence[int]]] | None = None,
+    n_values: Sequence[float] = N_VALUES,
+    n_levels: int = N_LEVELS,
+) -> list[dict[str, object]]:
+    """Estimate observed orders for primary and consistency triples."""
+    if triples is None:
+        triples = (
+            ("primary_126_251_501", FD501_PRIMARY_TRIPLE),
+            ("consistency_151_201_251", FD501_CONSISTENCY_TRIPLE),
+        )
+    bessel = first_bessel_disk_levels(n_levels)
+    out: list[dict[str, object]] = []
+    for n_value in n_values:
+        for level_index in range(int(n_levels)):
+            for triple_name, grids in triples:
+                triple_rows = [_row_for_level(rows, float(n_value), int(grid), level_index) for grid in grids]
+                h_values = [float(row["h"]) for row in triple_rows]
+                lambda_values = [float(row["lambda_fd_unit"]) for row in triple_rows]
+                d12 = lambda_values[0] - lambda_values[1]
+                d23 = lambda_values[1] - lambda_values[2]
+                p_self = observed_order_from_three_values(h_values, lambda_values)
+                out.append(
+                    {
+                        "n": float(n_value),
+                        "rAR": ASPECT_RATIO,
+                        "level_index": int(level_index),
+                        "triple": triple_name,
+                        "method": "self_convergence",
+                        "N_grid_1": int(grids[0]),
+                        "N_grid_2": int(grids[1]),
+                        "N_grid_3": int(grids[2]),
+                        "h1": h_values[0],
+                        "h2": h_values[1],
+                        "h3": h_values[2],
+                        "lambda1": lambda_values[0],
+                        "lambda2": lambda_values[1],
+                        "lambda3": lambda_values[2],
+                        "reference_lambda_if_available": "",
+                        "p_estimate": "" if p_self is None else p_self,
+                        "p_status": "not_found" if p_self is None else "stable_root_found",
+                        "delta12": d12,
+                        "delta23": d23,
+                        "delta_ratio": "" if abs(d23) < 1e-15 else d12 / d23,
+                    }
+                )
+                if np.isclose(float(n_value), 2.0):
+                    reference = bessel[level_index].lambda_value
+                    errors = [abs(value - reference) for value in lambda_values]
+                    p_error = observed_order_from_three_values(h_values, errors)
+                    e12 = errors[0] - errors[1]
+                    e23 = errors[1] - errors[2]
+                    out.append(
+                        {
+                            "n": float(n_value),
+                            "rAR": ASPECT_RATIO,
+                            "level_index": int(level_index),
+                            "triple": triple_name,
+                            "method": "bessel_error",
+                            "N_grid_1": int(grids[0]),
+                            "N_grid_2": int(grids[1]),
+                            "N_grid_3": int(grids[2]),
+                            "h1": h_values[0],
+                            "h2": h_values[1],
+                            "h3": h_values[2],
+                            "lambda1": errors[0],
+                            "lambda2": errors[1],
+                            "lambda3": errors[2],
+                            "reference_lambda_if_available": reference,
+                            "p_estimate": "" if p_error is None else p_error,
+                            "p_status": "not_found" if p_error is None else "stable_root_found",
+                            "delta12": e12,
+                            "delta23": e23,
+                            "delta_ratio": "" if abs(e23) < 1e-15 else e12 / e23,
+                        }
+                    )
+    return out
 
 
 def selected_reference_rows(rows: Sequence[dict[str, object]], selected_grid: int | None = None) -> list[dict[str, object]]:
