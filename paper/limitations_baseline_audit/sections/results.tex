@@ -34,8 +34,7 @@ the structured validation used here.
     Surrogate-model diagnostic from existing closed-spectrum outputs. The left
     panel summarizes the MLP success counts under progressively more structured
     validation splits. The right panel summarizes the Ridge relative-MAE ranges
-    used as the conservative baseline scale. The figure is a visualization of
-    repository outputs only; it does not introduce new training runs.
+    used as the conservative baseline scale.
     }
     \label{fig:surrogate-diagnostic}
 \end{figure*}
@@ -74,11 +73,15 @@ shape-dependent physics.
 
 The magnetic-response ranking analysis was a direct-Kwant check, not an ML task
 and not an extension of the Q/S objectives. It tested four representative
-geometries at sizes $a=\{30,36\}$, with weak-field flux parameters
+geometries: \texttt{circle\_n2\_r1} ($n=2.0$, $r_{\mathrm{AR}}=1.0$),
+\texttt{ellipse\_n2\_r067} ($n=2.0$, $r_{\mathrm{AR}}=0.67$),
+\texttt{diamond\_n12\_r1} ($n=1.2$, $r_{\mathrm{AR}}=1.0$), and
+\texttt{squircle\_n4\_r1} ($n=4.0$, $r_{\mathrm{AR}}=1.0$). Each was tested
+at sizes $a=\{30,36\}$, with weak-field flux parameters
 $\alpha=(0.0,0.00125,0.0025,0.005)$ and diagnostic values
 $\alpha=(0.01,0.02,0.04)$. Numerical checks passed: the $\alpha=0$ spectra
 were reproduced, gauge invariance was verified with maximum reported
-difference $1.865174681370263\times10^{-14}$, Hermiticity and finite sorted
+difference $1.87\times 10^{-14}$, Hermiticity and finite sorted
 spectra checks passed, and eigenvalue imaginary parts were controlled.
 
 The proposed geometry-ranking signal is not supported. The analysis found $0$
@@ -105,17 +108,17 @@ calibrates the low-energy circular case; it does not establish a
 shape-sensitive continuum residual for $n\neq2.0$. The finite-difference
 reference step then validates an embedded-mask Dirichlet Laplacian on grids up
 to $N_{\mathrm{grid}}=251$, where the selected circular ground-state relative
-error versus the Bessel value is $0.0052206740942014095$. This is adequate as
+error versus the Bessel value is $0.00522$. This is adequate as
 an initial reference check, but the later $N_{\mathrm{grid}}=501$ convergence
 check changes the conclusion for shape-sensitive use.
 
 The N501 check uses the near-geometric refinement triple $(126,251,501)$,
 corresponding approximately to $h=\{0.016,0.008,0.004\}$. Although the raw
 circle ground-state relative error versus Bessel improves to
-$0.0026734921480308575$, the non-circular reference uncertainties remain too
+$0.00267$, the non-circular reference uncertainties remain too
 large for the downstream residual claim:
-$0.0047216251159203785$ for the $n=1.2$ level-zero reference and
-$0.0021923716263753637$ for the $n=4.0$ level-zero reference. Both exceed the
+$0.00472$ for the $n=1.2$ level-zero reference and
+$0.00219$ for the $n=4.0$ level-zero reference. Both exceed the
 $0.001$ reference-uncertainty criterion. The safe conclusion is not that FD is
 generally invalid, but that this embedded-mask FD reference should not be
 treated as continuum truth for the intended shape-sensitive residual.
@@ -142,12 +145,15 @@ The potential residual exponent is unstable. The reported power-law values are
 approximately $p_{\mathrm{TB}}=0.10,0.53,1.05$ for $n=1.2,2.0,4.0$, but the
 power-law leave-one-size-out stability test is not accepted for any of the
 three $n$ values. The corresponding leave-one-size-out $p$ ranges are about
-$0.67$, $1.73$, and $1.01$, respectively, and the $n=1.2$ fit sits at the lower
-bound of the implemented power-law fit. The existing diagnostic therefore
+$0.67$, $1.73$, and $1.01$, respectively, and the $p_{\mathrm{TB}}=0.10$ fit
+for $n=1.2$ sits at the lower bound of the implemented power-law fit. The LOO
+$p$ range denotes $\max(p_{\mathrm{LOO}})-\min(p_{\mathrm{LOO}})$ over fits
+obtained by omitting one size $a$ at a time. The existing diagnostic therefore
 reports $p_{\mathrm{TB}}$ as an instability indicator, not as a physical
-exponent with a defensible uncertainty interval. Simple geometric baselines do
-not cleanly explain a robust residual, but the residual itself is not stable
-enough to support a shape-residual claim. The supported scientific result is
+exponent with a defensible uncertainty interval; the LOO range is a stability
+diagnostic, not a confidence interval. Simple geometric baselines do not
+cleanly explain a robust residual, but the residual itself is not stable enough
+to support a shape-residual claim. The supported scientific result is
 inconclusive.
 
 \begin{figure*}[t]
@@ -176,10 +182,9 @@ computed on the same energy grid.
 
 The central result is that contact width dominates the tested shape effect. For
 $n=2.0$, the raw distance between $W=4$ and $W=10$ conductance curves is
-$0.6589809313045025$. The mean pairwise shape distances are
-$0.5810925658201803$ at $W=4$ and $0.5122909816541278$ at $W=10$. The
-shift/rescale diagnostic gives $0.24323761388169962$ for the contact comparison
-and $0.49646370215309615$ and $0.2802443376667481$ for the two shape
+$0.659$. The mean pairwise shape distances are
+$0.581$ at $W=4$ and $0.512$ at $W=10$. The shift/rescale diagnostic gives
+$0.243$ for the contact comparison and $0.496$ and $0.280$ for the two shape
 comparisons. Mode thresholds do not explain the features, the straight-channel
 baseline is computed but does not remove the result, and an energy-shift/rescale
 collapse does not remove it either. The limitation is therefore not a trivial
@@ -187,9 +192,9 @@ numerical failure. It is a physical interpretation problem: in this open-dot
 geometry, lead-dot coupling is at least as important as the shape parameter
 being tested.
 
-\begin{figure*}[t]
+\begin{figure}[!t]
     \centering
-    \includegraphics[width=0.70\textwidth]{transport_effect_summary.pdf}
+    \includegraphics[width=\columnwidth]{transport_effect_summary.pdf}
     \caption{
     Compact summary of the open-transport diagnostic. In the tested setup, the
     contact-width effect for $n=2.0$ is larger than the raw normalized
@@ -197,7 +202,7 @@ being tested.
     from the source inventory and use Eq.~(\ref{eq:transport-distance}).
     }
     \label{fig:transport-effects}
-\end{figure*}
+\end{figure}
 
 \begin{table*}[t]
 \caption{
@@ -207,60 +212,61 @@ inventory; this table uses rounded values only to keep the audit readable.
 }
 \label{tab:hypothesis-summary}
 \scriptsize
-\setlength{\tabcolsep}{2pt}
+\setlength{\tabcolsep}{3pt}
+\begingroup
+\renewcommand{\arraystretch}{1.06}
 \begin{tabular}{@{}llllll@{}}
 \toprule
-\tcell{0.12\textwidth}{Analysis} &
-\tcell{0.13\textwidth}{Observable / protocol} &
-\tcell{0.17\textwidth}{Key diagnostic value} &
-\tcell{0.17\textwidth}{Main baseline or limitation} &
-\tcell{0.11\textwidth}{Result} &
+\tcell{0.115\textwidth}{Analysis} &
+\tcell{0.14\textwidth}{Observable / protocol} &
+\tcell{0.165\textwidth}{Key diagnostic value} &
+\tcell{0.155\textwidth}{Main baseline or limitation} &
+\tcell{0.105\textwidth}{Result} &
 \tcell{0.22\textwidth}{Safe conclusion} \\
 \midrule
-\tcell{0.12\textwidth}{Closed-spectrum Ridge/MLP} &
-\tcell{0.13\textwidth}{$E_0$, $dE_1$ under structured validation} &
-\tcell{0.17\textwidth}{Ridge relative MAE $2.01$--$2.60\%$ for $E_0$ and $0.78$--$1.15\%$ for $dE_1$; MLP success $10/16$, $3/8$, $7/8$} &
-\tcell{0.17\textwidth}{Physics-informed Ridge and split-aware validation} &
-\tcell{0.11\textwidth}{ML advantage not established} &
+\tcell{0.115\textwidth}{Closed-spectrum Ridge/MLP} &
+\tcell{0.14\textwidth}{$E_0$, $dE_1$ under structured validation} &
+\tcell{0.165\textwidth}{Ridge relative MAE: $2.01$--$2.60\%$ for $E_0$, $0.78$--$1.15\%$ for $dE_1$; MLP success $10/16$, $3/8$, $7/8$} &
+\tcell{0.155\textwidth}{Physics-informed Ridge; split-aware validation} &
+\tcell{0.105\textwidth}{ML advantage not established} &
 \tcell{0.22\textwidth}{Ridge remains the preferred conservative surrogate; direct Kwant remains the reference.} \\
-\tcell{0.12\textwidth}{Q inverse screening} &
-\tcell{0.13\textwidth}{$dE_1/(E_0+4)$} &
-\tcell{0.17\textwidth}{Success false for each fixed $n$; top candidate equals same-$n$ isotropic baseline} &
-\tcell{0.17\textwidth}{Isotropy and same-$n$ baselines} &
-\tcell{0.11\textwidth}{Not supported} &
+\tcell{0.115\textwidth}{Q inverse screening} &
+\tcell{0.14\textwidth}{$dE_1/(E_0+4)$} &
+\tcell{0.165\textwidth}{Success false for each fixed $n$; top candidate equals same-$n$ isotropic baseline} &
+\tcell{0.155\textwidth}{Isotropy and same-$n$ baselines} &
+\tcell{0.105\textwidth}{Not supported} &
 \tcell{0.22\textwidth}{Q candidates do not justify inverse-design claims.} \\
-\tcell{0.12\textwidth}{S objective} &
-\tcell{0.13\textwidth}{$(E_2-E_1)/(E_0+4)$} &
-\tcell{0.17\textwidth}{$0/4$ pass at $\alpha=0.95$ and $0/4$ at $\alpha=0.90$} &
-\tcell{0.17\textwidth}{Simple anisotropy and strongest feasible baselines} &
-\tcell{0.11\textwidth}{Not supported} &
+\tcell{0.115\textwidth}{S objective} &
+\tcell{0.14\textwidth}{$S=(E_2-E_1)/(E_0+4)$} &
+\tcell{0.165\textwidth}{$0/4$ pass at $\alpha=0.95$ and $0/4$ at $\alpha=0.90$} &
+\tcell{0.155\textwidth}{Simple anisotropy and strongest feasible baselines} &
+\tcell{0.105\textwidth}{Not supported} &
 \tcell{0.22\textwidth}{S behaves as an anisotropy diagnostic in the tested domain.} \\
-\tcell{0.12\textwidth}{Magnetic-response ranking} &
-\tcell{0.13\textwidth}{Weak-field level rankings} &
-\tcell{0.17\textwidth}{Thresholded crossovers $0$; surviving crossovers $0$; robustness divergences surviving filters $0$} &
-\tcell{0.17\textwidth}{Symmetry lifting and zero-field/aspect-ratio ranking} &
-\tcell{0.11\textwidth}{Baseline limited} &
+\tcell{0.115\textwidth}{Magnetic-response ranking} &
+\tcell{0.14\textwidth}{Weak-field level rankings} &
+\tcell{0.165\textwidth}{Thresholded crossovers $0$; surviving crossovers $0$; robustness divergences surviving filters $0$} &
+\tcell{0.155\textwidth}{Symmetry lifting and zero-field/aspect-ratio ranking} &
+\tcell{0.105\textwidth}{Baseline-limited} &
 \tcell{0.22\textwidth}{Field-dependent spectra are controlled numerically, but no non-baseline design signal is supported.} \\
-\tcell{0.12\textwidth}{FD continuum reference} &
-\tcell{0.13\textwidth}{Embedded-mask FD reference for shape-sensitive residuals} &
-\tcell{0.17\textwidth}{Non-circular level-zero relative uncertainties $0.00472$ and $0.00219$ exceed $0.001$} &
-\tcell{0.17\textwidth}{Reference-solver uncertainty} &
-\tcell{0.11\textwidth}{Inconclusive} &
+\tcell{0.115\textwidth}{FD continuum reference} &
+\tcell{0.14\textwidth}{Embedded-mask FD reference for shape-sensitive residuals} &
+\tcell{0.165\textwidth}{Non-circular level-zero relative uncertainties $0.00472$ and $0.00219$ exceed $0.001$} &
+\tcell{0.155\textwidth}{Reference-solver uncertainty} &
+\tcell{0.105\textwidth}{Inconclusive} &
 \tcell{0.22\textwidth}{Current FD reference should not be treated as continuum truth for shape-sensitive residuals.} \\
-\tcell{0.12\textwidth}{TB-only scaling} &
-\tcell{0.13\textwidth}{Ground-state finite-size scaling} &
-\tcell{0.17\textwidth}{$n=2$ calibration $7.21\times10^{-4}$; $p_{\mathrm{TB}}=0.10,0.53,1.05$ with unstable LOO ranges} &
-\tcell{0.17\textwidth}{Unstable residual exponent and insufficient surviving signal} &
-\tcell{0.11\textwidth}{Inconclusive} &
+\tcell{0.115\textwidth}{TB-only scaling} &
+\tcell{0.14\textwidth}{Ground-state finite-size scaling} &
+\tcell{0.165\textwidth}{$n=2$ calibration $7.21\times10^{-4}$; $p_{\mathrm{TB}}=0.10,0.53,1.05$ with unstable LOO ranges} &
+\tcell{0.155\textwidth}{Unstable residual exponent and insufficient surviving signal} &
+\tcell{0.105\textwidth}{Inconclusive} &
 \tcell{0.22\textwidth}{The diagnostic does not support a continuum-residual claim.} \\
-\tcell{0.12\textwidth}{Open transport diagnostic} &
-\tcell{0.13\textwidth}{$G(E)$ curves, $W=4,10$} &
-\tcell{0.17\textwidth}{Contact distance $0.659$; shape distances $0.581$ and $0.512$} &
-\tcell{0.17\textwidth}{Contact-width dependence and lead-dot coupling} &
-\tcell{0.11\textwidth}{Contact dominated} &
+\tcell{0.115\textwidth}{Open transport diagnostic} &
+\tcell{0.14\textwidth}{$G(E)$ curves, $W=4,10$} &
+\tcell{0.165\textwidth}{Contact distance $0.659$; shape distances $0.581$ and $0.512$} &
+\tcell{0.155\textwidth}{Contact-width dependence and lead-dot coupling} &
+\tcell{0.105\textwidth}{Contact-dominated} &
 \tcell{0.22\textwidth}{Transport interpretation requires tighter lead-dot coupling control before a shape claim.} \\
 \bottomrule
 \end{tabular}
+\endgroup
 \end{table*}
-
-\clearpage

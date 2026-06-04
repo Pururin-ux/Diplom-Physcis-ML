@@ -25,6 +25,14 @@ longbibliography
 
 \newcommand{\tcell}[2]{\begin{minipage}[t]{#1}\raggedright #2\end{minipage}}
 \graphicspath{{figures/}}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{7pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\dblfloatsep}{7pt plus 2pt minus 2pt}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@dblfptop}{0pt}
+\makeatother
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -56,9 +64,10 @@ Belarusian State University,
 \date{\today}
 
 \begin{abstract}
-We propose and apply a baseline-first audit hierarchy for shape-based
-objectives in a controlled square-lattice tight-binding model of finite
-superelliptic quantum dots. The audit uses existing closed-spectrum
+We document how a baseline-first hierarchy determines the fate of several
+apparent shape- and ML-assisted signals in a controlled square-lattice
+tight-binding benchmark of finite superelliptic quantum dots. The audit uses
+existing closed-spectrum
 calculations, surrogate-model comparisons, inverse-screening tests,
 continuum-reference checks, tight-binding-only finite-size scaling diagnostics,
 and an open-transport contact-width diagnostic. The model uses superelliptic
