@@ -24,6 +24,15 @@ listed below.
 | Magnetic ranking crossover | `explore-magnetic-ranking-crossover`, commits `bdc7e8459e23af1e7d513603bb43a78b28a6d79c` and `73f4806720413e598066761287b0b27f8257a072` | `reports/magnetic_ranking_crossover/summary.md`; `reports/magnetic_ranking_crossover/baseline_comparison.csv`; `reports/magnetic_ranking_crossover/ranking_crossovers.csv`; `reports/magnetic_ranking_crossover/robustness_divergence.csv`; `reports/exploratory_hypotheses/magnetic_ranking_crossover_closure.md` | confirmed | yes |
 | Project negative-result framing | current base branch contains registry | `reports/exploratory_hypotheses/project_negative_result_registry.md`; `reports/exploratory_hypotheses/project_protocol_baseline_first.md` | confirmed | qualitative framing only |
 
+## Manuscript figures generated from existing outputs
+
+| Figure file(s) | Source output(s) | Values visualized | Status |
+|---|---|---|---|
+| `figures/model_and_baseline_schematic.pdf`; `figures/model_and_baseline_schematic.png` | conceptual schematic based on the common model and baseline hierarchy in this inventory | no numerical values | generated for manuscript layout only |
+| `figures/surrogate_validation_summary.pdf`; `figures/surrogate_validation_summary.png` | `reports/mlp_ablation_summary.csv`; `reports/model_error_physical_scale.csv` | MLP success counts `10/16`, `3/8`, `7/8`; Ridge relative MAE ranges `2.01--2.60%` and `0.78--1.15%` | visualization only; no new training |
+| `figures/continuum_tb_diagnostics.pdf`; `figures/continuum_tb_diagnostics.png` | `reports/article_path_b_tb_continuum_scaling/fd_reference_501_recommended_values.csv`; `reports/article_path_b_tb_continuum_scaling/tb_self_scaling_fits.csv`; `reports/article_path_b_tb_continuum_scaling/tb_self_scaling_summary.md` | FD level-zero relative uncertainties `0.0047216251159203785`, `0.0021923716263753637`; criterion `0.001`; `p_TB` values and leave-one-size-out `p_range` diagnostics | visualization only; no new FD or TB run |
+| `figures/transport_effect_summary.pdf`; `figures/transport_effect_summary.png` | `reports/article_d_open_transport/contact_preflight_summary.md`; `reports/article_d_open_transport/contact_preflight_baselines.csv` | contact distance `0.6589809313045025`; shape distances `0.5810925658201803`, `0.5122909816541278` | visualization only; no new transport run |
+
 ## Numerical facts used in the draft
 
 | Result used | Value(s) | Exact source path | Status | Numerically citable? |

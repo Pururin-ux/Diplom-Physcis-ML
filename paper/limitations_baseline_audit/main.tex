@@ -8,8 +8,12 @@ superscriptaddress,
 longbibliography
 ]{revtex4-2}
 
+\usepackage{cmap}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\input{glyphtounicode}
+\pdfgentounicode=1
 \usepackage{graphicx}
 \usepackage[protrusion=true,expansion=false]{microtype}
 \usepackage{bm}
@@ -24,46 +28,55 @@ longbibliography
 
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[C]{\small Baseline-first limitations draft for square-lattice tight-binding dots}
+\fancyhead[C]{\small Baseline-first audit of tight-binding quantum dots}
 \renewcommand{\headrulewidth}{0.4pt}
 
 \begin{document}
 
 \title{
-Limitations of Shape-Based Spectral and Transport Objectives in
-Square-Lattice Tight-Binding Quantum Dots: A Baseline-First Audit
+Baseline-First Audit of Shape-Based Objectives in Square-Lattice
+Tight-Binding Quantum Dots
+}
+
+\author{A. V. Larkin}
+\email{larkinav@bsu.by}
+\affiliation{
+Faculty of Physics,
+Belarusian State University,
+4 Nezavisimosti Ave., 220030 Minsk, BELARUS
 }
 
 \author{A. A. Alvinsky}
 \affiliation{
 Faculty of Physics,
 Belarusian State University,
-4 Nezavisimosti Ave., 220030 Minsk, Belarus
+4 Nezavisimosti Ave., 220030 Minsk, BELARUS
 }
 
 \date{\today}
 
 \begin{abstract}
-We audit several shape-based objectives in a controlled square-lattice
-tight-binding model of finite superelliptic quantum dots. The study is not a
-new numerical sprint, but a baseline-first synthesis of existing closed-spectrum
+We propose and apply a baseline-first audit hierarchy for shape-based
+objectives in a controlled square-lattice tight-binding model of finite
+superelliptic quantum dots. The audit uses existing closed-spectrum
 calculations, surrogate-model comparisons, inverse-screening tests,
-continuum-reference checks, a tight-binding-only finite-size scaling gate, and
-an open-transport contact preflight. The model uses superelliptic boundaries,
-direct Kwant spectra, and the low-energy convention
-$E_{\mathrm{kin},k}=E_k+4$. Across these outputs, attractive objectives are
-repeatedly limited by simple or methodological baselines. A small multilayer
-perceptron does not establish a robust advantage over a physics-informed Ridge
-model under structured validation. Spectral inverse-screening objectives based
-on gap ratios and doublet splitting reduce to isotropy, anisotropy, or symmetry
-baselines. A finite-difference continuum reference is useful for calibration but
-not adequate as a high-precision shape-sensitive reference in the tested
-protocol. A tight-binding-only scaling gate remains inconclusive, and the
-tested open-dot conductance is more sensitive to contact width than to
-superellipse shape. The contribution is therefore methodological: a
-reproducible negative audit showing where apparent shape, ML, continuum-residual,
-and transport signals become unreliable before they can justify a positive
-device-design rule.
+continuum-reference checks, tight-binding-only finite-size scaling diagnostics,
+and an open-transport contact-width diagnostic. The model uses superelliptic
+boundaries, direct Kwant spectra, and the low-energy convention
+$E_{\mathrm{kin},k}=E_k+4$. Across these outputs, attractive observables are
+repeatedly absorbed by simpler explanations: confinement scale, aspect ratio,
+symmetry, boundary realization, reference uncertainty, or lead-dot coupling. A
+small multilayer perceptron does not establish a robust advantage over a
+physics-informed Ridge model under structured validation. Spectral
+inverse-screening objectives based on gap ratios and doublet splitting reduce
+to isotropy, anisotropy, or symmetry baselines. A finite-difference continuum
+reference is useful for calibration but not adequate as a high-precision
+shape-sensitive reference in the tested protocol. Tight-binding-only scaling
+remains inconclusive, and the tested open-dot conductance is more sensitive to
+contact width than to superellipse shape. The contribution is methodological
+and protocol-specific: the paper documents where apparent shape, ML,
+continuum-residual, and transport signals become unreliable before they can
+justify a device-design rule.
 \end{abstract}
 
 \maketitle
@@ -74,6 +87,7 @@ device-design rule.
 \input{sections/discussion}
 \input{sections/conclusion}
 
+\clearpage
 \bibliographystyle{apsrev4-2}
 \bibliography{refs}
 
