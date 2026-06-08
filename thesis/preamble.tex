@@ -143,9 +143,17 @@
   {}
 \titlespacing*{\subsection}{0pt}{14pt}{6pt}
 
-\renewcommand{\cftchapfont}{\normalfont\bfseries}
-\renewcommand{\cftchappagefont}{\normalfont\bfseries}
-\setlength{\cftbeforechapskip}{4pt}
+% Compact table of contents with a centered title.
+\renewcommand{\cfttoctitlefont}{\hfil\normalfont\bfseries\fontsize{16pt}{18pt}\selectfont}
+\renewcommand{\cftaftertoctitle}{\hfil\par}
+\setlength{\cftbeforetoctitleskip}{18pt}
+\setlength{\cftaftertoctitleskip}{18pt}
+\renewcommand{\cftchapfont}{\small\normalfont\bfseries}
+\renewcommand{\cftchappagefont}{\small\normalfont\bfseries}
+\renewcommand{\cftsecfont}{\small\normalfont}
+\renewcommand{\cftsecpagefont}{\small\normalfont}
+\setlength{\cftbeforechapskip}{3pt}
+\setlength{\cftbeforesecskip}{1pt}
 
 \newcommand{\dd}{\mathrm{d}}
 \newcommand{\Ekin}{E_{\mathrm{kin}}}
