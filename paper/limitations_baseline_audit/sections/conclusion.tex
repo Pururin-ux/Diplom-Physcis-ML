@@ -1,0 +1,28 @@
+\section{Conclusion}
+
+This paper summarizes a baseline-first limitations analysis for finite
+superelliptic quantum dots on a square tight-binding lattice. The system remains
+useful as a controlled benchmark: the Hamiltonian convention is clear, the
+geometry family is compact, and the direct Kwant calculations provide a
+consistent reference for the tested finite systems. The audit shows, however,
+that several attractive objectives fail to support robust positive claims once
+simple baselines and methodological checks are applied.
+
+For the closed spectra, the physics-informed Ridge model remains the preferred
+conservative surrogate, while a small MLP does not meet the robust structured
+validation criterion. Q and S inverse-screening objectives do not beat their
+isotropy, symmetry, or anisotropy baselines. The magnetic-response ranking
+check is explained by symmetry-lifting baselines. The embedded-mask
+finite-difference reference is not adequate as a high-precision continuum truth
+for shape-sensitive residuals, and the TB-only self-scaling fallback remains
+inconclusive. In the open-transport diagnostic, contact width dominates the
+tested shape comparison.
+
+These results do not prove a universal no-go theorem for geometry-based quantum
+design, machine learning, continuum references, or transport objectives. They
+show that this particular superellipse metric search, with these protocols and
+outputs, does not justify a device-design rule. The main methodological result
+is therefore the audit hierarchy itself: apparent shape, ML, continuum-residual,
+and transport signals are interpreted only after confinement, geometry,
+symmetry, boundary realization, reference uncertainty, and contact baselines
+have been checked.

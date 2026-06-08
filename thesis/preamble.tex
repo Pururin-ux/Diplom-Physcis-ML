@@ -1,25 +1,45 @@
 \usepackage{fontspec}
 \usepackage{polyglossia}
-\setmainlanguage{russian}
+\setmainlanguage[babelshorthands=true]{russian}
 \setotherlanguages{english,belarusian}
 
 \defaultfontfeatures{Ligatures=TeX}
 \IfFontExistsTF{Times New Roman}
-  {\setmainfont{Times New Roman}}
-  {\setmainfont{TeX Gyre Termes}}
-% If Times New Roman is unavailable, TeX Gyre Termes is used as a metric-compatible fallback.
+  {%
+    \setmainfont{Times New Roman}
+    \newfontfamily\cyrillicfont{Times New Roman}
+    \newfontfamily\belarusianfont{Times New Roman}
+    \newfontfamily\englishfont{Times New Roman}%
+  }
+  {%
+    \IfFontExistsTF{Tinos}
+      {%
+        \setmainfont{Tinos}
+        \newfontfamily\cyrillicfont{Tinos}
+        \newfontfamily\belarusianfont{Tinos}
+        \newfontfamily\englishfont{Tinos}%
+      }
+      {%
+        \setmainfont{DejaVu Serif}
+        \newfontfamily\cyrillicfont{DejaVu Serif}
+        \newfontfamily\belarusianfont{DejaVu Serif}
+        \newfontfamily\englishfont{DejaVu Serif}%
+      }%
+  }
+% Times New Roman is preferred. Tinos/DejaVu Serif are safe Cyrillic fallbacks.
 
 \IfFontExistsTF{Consolas}
   {\setmonofont{Consolas}\newfontfamily\cyrillicfonttt{Consolas}}
   {%
     \IfFontExistsTF{DejaVu Sans Mono}
       {\setmonofont{DejaVu Sans Mono}\newfontfamily\cyrillicfonttt{DejaVu Sans Mono}}
-      {\setmonofont{TeX Gyre Termes}\newfontfamily\cyrillicfonttt{TeX Gyre Termes}}%
+      {\setmonofont{Tinos}\newfontfamily\cyrillicfonttt{Tinos}}%
   }
 
 \usepackage[a4paper,left=30mm,right=15mm,top=20mm,bottom=20mm]{geometry}
 \usepackage{setspace}
 \onehalfspacing
+\usepackage[protrusion=true,expansion=true]{microtype}
 
 \usepackage{graphicx}
 \graphicspath{{figures/}{../reports/assets/}}
@@ -53,7 +73,13 @@
 
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
-\setlength{\emergencystretch}{2em}
+% Keep normal Russian hyphenation. Do not disable hyphenation: otherwise
+% justified paragraphs get large interword gaps in Russian text.
+\hyphenpenalty=50
+\exhyphenpenalty=50
+\pretolerance=100
+\tolerance=2000
+\setlength{\emergencystretch}{0.5em}
 \clubpenalty=10000
 \widowpenalty=10000
 \displaywidowpenalty=10000

@@ -1,0 +1,69 @@
+\section{Introduction}
+
+Shape control is an appealing route for studying and designing quantum-dot
+spectra. Quantum dots and quantum billiards provide a natural setting for this
+question because confinement, symmetry, and boundary geometry can all affect
+low-energy states~\cite{reimann2002quantumdots,kouwenhoven2001fewelectron,berry1981sinai,stockmann1990quantumchaos}.
+Tight-binding billiards and lattice quantum-dot models make these effects
+computationally explicit while retaining finite-size and boundary-realization
+features that are absent from ideal continuum sketches~\cite{cuevas1996chaoticbilliards,ulcakar2022tightbindingbilliards}.
+These ingredients make a square-lattice tight-binding model of superelliptic
+quantum dots a useful controlled benchmark: the Hamiltonian is simple, the
+geometry family is interpretable, and spectra and conductance can be computed
+with standard sparse-eigensolver and quantum-transport tools~\cite{groth2014kwant,datta2005quantumtransport}.
+At the same time, this simplicity creates a demanding test of any proposed shape
+objective. If an apparent signal is already explained by size, area, aspect
+ratio, symmetry, degeneracy, boundary pixelation, reference-solver uncertainty,
+or lead coupling, then it should not be presented as inverse design or as a new
+physical effect.
+
+This article is a methodology-oriented limitations paper. It does not enlarge
+the parameter space, repair unsuccessful directions, or promote a new objective.
+Instead, it documents how a baseline-first hierarchy determines the fate of
+several apparent shape- and ML-assisted signals in one finite superellipse
+tight-binding benchmark. The general need to compare against simple physical
+and statistical baselines is not new; the contribution here is the concrete
+record of failure modes in this controlled quantum-dot design setting. The
+hierarchy asks whether an apparent shape or ML-assisted signal survives
+successively simpler explanations: confinement scale, area and perimeter,
+aspect ratio, isotropy and degeneracy, lattice boundary realization,
+reference-solver uncertainty, and contact geometry.
+
+This kind of audit is needed because modern shape-controlled and
+ML-assisted workflows can make weak observables look successful. A surrogate
+may interpolate a dataset well while still learning size, aspect-ratio, or
+symmetry structure; inverse-design candidates may then inherit the same
+baseline rather than reveal a new physical effect. Classical surrogate-modeling
+practice therefore requires comparison against simple, structured alternatives,
+and spatially or hierarchically structured data require validation splits that
+match the intended use~\cite{bishop2006prml,hastie2009elements,forrester2008surrogate,queipo2005surrogate,roberts2017crossvalidation}.
+
+Shape-controlled quantum dots are especially vulnerable to this failure mode.
+Low-energy levels of confined systems are strongly governed by dimensional
+scaling; near the bottom of a square-lattice tight-binding band, the dispersion
+has the expected quadratic form. In addition, size, area, aspect ratio,
+symmetry, finite-lattice boundary realization, and transport contacts can all
+mimic or absorb shape dependence. A baseline-first hierarchy is therefore a
+necessary diagnostic before claiming a shape effect, a positive ML result, or a
+device-design rule.
+
+The main message is conservative and protocol-specific. In the tested
+square-lattice tight-binding model of finite superelliptic quantum dots,
+several plausible shape, ML, continuum-reference, and transport objectives do
+not support robust positive claims after baseline checks. This does not imply
+that geometry-based quantum design, machine learning, finite-size analysis, or
+transport studies are useless in general. The useful output is the documented
+audit hierarchy and the associated failure modes in this controlled benchmark.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.95\textwidth]{model_and_baseline_schematic.pdf}
+    \caption{
+    Schematic of the closed finite-lattice superellipse dot, the corresponding
+    open-dot transport geometry with separate left and right leads, and the
+    baseline ladder used before interpreting shape-dependent observables. The
+    ladder is conceptual: it describes the order of checks, not a new numerical
+    calculation.
+    }
+    \label{fig:model-baseline-schematic}
+\end{figure*}

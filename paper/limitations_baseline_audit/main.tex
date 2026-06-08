@@ -1,0 +1,103 @@
+\documentclass[
+reprint,
+aps,
+prb,
+amsmath,
+amssymb,
+superscriptaddress,
+longbibliography
+]{revtex4-2}
+
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\input{glyphtounicode}
+\pdfgentounicode=1
+\usepackage{graphicx}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fancyhdr}
+
+\newcommand{\tcell}[2]{\begin{minipage}[t]{#1}\raggedright #2\end{minipage}}
+\graphicspath{{figures/}}
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{7pt plus 2pt minus 2pt}
+\setlength{\dbltextfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\dblfloatsep}{7pt plus 2pt minus 2pt}
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@dblfptop}{0pt}
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\small Baseline-first audit of tight-binding quantum dots}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\begin{document}
+
+\title{
+Baseline-First Audit of Shape-Based Objectives in Square-Lattice
+Tight-Binding Quantum Dots
+}
+
+\author{A. V. Larkin}
+\email{larkinav@bsu.by}
+\affiliation{
+Faculty of Physics,
+Belarusian State University,
+4 Nezavisimosti Ave., 220030 Minsk, BELARUS
+}
+
+\author{A. A. Alvinsky}
+\affiliation{
+Faculty of Physics,
+Belarusian State University,
+4 Nezavisimosti Ave., 220030 Minsk, BELARUS
+}
+
+\date{\today}
+
+\begin{abstract}
+We document how a baseline-first hierarchy determines the fate of several
+apparent shape- and ML-assisted signals in a controlled square-lattice
+tight-binding benchmark of finite superelliptic quantum dots. The audit uses
+existing closed-spectrum
+calculations, surrogate-model comparisons, inverse-screening tests,
+continuum-reference checks, tight-binding-only finite-size scaling diagnostics,
+and an open-transport contact-width diagnostic. The model uses superelliptic
+boundaries, direct Kwant spectra, and the low-energy convention
+$E_{\mathrm{kin},k}=E_k+4$. Across these outputs, attractive observables are
+repeatedly absorbed by simpler explanations: confinement scale, aspect ratio,
+symmetry, boundary realization, reference uncertainty, or lead-dot coupling. A
+small multilayer perceptron does not establish a robust advantage over a
+physics-informed Ridge model under structured validation. Spectral
+inverse-screening objectives based on gap ratios and doublet splitting reduce
+to isotropy, anisotropy, or symmetry baselines. A finite-difference continuum
+reference is useful for calibration but not adequate as a high-precision
+shape-sensitive reference in the tested protocol. Tight-binding-only scaling
+remains inconclusive, and the tested open-dot conductance is more sensitive to
+contact width than to superellipse shape. The contribution is methodological
+and protocol-specific: the paper documents where apparent shape, ML,
+continuum-residual, and transport signals become unreliable before they can
+justify a device-design rule.
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/model_and_protocol}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\clearpage
+\bibliographystyle{apsrev4-2}
+\bibliography{refs}
+
+\end{document}
