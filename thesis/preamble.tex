@@ -36,10 +36,12 @@
       {\setmonofont{Tinos}\newfontfamily\cyrillicfonttt{Tinos}}%
   }
 
-\usepackage[a4paper,left=30mm,right=15mm,top=20mm,bottom=20mm]{geometry}
+\usepackage[a4paper,left=30mm,right=10mm,top=20mm,bottom=20mm]{geometry}
 \usepackage{setspace}
 \onehalfspacing
-\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{hyphenat}
+\usepackage{ragged2e}
 
 \usepackage{graphicx}
 \graphicspath{{figures/}{../reports/assets/}}
@@ -50,7 +52,6 @@
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage{placeins}
-\usepackage{indentfirst}
 \usepackage{titlesec}
 \usepackage{tocloft}
 
@@ -73,13 +74,14 @@
 
 \setlength{\parindent}{1.25cm}
 \setlength{\parskip}{0pt}
-% Keep normal Russian hyphenation. Do not disable hyphenation: otherwise
-% justified paragraphs get large interword gaps in Russian text.
+\setlength{\JustifyingParindent}{1.25cm}
+\justifying
+% Normal hyphenation is needed for clean justified Russian text.
 \hyphenpenalty=50
 \exhyphenpenalty=50
 \pretolerance=100
 \tolerance=2000
-\setlength{\emergencystretch}{0.5em}
+\setlength{\emergencystretch}{1em}
 \clubpenalty=10000
 \widowpenalty=10000
 \displaywidowpenalty=10000
