@@ -2,6 +2,7 @@
 \usepackage{polyglossia}
 \setmainlanguage[babelshorthands=true]{russian}
 \setotherlanguages{english,belarusian}
+\disablehyphenation
 
 \defaultfontfeatures{Ligatures=TeX}
 \IfFontExistsTF{Times New Roman}
@@ -39,8 +40,13 @@
 \usepackage[a4paper,left=30mm,right=10mm,top=20mm,bottom=20mm]{geometry}
 \usepackage{setspace}
 \onehalfspacing
-\usepackage[protrusion=true,expansion=false]{microtype}
-\usepackage{hyphenat}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\microtypesetup{expansion=true}
+\SetExpansion
+  [ name = thesiswide, stretch = 80, shrink = 80, step = 5 ]
+  { encoding = {TU} }
+  { }
+\usepackage[none]{hyphenat}
 \usepackage{ragged2e}
 
 \usepackage{graphicx}
@@ -76,12 +82,14 @@
 \setlength{\parskip}{0pt}
 \setlength{\JustifyingParindent}{1.25cm}
 \justifying
-% Normal hyphenation is needed for clean justified Russian text.
-\hyphenpenalty=50
-\exhyphenpenalty=50
+% Disable automatic and explicit word hyphenation throughout the thesis.
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 \pretolerance=100
-\tolerance=2000
-\setlength{\emergencystretch}{1em}
+\tolerance=3000
+\lefthyphenmin=62
+\righthyphenmin=62
+\setlength{\emergencystretch}{0.75em}
 \clubpenalty=10000
 \widowpenalty=10000
 \displaywidowpenalty=10000
