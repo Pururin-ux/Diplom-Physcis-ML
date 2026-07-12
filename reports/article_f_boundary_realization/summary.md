@@ -229,7 +229,7 @@ xi >= 0.5) is universal across sizes.
 | Protocol addendum 2 | `protocol_addendum_2.md` | `f270595` |
 | R5-R6 checks | `scripts/run_article_f_deltaH_and_ensemble.py`, `r5_deltaH_steps.csv`, `r6_ensemble_rows.csv`, `deltaH_and_ensemble_summary.md` | `b013c84` |
 | Protocol addendum 3 | `protocol_addendum_3.md` | `d777647` |
-| R7-R8 checks | `scripts/run_article_f_r7_r8.py`, `r7_ensemble_8x8.csv`, `r8_exact_closure.csv`, `r7_r8_summary.md` | see commit of this section (filled on commit) |
+| R7-R8 checks | `scripts/run_article_f_r7_r8.py`, `r7_ensemble_8x8.csv`, `r8_exact_closure.csv`, `r7_r8_summary.md` | `cbb79f8` |
 
 ## Correction log
 
