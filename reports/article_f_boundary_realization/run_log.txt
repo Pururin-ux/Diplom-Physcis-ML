@@ -50,3 +50,23 @@ R6 done dx=0.5
 R6 done dx=0.75
 R6 done
 R5-R6 complete
+R8 done step 0.75->1.0
+R8 done step 1.0->1.25
+R8 complete
+R7 done a=24.0 xi=0.25: mean=3.284
+R7 done a=24.0 xi=0.5: mean=2.894
+R7 done a=24.0 xi=0.75: mean=2.901
+R7 done a=24.0 xi=1.5: mean=2.949
+R7 done a=24.0 xi=3.0: mean=3.030
+R7 done a=33.0 xi=0.25: mean=3.271
+R7 done a=33.0 xi=0.5: mean=2.908
+R7 done a=33.0 xi=0.75: mean=2.913
+R7 done a=33.0 xi=1.5: mean=2.945
+R7 done a=33.0 xi=3.0: mean=3.009
+R7 done a=48.0 xi=0.25: mean=3.260
+R7 done a=48.0 xi=0.5: mean=2.917
+R7 done a=48.0 xi=0.75: mean=2.923
+R7 done a=48.0 xi=1.5: mean=2.943
+R7 done a=48.0 xi=3.0: mean=2.988
+R7 complete
+R7-R8 complete

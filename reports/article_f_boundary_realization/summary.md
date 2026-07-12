@@ -184,6 +184,34 @@ of the continuum derivative (residual bias + large scatter). Whether the
 xi = 0.25 bias is physical or a coarse-quadrature artifact of the 4x4
 translation grid is deferred to R7 (8x8 grid, several sizes).
 
+## Addendum 3 results (R7-R8, frozen in protocol_addendum_3.md, commit d777647)
+
+R8 — exact closure PASS at machine precision. The zeros of det G_RR(E), built
+solely from the old-geometry eigendecomposition, reproduce the directly
+diagonalized new doublet levels to 1e-14..1e-16 for both the 68-site
+row-crossing event and the 10-site small event. The boundary-event mechanism
+is therefore closed quantitatively by the exact low-rank Feshbach/T-matrix
+formula; the R5 overestimation is fully attributed to neglected multiple
+scattering. Caveat from the truncation study: naive spectral truncations of
+the resolvent (m = 4..500 of ~3900 modes) do NOT recover the levels (errors
+1e-3..5e-1 on the E+4 scale, with bracketing failures) — a practical
+approximate theory needs a static-remainder or similar treatment of the
+high-mode part, listed as future work. The mechanism hierarchy for the
+manuscript is thus: bare first order — structure only (R5); naive truncated
+resummation — insufficient (R8); exact low-rank closure — machine-precision
+(R8).
+
+R7 — the xi = 0.25 ensemble bias is predominantly physical. On the 8x8
+translation grid the mean drops slightly relative to 4x4 (3.402 -> 3.271 at
+a = 33) while all xi >= 0.5 means are grid-stable; at fixed xi = 0.25 the
+8x8 mean is nearly size-independent (3.284 / 3.271 / 3.260 for a = 24/33/48)
+with persistent large scatter (std ~2.0-2.2) and 20-25% suppressed
+placements. Per the frozen question: persistence under both grid refinement
+and size increase indicates a physical small-deformation bias of the
+placement-averaged response (~10% above the restored plateau), with only a
+modest quadrature component. The restored plateau itself (2.89-3.03 for
+xi >= 0.5) is universal across sizes.
+
 ## Provenance
 
 | Item | Path | Commit |
@@ -200,6 +228,8 @@ translation grid is deferred to R7 (8x8 grid, several sizes).
 | Robustness checks R1-R4 | `scripts/run_article_f_robustness_checks.py`, `r1_extrapolation_variants.csv`, `r2_mfs_robustness.csv`, `r3_orientation_decay.csv`, `r4_sawtooth_weights.csv`, `robustness_checks_summary.md` | `324a1a0` |
 | Protocol addendum 2 | `protocol_addendum_2.md` | `f270595` |
 | R5-R6 checks | `scripts/run_article_f_deltaH_and_ensemble.py`, `r5_deltaH_steps.csv`, `r6_ensemble_rows.csv`, `deltaH_and_ensemble_summary.md` | `b013c84` |
+| Protocol addendum 3 | `protocol_addendum_3.md` | `d777647` |
+| R7-R8 checks | `scripts/run_article_f_r7_r8.py`, `r7_ensemble_8x8.csv`, `r8_exact_closure.csv`, `r7_r8_summary.md` | see commit of this section (filled on commit) |
 
 ## Correction log
 
