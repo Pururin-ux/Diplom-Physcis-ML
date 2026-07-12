@@ -17,7 +17,8 @@ ARTIFACTS = [
     "protocol.md", "smoke_report.md", "pilot_main_rows.csv",
     "pilot_conv_rows.csv", "pilot_aggregates.csv", "pilot_convergence.csv",
     "pilot_chi_split_distributions_xi0.4.csv", "analysis_summary.md",
-    "pilot_log.txt",
+    "distribution_stats.md", "outcome_and_verdict.md", "pilot_aggregates.csv",
+    "pilot_convergence.csv", "pilot_log.txt",
 ]
 
 

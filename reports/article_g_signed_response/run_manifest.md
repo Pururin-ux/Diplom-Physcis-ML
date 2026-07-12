@@ -1,8 +1,8 @@
 # Article-G run manifest (protocol section 14)
 
-- generated: 2026-07-12T22:36:15.938856+00:00
+- generated: 2026-07-12T22:36:41.942975+00:00
 - branch: article-g-signed-shape-response
-- commit: 814ca60acc565048e0902f34cf79e422fda14974
+- commit: a27333fd0418cdf27e558e4690801ca829f87f5b
 - protocol commit on remote (frozen before results): 0fa6cbe
 - environment (from the running interpreter):
   - python: 3.12.13
@@ -25,4 +25,8 @@
 - `pilot_convergence.csv`: 03db186aea18e7a19be9e7e5196b17d0f122730c376390049ef6c92b5f6bd004
 - `pilot_chi_split_distributions_xi0.4.csv`: 9cc32d020923c53fb1b5d0493cdb95b18a8e06ccbbca14a143b7458db920d58d
 - `analysis_summary.md`: 59d084c092a57473aa9114c8b60538ddf8cac4d3bdb8335748126214326a4e2a
+- `distribution_stats.md`: 8830cdd6146e089f7380f2d59a55cf3b90b74ca464194e75878438815d4b7577
+- `outcome_and_verdict.md`: 595f10293d5856939146e14728518ebf2aceb118e52518a91f85583ce7e833f4
+- `pilot_aggregates.csv`: 376cb777d84a9771262c4653ea026be67d0c219e30e787252000049d07772079
+- `pilot_convergence.csv`: 03db186aea18e7a19be9e7e5196b17d0f122730c376390049ef6c92b5f6bd004
 - `pilot_log.txt`: 3a3cfafd084cb684716eedb8a90dacda48646beb8cd42622100a5a7091850fc7
