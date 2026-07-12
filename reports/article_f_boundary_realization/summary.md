@@ -16,9 +16,12 @@ shift-invert vs `which='SA'`: max abs diff 2.8e-14.
 | 3.0 | 5.21631971 | 13.19017870 | 5.866676 | 1.528637 | UNSTABLE at 1e-6 (drift ~2.5e-6) |
 | 4.0 | 5.05703172 | 12.73171703 | 5.969020 | 1.517626 | UNSTABLE at 1e-6 (drift ~3e-5) |
 
-Per protocol the 1e-6 stability gate failed for n = 3.0 and 4.0; those values
-are still usable at the ~1e-5 relative level (quoted drift), which is two
-orders of magnitude tighter than any lattice comparison in this report needs.
+Per protocol the 1e-6 stability gate failed for n = 3.0 and 4.0. The R2
+parameter-robustness study (addendum 1) sharpened this: n = 3.0 values are
+stable to ~4e-6 relative; for n = 4.0, lambda1 is stable to 3.9e-5 while
+lambda2 is stable only to 5.4e-4 and must be quoted as 12.731 +/- 0.007
+(Q0 = 1.518 +/- 0.001). All of these are still far tighter than the 1-4%
+lattice effects compared against them.
 
 Continuum shape effect at fixed area (excess of lam1*A/pi over the disk):
 n = 1.2: +4.45%; n = 3.0: +1.44%; n = 4.0: +3.21%. Faber-Krahn ordering holds
@@ -27,10 +30,15 @@ disk maximal, consistent with the Payne-Polya-Weinberger bound
 (Ashbaugh-Benguria): the isotropic optimum of Q is a symmetry/theorem effect,
 not a design opportunity.
 
-### 2. Lattice extrapolation cross-validates against the continuum to <= 0.1%
+### 2. Lattice extrapolation agrees with the continuum within its uncertainty
+(0.2% for n <= 3, 0.5% for n = 4)
 
 Translation-averaged (4x4 grid) fixed-area lattice series, linear
-extrapolation of mean lam1*A_an/pi vs 1/a_circ:
+extrapolation of mean lam1*A_an/pi vs 1/a_circ. The linear variant happens to
+land within 0.1% of MFS for all n, but the honest uncertainty of the
+extrapolated limit is the full spread over admissible fit schemes (linear,
+quadratic, leave-one-scale-out; see R1): about 0.2% for n <= 3 and 0.5% for
+n = 4.
 
 | n | TB intercept | MFS continuum | rel. difference |
 |---|---|---|---|
@@ -137,9 +145,10 @@ R4 — sawtooth mechanism. Over the 16 xi steps (n = 4.0, a = 33), the level
 shifts follow the first-order perturbative weight of the removed sites:
 corr(dE1, w1) = +0.97, corr(dE2, w2) = +0.999, corr(dSplit, w2 - w1) = +1.000,
 against the raw-count baseline corr = +0.98. Frozen-rule outcome: SUPPORTED.
-The sawtooth is therefore quantitatively explained as first-order perturbation
-theory in the eigenfunction weight of the boundary sites removed at each
-lattice-row crossing.
+Final interpretation (superseded by R5, see below and the correction log):
+the sawtooth is governed by the low-rank boundary-event operator through the
+eigenfunction weight of the removed sites; the bare first order reproduces
+the structure of the jumps but not their absolute magnitude.
 
 ## Addendum 2 results (R5-R6, frozen in protocol_addendum_2.md, commit f270595)
 
@@ -147,27 +156,33 @@ R5 — explicit low-rank Delta-H test (n = 4.0, a = 33). The bare first-order
 prediction from the cut-bond Delta_H in the doublet subspace reproduces the
 *structure* of the level shifts essentially exactly — Pearson
 corr(dSplit_pred, dSplit_act) = +0.9997 — but systematically overestimates
-magnitudes by a factor of about 3 (median relative error ~200%). Frozen-rule
-outcome: qualitative agreement only. Interpretation: site removal is a strong
-(V -> infinity) perturbation, so the bare first order in the bounded cut-bond
-operator overshoots; the systematic, nearly constant overestimation factor
-indicates that a resummed (T-matrix / Feshbach-eliminated) low-rank treatment
-should close the gap. The earlier R4 phrasing "first-order perturbation
-theory" is hereby downgraded to: the spectral jumps are governed by the
-low-rank boundary-event operator, with magnitudes requiring resummation —
-matching the reviewer's proposed wording.
+magnitudes (median relative error ~200%). Frozen-rule outcome: qualitative
+agreement only. The overestimation factor is NOT constant: it clusters in two
+regimes — about 2.3-3.5 for small boundary events (10-28 removed sites) and
+5.37-5.47 for the large lattice-row-crossing events (64-72 removed sites);
+see `r5_deltaH_steps.csv`. Site removal is a strong (V -> infinity)
+perturbation, so the bare first order in the bounded cut-bond operator
+overshoots, and the growth of the factor with event size indicates essential
+multiple-scattering processes: a non-perturbative low-rank treatment
+(T-matrix / Feshbach elimination of the removed block) is required, not a
+single renormalization constant. The earlier R4 phrasing "first-order
+perturbation theory" is hereby downgraded accordingly.
 
 R6 — placement-ensemble average of the xi response (n = 4.0, a = 33, 16
 translations). The staircase is a fixed-placement property, not an ensemble
 property: total variation of y(xi) drops from 7.38 (centered realization) to
-0.65 (ensemble mean), and the ensemble mean sits at the continuum coefficient
-(~2.9-3.1) over the whole grid including xi < 1, where the centered
-realization is suppressed (y ~ 0.4-0.6). At xi = 0.25 only 38% of placements
-are suppressed while the ensemble std is large (2.2), shrinking to 0.2 by
-xi = 4. Conclusion: the non-commutation of the small-deformation and
-continuum limits holds per fixed placement; translation averaging restores a
-smooth, continuum-valued shape derivative already at finite lattice size, at
-the cost of large realization-to-realization scatter at small xi.
+0.65 (ensemble mean). The ensemble mean is close to the continuum coefficient
+(2.90-3.06) for xi >= 0.5; at the smallest tested deformation xi = 0.25 the
+mean is biased upward (3.40) with very large realization scatter (std 2.2,
+shrinking to 0.2 by xi = 4), and only 38% of placements are suppressed there.
+Nearly all of the residual total variation of the mean comes from the
+3.40 -> 2.90 drop between the first two xi points. Conclusion: translation
+averaging removes the staircase and restores a near-continuum mean response
+already for xi >= 0.5 at this size; at extremely small deformations the
+averaging removes stepping but does not yet guarantee quantitative recovery
+of the continuum derivative (residual bias + large scatter). Whether the
+xi = 0.25 bias is physical or a coarse-quadrature artifact of the 4x4
+translation grid is deferred to R7 (8x8 grid, several sizes).
 
 ## Provenance
 
@@ -184,4 +199,18 @@ the cost of large realization-to-realization scatter at small xi.
 | Protocol addendum 1 | `protocol_addendum_1.md` | `04e24a1` |
 | Robustness checks R1-R4 | `scripts/run_article_f_robustness_checks.py`, `r1_extrapolation_variants.csv`, `r2_mfs_robustness.csv`, `r3_orientation_decay.csv`, `r4_sawtooth_weights.csv`, `robustness_checks_summary.md` | `324a1a0` |
 | Protocol addendum 2 | `protocol_addendum_2.md` | `f270595` |
-| R5-R6 checks | `scripts/run_article_f_deltaH_and_ensemble.py`, `r5_deltaH_steps.csv`, `r6_ensemble_rows.csv`, `deltaH_and_ensemble_summary.md` | see commit of this section |
+| R5-R6 checks | `scripts/run_article_f_deltaH_and_ensemble.py`, `r5_deltaH_steps.csv`, `r6_ensemble_rows.csv`, `deltaH_and_ensemble_summary.md` | `b013c84` |
+
+## Correction log
+
+- `<= 0.1%` cross-validation headline replaced by the honest extrapolation
+  uncertainty (0.2% for n <= 3, 0.5% for n = 4) after R1.
+- MFS "usable at ~1e-5" phrasing replaced by the R2 per-eigenvalue stability
+  (n = 3: ~4e-6; n = 4: lambda1 3.9e-5, lambda2 5.4e-4).
+- R4 "quantitatively explained as first-order perturbation theory" downgraded
+  after R5 to the low-rank boundary-event mechanism with non-perturbative
+  magnitudes; the overestimation factor is event-size dependent (2.3-3.5
+  small events, ~5.4 row-crossing events), not a single constant.
+- R6 "continuum coefficient over the whole grid" narrowed to xi >= 0.5, with
+  a biased mean and large scatter at xi = 0.25 (status pending R7).
+- "order of magnitude larger" replaced by explicit factors 6-22x.
