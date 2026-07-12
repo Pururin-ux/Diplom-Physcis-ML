@@ -51,7 +51,49 @@ The R6/R7 interpretation of `S(delta, p) / delta` as a small-deformation
   read only as a demonstration that naive truncation fails, not as an
   approximation scheme.
 
+## Additional interpretation defects identified by the independent review
+
+The independent review (`independent_scientific_review_article_f_ru.md`,
+2026-07-12, verdict class E) documented further Article-F interpretation
+errors beyond the R6/R7 defect. They are recorded here for honesty; the raw
+spectra and geometry remain valid, but the following headline phrasings in
+`summary.md` are not supported and should not be carried forward:
+
+- **R4 "SUPPORTED" is literally false.** The frozen addendum-1 rule requires
+  every weighted correlation to exceed the raw-count baseline. Independently,
+  corr(dE1, w1) = 0.9731 < raw-count baseline 0.9831; the code only tested the
+  split correlation. The correct frozen outcome is NOT SUPPORTED (or, if only
+  the splitting was intended, the criterion was changed post hoc). Individual
+  w1, w2 are also basis-dependent inside the degenerate subspace.
+- **"Exact zeros only for C4v" is too narrow.** In the present real,
+  time-reversal-symmetric Hamiltonian the first-excited doublet is protected by
+  C4v OR by C4 + time reversal (the m = +-1 complex-conjugate irreps form a
+  real 2D representation). At a generic rotation the mirrors can be lost while
+  C4 remains and the splitting is still numerically zero.
+- **MFS model spread is a sensitivity envelope, not an uncertainty**, and the
+  n = 3, 4 continuum values were used for comparison despite failing the
+  protocol's own stability gate; lambda2(n=4) should be quoted as ~12.73, not
+  to eight decimals.
+- **"No deviations from protocol" is incorrect** (R4 rule failed; MFS
+  comparison used after a failed gate).
+- **R8 "exact closure" is the standard Jacobi/Schur principal-minor identity**
+  (det G_RR(E) = det M_CC(E)/det M(E)); it is an algebraic integrity check,
+  not a new mechanism, and "R5 overestimation fully attributed to multiple
+  scattering" overstates it. The R8 truncations with m < |R| are not merely
+  inadmissible but identically singular (rank(G_RR^(m)) <= m < |R| forces
+  det = 0), so their reported sign changes are floating-point artifacts.
+- **"Universal plateau" and "predominantly physical bias"** are not
+  established (three sizes; uncorrected sorted order statistic).
+- **"Preregistered"** describes a prospective LOCAL ordering only; the remote
+  reflog shows each protocol/addendum was first pushed together with its
+  results, so this is not an independent public preregistration. (Article-G
+  corrects this: its protocol commit `0fa6cbe` was pushed to the remote and
+  its SHA confirmed BEFORE any result commit.)
+
 ## Continuation
 
 The corrected observable and a minimal decisive pilot are defined in
 `reports/article_g_signed_response/protocol.md` (frozen before computation).
+The independent review's recommended research direction (phase-averaged signed
+digital shape derivative and boundary-event statistics) coincides with the
+Article-G observable.
