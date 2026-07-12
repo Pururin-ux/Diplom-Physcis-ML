@@ -107,6 +107,38 @@ None in grids or definitions. MFS gate outcomes UNSTABLE for n in {3.0, 4.0}
 are reported as required (values quoted with their drift, no silent
 fallback). All other analyses ran exactly as preregistered.
 
+## Addendum 1 results (R1-R4, frozen in protocol_addendum_1.md, commit 04e24a1)
+
+R1 — extrapolation-form robustness. The full min-max spread of the continuum
+intercept over {linear, quadratic, leave-one-scale-out} variants is 0.18-0.20%
+for n in {1.2, 2.0, 3.0} and 0.53% for n = 4.0. The headline "agreement with
+MFS to <= 0.1%" above therefore holds for the linear variant but the honest
+extrapolation uncertainty is ~0.2% (n <= 3) and ~0.5% (n = 4). This supersedes
+the <= 0.1% phrasing; the lattice-continuum decomposition remains valid, since
+the shape effects being resolved are 1.4-4.5%, an order of magnitude larger.
+
+R2 — MFS parameter robustness (charge factor x basis, 6 combinations). n = 3.0:
+lambda1 and lambda2 stable to ~4e-6 relative (the earlier UNSTABLE flag was
+borderline). n = 4.0: lambda1 stable to 3.9e-5 relative; lambda2 only to
+5.4e-4 relative — for n = 4.0, lambda2 must be quoted as 12.731 +/- 0.007 and
+Q0(n=4) as 1.518 +/- 0.001. An independent non-MFS continuum method remains an
+open validation item (recorded in the addendum).
+
+R3 — orientation-effect decay. Delta_theta(a_circ) shrinks with size for both
+classes: n = 1.2: 0.047 -> 0.029 over a_circ 24 -> 48 (effective power
+p ~ 0.7); n = 4.0: 0.078 -> 0.029 (p ~ 1.3). Three-point estimates only, but
+they (i) confirm the orientation correction vanishes toward the continuum and
+(ii) suggest different effective decay laws for the diagonal and axis-aligned
+boundary classes — a candidate standalone result for the manuscript.
+
+R4 — sawtooth mechanism. Over the 16 xi steps (n = 4.0, a = 33), the level
+shifts follow the first-order perturbative weight of the removed sites:
+corr(dE1, w1) = +0.97, corr(dE2, w2) = +0.999, corr(dSplit, w2 - w1) = +1.000,
+against the raw-count baseline corr = +0.98. Frozen-rule outcome: SUPPORTED.
+The sawtooth is therefore quantitatively explained as first-order perturbation
+theory in the eigenfunction weight of the boundary sites removed at each
+lattice-row crossing.
+
 ## Provenance
 
 | Item | Path | Commit |
@@ -119,3 +151,5 @@ fallback). All other analyses ran exactly as preregistered.
 | xi transition | `xi_transition_rows.csv`, `xi_transition_summary.md` | `601aa68` |
 | Continuum MFS | `continuum_mfs_values.csv`, `continuum_mfs_summary.md` | `601aa68` |
 | Execution log | `run_log.txt` | `601aa68` |
+| Protocol addendum 1 | `protocol_addendum_1.md` | `04e24a1` |
+| Robustness checks R1-R4 | `scripts/run_article_f_robustness_checks.py`, `r1_extrapolation_variants.csv`, `r2_mfs_robustness.csv`, `r3_orientation_decay.csv`, `r4_sawtooth_weights.csv`, `robustness_checks_summary.md` | see commit of this section |
