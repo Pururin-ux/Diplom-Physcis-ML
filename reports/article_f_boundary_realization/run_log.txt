@@ -1,0 +1,36 @@
+=== placement stats ===
+placement stats done: 256 cells; solver check 2.7977620220553945e-14
+=== fixed area scaling ===
+done n=1.2 a_circ=24.0
+done n=1.2 a_circ=30.0
+done n=1.2 a_circ=36.0
+done n=1.2 a_circ=48.0
+done n=2.0 a_circ=24.0
+done n=2.0 a_circ=30.0
+done n=2.0 a_circ=36.0
+done n=2.0 a_circ=48.0
+done n=3.0 a_circ=24.0
+done n=3.0 a_circ=30.0
+done n=3.0 a_circ=36.0
+done n=3.0 a_circ=48.0
+done n=4.0 a_circ=24.0
+done n=4.0 a_circ=30.0
+done n=4.0 a_circ=36.0
+done n=4.0 a_circ=48.0
+done n=1.2 a_circ=72.0
+done n=4.0 a_circ=72.0
+fixed-area scaling done: 288 cells
+=== xi transition ===
+done n=4.0 a=24.0
+done n=4.0 a=33.0
+done n=4.0 a=48.0
+done n=1.2 a=33.0
+done n=2.0 a=33.0
+done n=3.0 a=33.0
+xi transition done: 102 rows
+=== continuum mfs ===
+n=1.2: lam1=8.06697513 lam2=20.29029896 gate=PASS
+n=2.0: lam1=5.78318596 lam2=14.68197053 gate=PASS
+n=3.0: lam1=5.21631971 lam2=13.19017870 gate=UNSTABLE
+n=4.0: lam1=5.05703172 lam2=12.73171703 gate=UNSTABLE
+=== ALL DONE ===
