@@ -34,3 +34,12 @@ n=2.0: lam1=5.78318596 lam2=14.68197053 gate=PASS
 n=3.0: lam1=5.21631971 lam2=13.19017870 gate=UNSTABLE
 n=4.0: lam1=5.05703172 lam2=12.73171703 gate=UNSTABLE
 === ALL DONE ===
+R1 done
+R2 done
+R3 done n=1.2 a_circ=24.0
+R3 done n=1.2 a_circ=48.0
+R3 done n=4.0 a_circ=24.0
+R3 done n=4.0 a_circ=48.0
+R3 done
+R4 done
+robustness checks complete
