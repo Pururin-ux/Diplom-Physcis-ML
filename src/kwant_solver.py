@@ -72,3 +72,55 @@ def lowest_four_energies(Lx: int, Ly: int) -> np.ndarray:
     else:
         vals, _ = eigsh(h, k=4, which="SA")
     return _as_sorted_real_finite(vals)
+
+
+BAND_BOTTOM_SHIFT = -4.2
+"""Shift-invert reference energy just below the square-lattice band bottom -4.
+
+Reason for shift-invert (documented per METHODOLOGY_DECISIONS.md): the target
+eigenvalues cluster near the band bottom ``E = -4`` while the full spectrum
+spans ``[-4, 4]``; for systems with more than a few thousand sites plain
+``which='SA'`` Lanczos converges slowly, whereas shift-invert around a point
+just below the band bottom targets exactly the lowest levels. Because
+``BAND_BOTTOM_SHIFT`` lies strictly below the whole spectrum, shift-invert
+ordering coincides with ascending eigenvalue ordering and no interior
+eigenvalues can be missed. Consistency with ``which='SA'`` is asserted by
+:func:`shift_invert_consistency_error` and covered by tests.
+"""
+
+
+def lowest_energies_of_system(
+    fsys, k: int = 4, use_shift_invert: bool = True
+) -> np.ndarray:
+    """Return the ``k`` lowest eigenenergies of a finalized closed Kwant system.
+
+    Parameters
+    ----------
+    fsys
+        Finalized Kwant system (closed dot, real symmetric Hamiltonian).
+    k
+        Number of lowest levels requested.
+    use_shift_invert
+        If True (default), use shift-invert around :data:`BAND_BOTTOM_SHIFT`;
+        otherwise use plain ``which='SA'``. Both target the same levels; see
+        :data:`BAND_BOTTOM_SHIFT` for the justification.
+    """
+    h = fsys.hamiltonian_submatrix(sparse=True).tocsc().real
+    dim = h.shape[0]
+    if dim < k + 1:
+        vals = np.linalg.eigvalsh(h.toarray())[:k]
+        return _as_sorted_real_finite(vals)
+    if use_shift_invert:
+        vals = eigsh(
+            h, k=k, sigma=BAND_BOTTOM_SHIFT, which="LM", return_eigenvectors=False
+        )
+    else:
+        vals = eigsh(h, k=k, which="SA", return_eigenvectors=False)
+    return _as_sorted_real_finite(vals)
+
+
+def shift_invert_consistency_error(fsys, k: int = 4) -> float:
+    """Return max abs difference between shift-invert and ``which='SA'`` levels."""
+    si = lowest_energies_of_system(fsys, k=k, use_shift_invert=True)
+    sa = lowest_energies_of_system(fsys, k=k, use_shift_invert=False)
+    return float(np.max(np.abs(si - sa)))
