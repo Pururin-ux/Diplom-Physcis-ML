@@ -43,3 +43,10 @@ R3 done n=4.0 a_circ=48.0
 R3 done
 R4 done
 robustness checks complete
+R5 done
+R6 done dx=0.0
+R6 done dx=0.25
+R6 done dx=0.5
+R6 done dx=0.75
+R6 done
+R5-R6 complete

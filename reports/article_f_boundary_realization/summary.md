@@ -114,8 +114,10 @@ intercept over {linear, quadratic, leave-one-scale-out} variants is 0.18-0.20%
 for n in {1.2, 2.0, 3.0} and 0.53% for n = 4.0. The headline "agreement with
 MFS to <= 0.1%" above therefore holds for the linear variant but the honest
 extrapolation uncertainty is ~0.2% (n <= 3) and ~0.5% (n = 4). This supersedes
-the <= 0.1% phrasing; the lattice-continuum decomposition remains valid, since
-the shape effects being resolved are 1.4-4.5%, an order of magnitude larger.
+the <= 0.1% phrasing; the lattice-continuum decomposition remains valid: the
+shape effects being resolved (1.4-4.5%) exceed the extrapolation uncertainty
+by a factor of about 22 (n = 1.2), 8 (n = 3.0), and 6 (n = 4.0) — several
+times over, not uniformly "an order of magnitude".
 
 R2 — MFS parameter robustness (charge factor x basis, 6 combinations). n = 3.0:
 lambda1 and lambda2 stable to ~4e-6 relative (the earlier UNSTABLE flag was
@@ -139,6 +141,34 @@ The sawtooth is therefore quantitatively explained as first-order perturbation
 theory in the eigenfunction weight of the boundary sites removed at each
 lattice-row crossing.
 
+## Addendum 2 results (R5-R6, frozen in protocol_addendum_2.md, commit f270595)
+
+R5 — explicit low-rank Delta-H test (n = 4.0, a = 33). The bare first-order
+prediction from the cut-bond Delta_H in the doublet subspace reproduces the
+*structure* of the level shifts essentially exactly — Pearson
+corr(dSplit_pred, dSplit_act) = +0.9997 — but systematically overestimates
+magnitudes by a factor of about 3 (median relative error ~200%). Frozen-rule
+outcome: qualitative agreement only. Interpretation: site removal is a strong
+(V -> infinity) perturbation, so the bare first order in the bounded cut-bond
+operator overshoots; the systematic, nearly constant overestimation factor
+indicates that a resummed (T-matrix / Feshbach-eliminated) low-rank treatment
+should close the gap. The earlier R4 phrasing "first-order perturbation
+theory" is hereby downgraded to: the spectral jumps are governed by the
+low-rank boundary-event operator, with magnitudes requiring resummation —
+matching the reviewer's proposed wording.
+
+R6 — placement-ensemble average of the xi response (n = 4.0, a = 33, 16
+translations). The staircase is a fixed-placement property, not an ensemble
+property: total variation of y(xi) drops from 7.38 (centered realization) to
+0.65 (ensemble mean), and the ensemble mean sits at the continuum coefficient
+(~2.9-3.1) over the whole grid including xi < 1, where the centered
+realization is suppressed (y ~ 0.4-0.6). At xi = 0.25 only 38% of placements
+are suppressed while the ensemble std is large (2.2), shrinking to 0.2 by
+xi = 4. Conclusion: the non-commutation of the small-deformation and
+continuum limits holds per fixed placement; translation averaging restores a
+smooth, continuum-valued shape derivative already at finite lattice size, at
+the cost of large realization-to-realization scatter at small xi.
+
 ## Provenance
 
 | Item | Path | Commit |
@@ -152,4 +182,6 @@ lattice-row crossing.
 | Continuum MFS | `continuum_mfs_values.csv`, `continuum_mfs_summary.md` | `601aa68` |
 | Execution log | `run_log.txt` | `601aa68` |
 | Protocol addendum 1 | `protocol_addendum_1.md` | `04e24a1` |
-| Robustness checks R1-R4 | `scripts/run_article_f_robustness_checks.py`, `r1_extrapolation_variants.csv`, `r2_mfs_robustness.csv`, `r3_orientation_decay.csv`, `r4_sawtooth_weights.csv`, `robustness_checks_summary.md` | see commit of this section |
+| Robustness checks R1-R4 | `scripts/run_article_f_robustness_checks.py`, `r1_extrapolation_variants.csv`, `r2_mfs_robustness.csv`, `r3_orientation_decay.csv`, `r4_sawtooth_weights.csv`, `robustness_checks_summary.md` | `324a1a0` |
+| Protocol addendum 2 | `protocol_addendum_2.md` | `f270595` |
+| R5-R6 checks | `scripts/run_article_f_deltaH_and_ensemble.py`, `r5_deltaH_steps.csv`, `r6_ensemble_rows.csv`, `deltaH_and_ensemble_summary.md` | see commit of this section |
