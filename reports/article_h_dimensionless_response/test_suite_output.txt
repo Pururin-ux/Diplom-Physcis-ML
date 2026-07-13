@@ -1,0 +1,16 @@
+.....................................................................    [100%]
+============================== warnings summary ===============================
+tests/test_model_baselines.py::test_run_baseline_stress_test_protocol_keys
+  C:\Users\lalad\miniforge3\envs\diplom-kwant\Lib\site-packages\threadpoolctl.py:1226: RuntimeWarning: 
+  Found Intel OpenMP ('libiomp') and LLVM OpenMP ('libomp') loaded at
+  the same time. Both libraries are known to be incompatible and this
+  can cause random crashes or deadlocks on Linux when loaded in the
+  same Python program.
+  Using threadpoolctl may cause crashes or deadlocks. For more
+  information and possible workarounds, please see
+      https://github.com/joblib/threadpoolctl/blob/master/multiple_openmp.md
+  
+    warnings.warn(msg, RuntimeWarning)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+69 passed, 1 warning in 15.85s
