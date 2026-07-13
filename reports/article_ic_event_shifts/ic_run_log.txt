@@ -1,0 +1,3 @@
+events n=2.0 done: 538 rows so far
+events n=4.0 done: 1262 rows so far
+event pilot done: 1262 events, 32 placements

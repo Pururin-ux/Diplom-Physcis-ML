@@ -1,0 +1,1262 @@
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 0, "added": [[-24, -4], [-24, 4], [24, -4], [24, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 1, "added": [[-23, -8], [-23, 8], [23, -8], [23, 8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 2, "added": [], "removed": [[-3, -24], [-3, 24], [3, -24], [3, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 3, "added": [], "removed": [[-10, -22], [-10, 22], [10, -22], [10, 22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 4, "added": [], "removed": [[-12, -21], [-12, 21], [12, -21], [12, 21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 5, "added": [], "removed": [[-2, -24], [-2, 24], [2, -24], [2, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 6, "added": [[-24, -5], [-24, 5], [24, -5], [24, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 7, "added": [], "removed": [[-1, -24], [-1, 24], [1, -24], [1, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 8, "added": [], "removed": [[0, -24], [0, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 9, "added": [], "removed": [[-7, -23], [-7, 23], [7, -23], [7, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 10, "added": [[-20, -14], [-20, 14], [20, -14], [20, 14]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 11, "added": [], "removed": [[-15, -19], [-15, 19], [15, -19], [15, 19]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 0, "added": [[-33, -7], [-33, 7], [33, -7], [33, 7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 1, "added": [], "removed": [[-13, -31], [-13, 31], [13, -31], [13, 31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 2, "added": [], "removed": [[-6, -33], [-6, 33], [6, -33], [6, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 3, "added": [], "removed": [[-17, -29], [-17, 29], [17, -29], [17, 29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 4, "added": [[-32, -11], [-32, 11], [32, -11], [32, 11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 5, "added": [], "removed": [[-10, -32], [-10, 32], [10, -32], [10, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 6, "added": [], "removed": [[-15, -30], [-15, 30], [15, -30], [15, 30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 7, "added": [[-33, -8], [-33, 8], [33, -8], [33, 8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 8, "added": [[-34, 0], [34, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 9, "added": [[-34, -1], [-34, 1], [34, -1], [34, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 10, "added": [], "removed": [[-20, -27], [-20, 27], [20, -27], [20, 27]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 11, "added": [], "removed": [[-5, -33], [-5, 33], [5, -33], [5, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 12, "added": [[-34, -2], [-34, 2], [34, -2], [34, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 13, "added": [[-28, -19], [-28, 19], [28, -19], [28, 19]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 0, "added": [[-19, -14], [-19, 15], [20, -14], [20, 15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 1, "added": [[-23, -6], [-23, 7], [24, -6], [24, 7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 2, "added": [[-21, -11], [-21, 12], [22, -11], [22, 12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 3, "added": [[-22, -9], [-22, 10], [23, -9], [23, 10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 4, "added": [], "removed": [[-5, -23], [-5, 24], [6, -23], [6, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 5, "added": [[-24, 0], [-24, 1], [25, 0], [25, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 6, "added": [[-24, -1], [-24, 2], [25, -1], [25, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 7, "added": [], "removed": [[-8, -22], [-8, 23], [9, -22], [9, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 8, "added": [[-24, -2], [-24, 3], [25, -2], [25, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 9, "added": [], "removed": [[-4, -23], [-4, 24], [5, -23], [5, 24]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 0, "added": [], "removed": [[-3, -33], [-3, 34], [4, -33], [4, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 1, "added": [[-27, -19], [-27, 20], [28, -19], [28, 20]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 2, "added": [[-33, -4], [-33, 5], [34, -4], [34, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 3, "added": [], "removed": [[-2, -33], [-2, 34], [3, -33], [3, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 4, "added": [[-30, -14], [-30, 15], [31, -14], [31, 15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 5, "added": [], "removed": [[-8, -32], [-8, 33], [9, -32], [9, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 6, "added": [], "removed": [[-1, -33], [-1, 34], [2, -33], [2, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 7, "added": [[-32, -9], [-32, 10], [33, -9], [33, 10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 8, "added": [[-29, -16], [-29, 17], [30, -16], [30, 17]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 9, "added": [], "removed": [[0, -33], [0, 34], [1, -33], [1, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 10, "added": [], "removed": [[-11, -31], [-11, 32], [12, -31], [12, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 11, "added": [[-31, -12], [-31, 13], [32, -12], [32, 13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 12, "added": [[-33, -5], [-33, 6], [34, -5], [34, 6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 13, "added": [], "removed": [[-7, -32], [-7, 33], [8, -32], [8, 33]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 0, "added": [[-23, -6], [24, -6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 1, "added": [], "removed": [[-15, 19], [16, 19]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 2, "added": [[-22, -9], [23, -9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 3, "added": [], "removed": [[-8, 23], [9, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 4, "added": [], "removed": [[-9, -22], [10, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 5, "added": [], "removed": [[-6, -23], [7, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 6, "added": [[-23, 7], [24, 7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 7, "added": [], "removed": [[-11, -21], [12, -21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 8, "added": [], "removed": [[-4, 24], [5, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 9, "added": [[-24, 0], [25, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 10, "added": [[-24, 1], [25, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 11, "added": [[-24, -1], [25, -1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 12, "added": [], "removed": [[-12, 21], [13, 21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 13, "added": [[-24, 2], [25, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 14, "added": [[-22, 10], [23, 10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 15, "added": [], "removed": [[-10, 22], [11, 22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 16, "added": [[-24, -2], [25, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 17, "added": [[-21, 12], [22, 12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 18, "added": [[-20, -13], [21, -13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 19, "added": [[-24, 3], [25, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 20, "added": [], "removed": [[-3, 24], [4, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 21, "added": [[-23, -7], [24, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 22, "added": [], "removed": [[-5, -23], [6, -23]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 0, "added": [[-33, 4], [34, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 1, "added": [[-29, -16], [30, -16]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 2, "added": [], "removed": [[-9, -32], [10, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 3, "added": [[-33, -4], [34, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 4, "added": [], "removed": [[-4, -33], [5, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 5, "added": [[-32, -9], [33, -9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 6, "added": [[-33, 5], [34, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 7, "added": [], "removed": [[-16, -29], [17, -29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 8, "added": [], "removed": [[-20, 27], [21, 27]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 9, "added": [[-31, -12], [32, -12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 10, "added": [], "removed": [[-7, 33], [8, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 11, "added": [], "removed": [[-14, -30], [15, -30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 12, "added": [], "removed": [[-17, 29], [18, 29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 13, "added": [], "removed": [[-3, -33], [4, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 14, "added": [[-33, -5], [34, -5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 15, "added": [], "removed": [[-13, 31], [14, 31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 16, "added": [[-30, 15], [31, 15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 17, "added": [[-32, 10], [33, 10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 18, "added": [[-33, 6], [34, 6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 19, "added": [], "removed": [[-2, -33], [3, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 20, "added": [], "removed": [[-15, 30], [16, 30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 21, "added": [], "removed": [[-8, -32], [9, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 22, "added": [[-31, 13], [32, 13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 23, "added": [], "removed": [[-1, -33], [2, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 24, "added": [], "removed": [[-10, 32], [11, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 25, "added": [], "removed": [[-6, 33], [7, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 26, "added": [[-29, 17], [30, 17]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 27, "added": [], "removed": [[0, -33], [1, -33]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 0, "added": [[-22, -10], [22, -10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 1, "added": [], "removed": [[-11, 22], [11, 22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 2, "added": [[-24, -4], [24, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 3, "added": [[-24, 5], [24, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 4, "added": [], "removed": [[-6, -23], [6, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 5, "added": [[-21, -12], [21, -12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 6, "added": [], "removed": [[-5, 24], [5, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 7, "added": [[-22, 11], [22, 11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 8, "added": [], "removed": [[-9, -22], [9, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 9, "added": [[-23, -8], [23, -8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 10, "added": [], "removed": [[-13, -20], [13, -20]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 11, "added": [[-24, -5], [24, -5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 12, "added": [[-23, 9], [23, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 13, "added": [[-24, 6], [24, 6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 14, "added": [], "removed": [[-4, 24], [4, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 15, "added": [], "removed": [[-11, -21], [11, -21]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 0, "added": [[-25, 23], [25, 23]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 1, "added": [[-32, 11], [32, 11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 2, "added": [[-30, -15], [30, -15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 3, "added": [], "removed": [[-2, 34], [2, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 4, "added": [], "removed": [[-4, -33], [4, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 5, "added": [], "removed": [[-14, 31], [14, 31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 6, "added": [], "removed": [[-1, 34], [1, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 7, "added": [], "removed": [[-9, -32], [9, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 8, "added": [], "removed": [[-16, 30], [16, 30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 9, "added": [], "removed": [[0, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 10, "added": [[-31, -13], [31, -13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 11, "added": [], "removed": [[-12, -31], [12, -31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 12, "added": [[-33, -7], [33, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 13, "added": [], "removed": [[-8, 33], [8, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 14, "added": [], "removed": [[-3, -33], [3, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 15, "added": [], "removed": [[-18, -28], [18, -28]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 16, "added": [[-33, 8], [33, 8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 17, "added": [[-30, 16], [30, 16]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 18, "added": [[-31, 14], [31, 14]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 19, "added": [], "removed": [[-2, -33], [2, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 20, "added": [[-29, -17], [29, -17]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 21, "added": [], "removed": [[-1, -33], [1, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 22, "added": [], "removed": [[-23, 25], [23, 25]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 23, "added": [[-34, 0], [34, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 24, "added": [], "removed": [[0, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 25, "added": [[-34, 1], [34, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 26, "added": [], "removed": [[-11, 32], [11, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 27, "added": [[-34, -1], [34, -1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 28, "added": [[-34, 2], [34, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 29, "added": [[-32, -11], [32, -11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 30, "added": [], "removed": [[-14, -30], [14, -30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 31, "added": [], "removed": [[-8, -32], [8, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 32, "added": [[-34, -2], [34, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 33, "added": [], "removed": [[-7, 33], [7, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 34, "added": [[-33, -8], [33, -8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 35, "added": [[-34, 3], [34, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 0, "added": [], "removed": [[-7, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 1, "added": [], "removed": [[-8, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 2, "added": [[-24, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 3, "added": [], "removed": [[5, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 4, "added": [], "removed": [[-2, -24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 5, "added": [[-24, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 6, "added": [[-24, -1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 7, "added": [[23, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 8, "added": [], "removed": [[2, -24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 9, "added": [[-24, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 10, "added": [], "removed": [[-4, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 11, "added": [], "removed": [[-1, -24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 12, "added": [[21, 13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 13, "added": [[-23, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 14, "added": [[-24, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 15, "added": [[24, 6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 16, "added": [[-22, 10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 17, "added": [], "removed": [[1, -24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 18, "added": [], "removed": [[0, -24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 19, "added": [[-21, 12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 20, "added": [], "removed": [[-15, 19]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 21, "added": [], "removed": [[10, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 22, "added": [[22, -11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 23, "added": [[-24, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 24, "added": [[-19, 15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 25, "added": [], "removed": [[4, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 26, "added": [[24, -6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 27, "added": [], "removed": [[-12, 21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 28, "added": [], "removed": [[7, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 29, "added": [], "removed": [[12, -21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 30, "added": [[-24, -3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 31, "added": [[23, -9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 32, "added": [], "removed": [[-10, 22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 33, "added": [], "removed": [[-3, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 34, "added": [], "removed": [[8, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 35, "added": [[-24, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 36, "added": [], "removed": [[3, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 37, "added": [], "removed": [[-13, -20]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 38, "added": [], "removed": [[-6, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 39, "added": [[-22, -10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 40, "added": [], "removed": [[-9, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 41, "added": [[-23, 8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 42, "added": [], "removed": [[-2, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 43, "added": [[-24, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 44, "added": [[25, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 45, "added": [[25, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 46, "added": [], "removed": [[-7, 23]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 0, "added": [[34, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 1, "added": [[-33, -5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 2, "added": [[34, -1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 3, "added": [[34, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 4, "added": [], "removed": [[6, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 5, "added": [[34, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 6, "added": [], "removed": [[13, -31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 7, "added": [[-30, 15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 8, "added": [], "removed": [[-7, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 9, "added": [[26, 22]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 10, "added": [[-32, 10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 11, "added": [[34, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 12, "added": [], "removed": [[-5, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 13, "added": [], "removed": [[10, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 14, "added": [[-33, 6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 15, "added": [[34, -3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 16, "added": [], "removed": [[-17, 29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 17, "added": [], "removed": [[11, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 18, "added": [[31, -14]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 19, "added": [[-27, 20]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 20, "added": [[32, 12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 21, "added": [], "removed": [[-13, 31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 22, "added": [], "removed": [[-20, 27]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 23, "added": [[29, 18]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 24, "added": [], "removed": [[17, -29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 25, "added": [[33, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 26, "added": [[-33, -6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 27, "added": [[-31, 13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 28, "added": [[-29, 17]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 29, "added": [[30, -16]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 30, "added": [], "removed": [[5, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 31, "added": [[-32, -10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 32, "added": [[34, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 33, "added": [], "removed": [[7, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 34, "added": [], "removed": [[15, -30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 35, "added": [], "removed": [[-9, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 36, "added": [], "removed": [[-18, -28]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 37, "added": [[34, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 38, "added": [], "removed": [[-12, -31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 39, "added": [], "removed": [[-4, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 40, "added": [], "removed": [[-15, 30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 41, "added": [], "removed": [[-6, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 42, "added": [[33, -9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 43, "added": [], "removed": [[-10, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 44, "added": [[-30, -15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 45, "added": [[-33, 7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 46, "added": [[32, -12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 47, "added": [], "removed": [[4, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 48, "added": [[-26, -21]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 49, "added": [[34, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 50, "added": [], "removed": [[-3, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 51, "added": [[-31, -13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 52, "added": [[34, -5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 0, "added": [], "removed": [[6, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 1, "added": [[23, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 2, "added": [[-24, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 3, "added": [[-24, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 4, "added": [[24, -5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 5, "added": [], "removed": [[-6, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 6, "added": [], "removed": [[-9, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 7, "added": [], "removed": [[9, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 8, "added": [[-23, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 9, "added": [[24, 6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 10, "added": [], "removed": [[-5, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 11, "added": [], "removed": [[13, 21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 12, "added": [[18, 17]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 13, "added": [[-23, 8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 14, "added": [[-24, -3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 15, "added": [[-20, 14]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 16, "added": [[-24, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 17, "added": [], "removed": [[6, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 18, "added": [], "removed": [[-11, -21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 19, "added": [], "removed": [[5, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 20, "added": [], "removed": [[-14, 20]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 21, "added": [], "removed": [[11, 22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 22, "added": [], "removed": [[9, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 23, "added": [], "removed": [[-8, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 24, "added": [], "removed": [[-5, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 25, "added": [[-24, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 26, "added": [], "removed": [[16, -18]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 27, "added": [], "removed": [[-4, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 28, "added": [[24, -6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 29, "added": [[-24, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 30, "added": [[-22, -10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 0, "added": [], "removed": [[-9, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 1, "added": [[-28, -18]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 2, "added": [], "removed": [[-4, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 3, "added": [], "removed": [[-2, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 4, "added": [[29, 18]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 5, "added": [], "removed": [[-23, -24]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 6, "added": [], "removed": [[2, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 7, "added": [[34, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 8, "added": [[32, -11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 9, "added": [[34, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 10, "added": [], "removed": [[4, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 11, "added": [], "removed": [[18, 29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 12, "added": [], "removed": [[-1, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 13, "added": [], "removed": [[-8, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 14, "added": [[34, -1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 15, "added": [], "removed": [[1, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 16, "added": [[34, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 17, "added": [], "removed": [[0, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 18, "added": [], "removed": [[-3, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 19, "added": [], "removed": [[9, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 20, "added": [[33, -8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 21, "added": [[-33, -6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 22, "added": [[32, 12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 23, "added": [[34, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 24, "added": [[34, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 25, "added": [], "removed": [[3, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 26, "added": [[-33, 7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 27, "added": [], "removed": [[-14, -30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 28, "added": [], "removed": [[-19, 28]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 29, "added": [], "removed": [[-16, -29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 30, "added": [[33, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 31, "added": [], "removed": [[12, -31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 32, "added": [[-32, -10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 33, "added": [], "removed": [[-2, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 34, "added": [], "removed": [[8, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 35, "added": [], "removed": [[-11, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 36, "added": [], "removed": [[14, 31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 37, "added": [], "removed": [[2, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 38, "added": [[34, -3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 39, "added": [[-28, 19]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 40, "added": [[34, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 41, "added": [], "removed": [[-1, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 42, "added": [[-32, 11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 43, "added": [], "removed": [[1, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 44, "added": [], "removed": [[0, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 45, "added": [[27, 21]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 46, "added": [], "removed": [[-8, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 47, "added": [], "removed": [[16, 30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 48, "added": [], "removed": [[-7, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 49, "added": [[34, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 50, "added": [[-33, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 51, "added": [[34, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 52, "added": [[-30, -15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 0, "added": [[-20, -12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 1, "added": [[20, -14]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 2, "added": [[-19, 15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 3, "added": [[25, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 4, "added": [], "removed": [[2, 25]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 5, "added": [[-22, -8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 6, "added": [[25, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 7, "added": [], "removed": [[0, 25]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 8, "added": [[25, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 9, "added": [], "removed": [[-9, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 10, "added": [], "removed": [[1, 25]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 11, "added": [[22, -11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 12, "added": [[23, -9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 13, "added": [[25, -1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 14, "added": [[-23, -5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 15, "added": [], "removed": [[-11, 22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 16, "added": [], "removed": [[-4, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 17, "added": [], "removed": [[9, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 18, "added": [], "removed": [[-10, -21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 19, "added": [[25, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 20, "added": [], "removed": [[-6, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 21, "added": [[24, 8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 22, "added": [], "removed": [[14, 21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 23, "added": [[25, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 24, "added": [], "removed": [[5, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 25, "added": [[-23, 7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 26, "added": [[-21, 12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 27, "added": [[25, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 28, "added": [], "removed": [[7, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 29, "added": [], "removed": [[10, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 30, "added": [], "removed": [[-3, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 31, "added": [[-22, 10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 32, "added": [[25, -3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 33, "added": [], "removed": [[-14, 20]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 34, "added": [[24, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 35, "added": [], "removed": [[4, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 36, "added": [], "removed": [[13, -20]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 37, "added": [], "removed": [[11, -21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 38, "added": [], "removed": [[-7, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 39, "added": [[-24, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 40, "added": [[-23, -6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 41, "added": [[23, 11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 42, "added": [[-24, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 43, "added": [], "removed": [[12, 22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 44, "added": [[25, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 0, "added": [[-33, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 1, "added": [[26, 23]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 2, "added": [[-32, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 3, "added": [[28, -19]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 4, "added": [[31, -14]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 5, "added": [[34, 6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 6, "added": [], "removed": [[6, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 7, "added": [], "removed": [[-9, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 8, "added": [[-33, -1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 9, "added": [], "removed": [[23, 26]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 10, "added": [], "removed": [[-16, 30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 11, "added": [], "removed": [[-13, -30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 12, "added": [[33, -9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 13, "added": [[-27, 20]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 14, "added": [[-33, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 15, "added": [], "removed": [[-7, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 16, "added": [[-28, -17]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 17, "added": [], "removed": [[19, 29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 18, "added": [[-33, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 19, "added": [[34, -5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 20, "added": [], "removed": [[-14, 31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 21, "added": [], "removed": [[-15, -29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 22, "added": [[30, -16]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 23, "added": [], "removed": [[-4, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 24, "added": [[-31, -11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 25, "added": [[-33, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 26, "added": [[32, -12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 27, "added": [], "removed": [[13, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 28, "added": [], "removed": [[10, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 29, "added": [], "removed": [[8, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 30, "added": [[-32, -8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 31, "added": [], "removed": [[5, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 32, "added": [], "removed": [[-21, -25]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 33, "added": [[-33, -3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 34, "added": [[34, 7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 35, "added": [[-30, 15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 36, "added": [[33, 11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 37, "added": [], "removed": [[-10, -31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 38, "added": [], "removed": [[-3, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 39, "added": [], "removed": [[-19, 28]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 40, "added": [[-33, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 41, "added": [[-29, 17]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 42, "added": [], "removed": [[14, -30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 43, "added": [], "removed": [[4, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 44, "added": [], "removed": [[18, -28]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 45, "added": [], "removed": [[-6, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 46, "added": [[34, -6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 47, "added": [[-32, 10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 48, "added": [[-33, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 49, "added": [], "removed": [[-2, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 50, "added": [], "removed": [[-8, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 51, "added": [], "removed": [[15, 31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 52, "added": [[-31, 13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 53, "added": [], "removed": [[3, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 54, "added": [], "removed": [[7, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 55, "added": [], "removed": [[11, -31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 56, "added": [], "removed": [[17, 30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 57, "added": [[31, 16]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 58, "added": [], "removed": [[21, -26]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 0, "added": [], "removed": [[9, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 1, "added": [[-20, -13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 2, "added": [[24, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 3, "added": [[22, -10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 4, "added": [[-23, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 5, "added": [[-24, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 6, "added": [[23, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 7, "added": [[-24, -3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 8, "added": [], "removed": [[16, 19]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 9, "added": [], "removed": [[-13, 21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 10, "added": [], "removed": [[-5, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 11, "added": [], "removed": [[-6, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 12, "added": [], "removed": [[11, -21]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 13, "added": [], "removed": [[-9, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 14, "added": [[24, 6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 15, "added": [[23, -8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 16, "added": [[21, -12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 17, "added": [], "removed": [[5, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 18, "added": [], "removed": [[6, 24]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 19, "added": [[-22, 11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 20, "added": [[19, 16]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 21, "added": [[-24, 5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 22, "added": [[24, -5]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 23, "added": [[-24, -4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 24, "added": [], "removed": [[9, 23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 25, "added": [], "removed": [[-11, 22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 26, "added": [], "removed": [[-8, -22]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 27, "added": [], "removed": [[-4, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 28, "added": [], "removed": [[-14, -19]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 29, "added": [], "removed": [[4, -23]]}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 30, "added": [[-23, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 31, "added": [[-21, 13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 32, "added": [[-22, -10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 33, "added": [], "removed": [[-5, 24]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 0, "added": [], "removed": [[-2, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 1, "added": [[30, -15]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 2, "added": [], "removed": [[2, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 3, "added": [[-33, 7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 4, "added": [[33, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 5, "added": [], "removed": [[-18, 29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 6, "added": [[31, -13]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 7, "added": [], "removed": [[-1, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 8, "added": [], "removed": [[-9, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 9, "added": [], "removed": [[-4, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 10, "added": [], "removed": [[1, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 11, "added": [], "removed": [[-12, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 12, "added": [], "removed": [[0, -33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 13, "added": [[-32, 11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 14, "added": [[26, -21]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 15, "added": [[-28, -18]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 16, "added": [[27, 21]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 17, "added": [[-33, -6]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 18, "added": [], "removed": [[-8, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 19, "added": [], "removed": [[22, -25]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 20, "added": [], "removed": [[4, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 21, "added": [], "removed": [[14, -30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 22, "added": [], "removed": [[9, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 23, "added": [], "removed": [[8, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 24, "added": [[34, 1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 25, "added": [], "removed": [[16, -29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 26, "added": [[-32, -10]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 27, "added": [[34, 0]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 28, "added": [], "removed": [[-3, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 29, "added": [[32, 12]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 30, "added": [], "removed": [[-22, 26]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 31, "added": [[34, 2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 32, "added": [], "removed": [[12, 32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 33, "added": [], "removed": [[3, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 34, "added": [[34, -1]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 35, "added": [[-30, 16]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 36, "added": [], "removed": [[-11, -31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 37, "added": [[33, 9]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 38, "added": [], "removed": [[-2, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 39, "added": [[34, 3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 40, "added": [], "removed": [[21, 27]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 41, "added": [[-33, 8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 42, "added": [[-31, 14]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 43, "added": [], "removed": [[2, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 44, "added": [[29, -17]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 45, "added": [[34, -2]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 46, "added": [], "removed": [[-19, -27]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 47, "added": [[32, -11]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 48, "added": [], "removed": [[-14, 31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 49, "added": [], "removed": [[-1, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 50, "added": [], "removed": [[1, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 51, "added": [], "removed": [[0, 34]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 52, "added": [[33, -8]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 53, "added": [[-33, -7]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 54, "added": [[-26, 22]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 55, "added": [], "removed": [[11, -31]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 56, "added": [], "removed": [[-16, 30]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 57, "added": [], "removed": [[-7, -32]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 58, "added": [[34, 4]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 59, "added": [], "removed": [[-8, 33]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 60, "added": [], "removed": [[18, 29]]}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 61, "added": [[34, -3]], "removed": []}
+{"shape_n": 2.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 62, "added": [], "removed": [[7, -32]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 0, "added": [], "removed": [[-11, -24], [-11, 24], [11, -24], [11, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 1, "added": [[-24, -12], [-24, 12], [24, -12], [24, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 2, "added": [], "removed": [[-16, -23], [-16, 23], [16, -23], [16, 23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 3, "added": [], "removed": [[-10, -24], [-10, 24], [10, -24], [10, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 4, "added": [], "removed": [[-9, -24], [-9, 24], [9, -24], [9, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 5, "added": [], "removed": [[-8, -24], [-8, 24], [8, -24], [8, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 6, "added": [[-24, -13], [-24, 13], [24, -13], [24, 13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 7, "added": [], "removed": [[-7, -24], [-7, 24], [7, -24], [7, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 8, "added": [], "removed": [[-6, -24], [-6, 24], [6, -24], [6, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 9, "added": [], "removed": [[-5, -24], [-5, 24], [5, -24], [5, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 10, "added": [], "removed": [[-4, -24], [-4, 24], [4, -24], [4, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 11, "added": [], "removed": [[-3, -24], [-3, 24], [3, -24], [3, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 12, "added": [], "removed": [[-2, -24], [-2, 24], [2, -24], [2, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 13, "added": [], "removed": [[-1, -24], [-1, 24], [1, -24], [1, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.0, "event_index": 14, "added": [], "removed": [[0, -24], [0, 24]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 0, "added": [[-33, -18], [-33, 18], [33, -18], [33, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 1, "added": [], "removed": [[-22, -32], [-22, 32], [22, -32], [22, 32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 2, "added": [], "removed": [[-17, -33], [-17, 33], [17, -33], [17, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 3, "added": [[-33, -19], [-33, 19], [33, -19], [33, 19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 4, "added": [], "removed": [[-16, -33], [-16, 33], [16, -33], [16, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 5, "added": [[-34, 0], [34, 0]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 6, "added": [[-34, -1], [-34, 1], [34, -1], [34, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 7, "added": [[-34, -2], [-34, 2], [34, -2], [34, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 8, "added": [[-34, -3], [-34, 3], [34, -3], [34, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 9, "added": [[-34, -4], [-34, 4], [34, -4], [34, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 10, "added": [[-34, -5], [-34, 5], [34, -5], [34, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 11, "added": [[-34, -6], [-34, 6], [34, -6], [34, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 12, "added": [[-34, -7], [-34, 7], [34, -7], [34, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 13, "added": [[-34, -8], [-34, 8], [34, -8], [34, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 14, "added": [[-34, -9], [-34, 9], [34, -9], [34, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 15, "added": [[-34, -10], [-34, 10], [34, -10], [34, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 16, "added": [], "removed": [[-15, -33], [-15, 33], [15, -33], [15, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.0, "event_index": 17, "added": [[-34, -11], [-34, 11], [34, -11], [34, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 0, "added": [[-23, -14], [-23, 15], [24, -14], [24, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 1, "added": [[-22, -17], [-22, 18], [23, -17], [23, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 2, "added": [[-24, 0], [-24, 1], [25, 0], [25, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 3, "added": [[-24, -1], [-24, 2], [25, -1], [25, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 4, "added": [[-24, -2], [-24, 3], [25, -2], [25, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 5, "added": [[-24, -3], [-24, 4], [25, -3], [25, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 6, "added": [[-24, -4], [-24, 5], [25, -4], [25, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 7, "added": [[-24, -5], [-24, 6], [25, -5], [25, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 8, "added": [], "removed": [[-13, -23], [-13, 24], [14, -23], [14, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 9, "added": [[-24, -6], [-24, 7], [25, -6], [25, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 10, "added": [[-24, -7], [-24, 8], [25, -7], [25, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 11, "added": [[-24, -8], [-24, 9], [25, -8], [25, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 12, "added": [[-24, -9], [-24, 10], [25, -9], [25, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 13, "added": [[-23, -15], [-23, 16], [24, -15], [24, 16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.5, "event_index": 14, "added": [], "removed": [[-12, -23], [-12, 24], [13, -23], [13, 24]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 0, "added": [], "removed": [[-23, -31], [-23, 32], [24, -31], [24, 32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 1, "added": [[-33, -13], [-33, 14], [34, -13], [34, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 2, "added": [[-32, -20], [-32, 21], [33, -20], [33, 21]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 3, "added": [], "removed": [[-25, -30], [-25, 31], [26, -30], [26, 31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 4, "added": [], "removed": [[-12, -33], [-12, 34], [13, -33], [13, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 5, "added": [], "removed": [[-11, -33], [-11, 34], [12, -33], [12, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 6, "added": [[-33, -14], [-33, 15], [34, -14], [34, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 7, "added": [], "removed": [[-10, -33], [-10, 34], [11, -33], [11, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 8, "added": [], "removed": [[-9, -33], [-9, 34], [10, -33], [10, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 9, "added": [], "removed": [[-8, -33], [-8, 34], [9, -33], [9, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 10, "added": [], "removed": [[-7, -33], [-7, 34], [8, -33], [8, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 11, "added": [], "removed": [[-6, -33], [-6, 34], [7, -33], [7, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 12, "added": [[-33, -15], [-33, 16], [34, -15], [34, 16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 13, "added": [], "removed": [[-5, -33], [-5, 34], [6, -33], [6, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 14, "added": [], "removed": [[-4, -33], [-4, 34], [5, -33], [5, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 15, "added": [], "removed": [[-3, -33], [-3, 34], [4, -33], [4, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 16, "added": [], "removed": [[-2, -33], [-2, 34], [3, -33], [3, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 17, "added": [], "removed": [[-1, -33], [-1, 34], [2, -33], [2, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 18, "added": [], "removed": [[0, -33], [0, 34], [1, -33], [1, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 19, "added": [], "removed": [[-19, -32], [-19, 33], [20, -32], [20, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 20, "added": [[-33, -16], [-33, 17], [34, -16], [34, 17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.5, "event_index": 21, "added": [[-32, -21], [-32, 22], [33, -21], [33, 22]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 0, "added": [[-23, 15], [24, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 1, "added": [], "removed": [[-12, 24], [13, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 2, "added": [[-24, 0], [25, 0]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 3, "added": [[-24, 1], [25, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 4, "added": [[-24, -1], [25, -1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 5, "added": [[-24, 2], [25, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 6, "added": [[-24, -2], [25, -2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 7, "added": [[-24, 3], [25, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 8, "added": [[-24, -3], [25, -3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 9, "added": [[-24, 4], [25, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 10, "added": [[-24, -4], [25, -4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 11, "added": [[-24, 5], [25, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 12, "added": [[-24, -5], [25, -5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 13, "added": [[-24, 6], [25, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 14, "added": [[-24, -6], [25, -6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 15, "added": [], "removed": [[-14, -23], [15, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 16, "added": [[-22, 18], [23, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 17, "added": [[-24, 7], [25, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 18, "added": [[-24, -7], [25, -7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 19, "added": [[-24, 8], [25, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 20, "added": [], "removed": [[-16, 23], [17, 23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 21, "added": [[-23, -15], [24, -15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 22, "added": [], "removed": [[-17, -22], [18, -22]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 23, "added": [[-24, -8], [25, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 24, "added": [[-24, 9], [25, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 25, "added": [], "removed": [[-11, 24], [12, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 26, "added": [[-24, -9], [25, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 27, "added": [[-21, -19], [22, -19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 28, "added": [[-24, 10], [25, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.5, "placement_y": 0.3, "event_index": 29, "added": [], "removed": [[-10, 24], [11, 24]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 0, "added": [[-33, -13], [34, -13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 1, "added": [], "removed": [[-19, 33], [20, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 2, "added": [], "removed": [[-15, -33], [16, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 3, "added": [[-33, 14], [34, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 4, "added": [[-33, -14], [34, -14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 5, "added": [[-32, 21], [33, 21]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 6, "added": [], "removed": [[-14, -33], [15, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 7, "added": [[-33, 15], [34, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 8, "added": [[-31, 24], [32, 24]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 9, "added": [[-33, -15], [34, -15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 10, "added": [], "removed": [[-13, -33], [14, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 11, "added": [[-33, 16], [34, 16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 12, "added": [], "removed": [[-20, -32], [21, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 13, "added": [], "removed": [[-18, 33], [19, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 14, "added": [[-30, 26], [31, 26]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 15, "added": [], "removed": [[-12, -33], [13, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 16, "added": [], "removed": [[-22, 32], [23, 32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 17, "added": [[-33, -16], [34, -16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 18, "added": [], "removed": [[-11, -33], [12, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 19, "added": [[-32, -21], [33, -21]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 20, "added": [], "removed": [[-23, -31], [24, -31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 21, "added": [], "removed": [[-10, -33], [11, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 22, "added": [[-33, 17], [34, 17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 23, "added": [], "removed": [[-9, -33], [10, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 24, "added": [], "removed": [[-8, -33], [9, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 25, "added": [], "removed": [[-7, -33], [8, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 26, "added": [], "removed": [[-6, -33], [7, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 27, "added": [], "removed": [[-5, -33], [6, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 28, "added": [], "removed": [[-4, -33], [5, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 29, "added": [], "removed": [[-3, -33], [4, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 30, "added": [], "removed": [[-2, -33], [3, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 31, "added": [], "removed": [[-1, -33], [2, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.5, "placement_y": 0.3, "event_index": 32, "added": [], "removed": [[0, -33], [1, -33]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 0, "added": [], "removed": [[-14, 24], [14, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 1, "added": [[-22, -18], [22, -18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 2, "added": [[-24, 12], [24, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 3, "added": [], "removed": [[-19, 22], [19, 22]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 4, "added": [[-23, -16], [23, -16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 5, "added": [[-24, -12], [24, -12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 6, "added": [], "removed": [[-17, 23], [17, 23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 7, "added": [[-24, 13], [24, 13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 8, "added": [], "removed": [[-13, 24], [13, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 9, "added": [[-23, 17], [23, 17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 10, "added": [], "removed": [[-14, -23], [14, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 11, "added": [[-22, 19], [22, 19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 12, "added": [[-24, -13], [24, -13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 13, "added": [], "removed": [[-12, 24], [12, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.0, "placement_y": 0.4, "event_index": 14, "added": [[-24, 14], [24, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 0, "added": [], "removed": [[-20, 33], [20, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 1, "added": [], "removed": [[-11, 34], [11, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 2, "added": [], "removed": [[-10, 34], [10, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 3, "added": [], "removed": [[-14, -33], [14, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 4, "added": [], "removed": [[-9, 34], [9, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 5, "added": [], "removed": [[-8, 34], [8, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 6, "added": [], "removed": [[-7, 34], [7, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 7, "added": [[-33, -18], [33, -18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 8, "added": [], "removed": [[-6, 34], [6, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 9, "added": [], "removed": [[-5, 34], [5, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 10, "added": [], "removed": [[-4, 34], [4, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 11, "added": [], "removed": [[-3, 34], [3, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 12, "added": [], "removed": [[-2, 34], [2, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 13, "added": [], "removed": [[-1, 34], [1, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 14, "added": [], "removed": [[0, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 15, "added": [[-32, -22], [32, -22]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 16, "added": [], "removed": [[-13, -33], [13, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 17, "added": [[-33, 19], [33, 19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 18, "added": [], "removed": [[-23, 32], [23, 32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 19, "added": [[-30, -26], [30, -26]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 20, "added": [], "removed": [[-12, -33], [12, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 21, "added": [], "removed": [[-11, -33], [11, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 22, "added": [[-32, 23], [32, 23]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 23, "added": [], "removed": [[-10, -33], [10, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 24, "added": [], "removed": [[-20, -32], [20, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 25, "added": [], "removed": [[-19, 33], [19, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 26, "added": [], "removed": [[-9, -33], [9, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 27, "added": [], "removed": [[-8, -33], [8, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 28, "added": [], "removed": [[-7, -33], [7, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 29, "added": [], "removed": [[-6, -33], [6, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 30, "added": [], "removed": [[-5, -33], [5, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 31, "added": [[-34, 0], [-34, 1], [34, 0], [34, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 32, "added": [[-34, -1], [34, -1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 33, "added": [[-34, 2], [34, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 34, "added": [[-34, -2], [34, -2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 35, "added": [[-34, 3], [34, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 36, "added": [[-34, -3], [34, -3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 37, "added": [], "removed": [[-4, -33], [4, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 38, "added": [[-34, 4], [34, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 39, "added": [], "removed": [[-3, -33], [3, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 40, "added": [[-34, -4], [34, -4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 41, "added": [], "removed": [[-2, -33], [2, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 42, "added": [], "removed": [[-1, -33], [1, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 43, "added": [], "removed": [[0, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 44, "added": [[-34, 5], [34, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 45, "added": [[-34, -5], [34, -5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 46, "added": [[-34, 6], [34, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 47, "added": [[-34, -6], [34, -6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 48, "added": [[-34, 7], [34, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 49, "added": [[-33, -19], [33, -19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 50, "added": [[-34, -7], [34, -7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 51, "added": [[-34, 8], [34, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 52, "added": [[-34, -8], [34, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 53, "added": [[-34, 9], [34, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 54, "added": [[-34, -9], [34, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 55, "added": [[-34, 10], [34, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 56, "added": [[-33, 20], [33, 20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 57, "added": [], "removed": [[-25, 31], [25, 31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 58, "added": [[-34, -10], [34, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 59, "added": [[-34, 11], [34, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.0, "placement_y": 0.4, "event_index": 60, "added": [], "removed": [[-27, -29], [27, -29]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 0, "added": [[-22, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 1, "added": [], "removed": [[13, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 2, "added": [[-24, 0]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 3, "added": [[-24, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 4, "added": [[-24, -1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 5, "added": [[-24, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 6, "added": [[-24, -2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 7, "added": [[-24, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 8, "added": [[-24, -3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 9, "added": [[-24, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 10, "added": [[-24, -4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 11, "added": [[-24, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 12, "added": [[-24, -5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 13, "added": [[21, -20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 14, "added": [[-24, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 15, "added": [], "removed": [[9, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 16, "added": [[-24, -6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 17, "added": [], "removed": [[-8, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 18, "added": [[-24, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 19, "added": [[-24, -7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 20, "added": [[24, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 21, "added": [], "removed": [[-12, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 22, "added": [], "removed": [[8, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 23, "added": [[-24, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 24, "added": [], "removed": [[-7, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 25, "added": [[-24, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 26, "added": [], "removed": [[7, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 27, "added": [], "removed": [[-6, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 28, "added": [], "removed": [[6, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 29, "added": [[23, -17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 30, "added": [], "removed": [[-5, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 31, "added": [[-24, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 32, "added": [], "removed": [[5, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 33, "added": [], "removed": [[-4, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 34, "added": [], "removed": [[4, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 35, "added": [], "removed": [[-3, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 36, "added": [], "removed": [[3, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 37, "added": [], "removed": [[-2, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 38, "added": [], "removed": [[2, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 39, "added": [], "removed": [[-1, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 40, "added": [], "removed": [[1, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 41, "added": [], "removed": [[0, -24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 42, "added": [[-24, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 43, "added": [], "removed": [[-15, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 44, "added": [[24, -14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 45, "added": [], "removed": [[12, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 46, "added": [[-24, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 47, "added": [], "removed": [[-16, 23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 48, "added": [], "removed": [[-11, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 49, "added": [[-24, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 50, "added": [], "removed": [[11, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 51, "added": [[-23, 16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 52, "added": [[-24, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 53, "added": [], "removed": [[-10, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 54, "added": [[-24, -11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 55, "added": [], "removed": [[10, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 56, "added": [], "removed": [[15, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 57, "added": [[24, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 58, "added": [], "removed": [[-9, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 59, "added": [], "removed": [[18, -22]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 60, "added": [], "removed": [[9, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 61, "added": [[-22, -18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 62, "added": [[-24, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 63, "added": [[25, 0]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 64, "added": [[25, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 65, "added": [[25, -1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 66, "added": [[25, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 67, "added": [[25, -2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 68, "added": [[25, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 69, "added": [[25, -3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 70, "added": [[25, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 71, "added": [[25, -4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 72, "added": [], "removed": [[-8, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 73, "added": [[25, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.31, "placement_y": 0.17, "event_index": 74, "added": [[25, -5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 0, "added": [[34, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 1, "added": [[34, -7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 2, "added": [[-32, -21]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 3, "added": [], "removed": [[17, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 4, "added": [[34, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 5, "added": [[34, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 6, "added": [[-33, 16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 7, "added": [[34, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 8, "added": [[34, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 9, "added": [], "removed": [[19, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 10, "added": [[34, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 11, "added": [[33, 20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 12, "added": [[34, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 13, "added": [], "removed": [[-16, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 14, "added": [[-33, -16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 15, "added": [[34, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 16, "added": [[32, -23]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 17, "added": [[34, -11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 18, "added": [[34, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 19, "added": [], "removed": [[-21, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 20, "added": [], "removed": [[-18, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 21, "added": [], "removed": [[16, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 22, "added": [[34, -12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 23, "added": [[33, -20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 24, "added": [[-33, 17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 25, "added": [], "removed": [[-22, 32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 26, "added": [[34, 13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 27, "added": [[-31, -24]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 28, "added": [], "removed": [[-15, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 29, "added": [[30, 27]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 30, "added": [[34, -13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 31, "added": [[-33, -17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 32, "added": [], "removed": [[25, 31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 33, "added": [], "removed": [[15, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 34, "added": [], "removed": [[18, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 35, "added": [[34, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 36, "added": [], "removed": [[-14, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 37, "added": [[34, -14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 38, "added": [[-32, 22]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 39, "added": [], "removed": [[-17, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 40, "added": [], "removed": [[14, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 41, "added": [[-33, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 42, "added": [[34, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 43, "added": [], "removed": [[21, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 44, "added": [], "removed": [[-13, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 45, "added": [[34, -15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 46, "added": [[33, 21]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 47, "added": [], "removed": [[13, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 48, "added": [], "removed": [[17, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 49, "added": [[-33, -18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 50, "added": [], "removed": [[-12, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 51, "added": [], "removed": [[24, -31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.31, "placement_y": 0.17, "event_index": 52, "added": [], "removed": [[-27, -29]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 0, "added": [], "removed": [[-17, 23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 1, "added": [[-24, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 2, "added": [], "removed": [[15, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 3, "added": [[-24, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 4, "added": [[-23, 16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 5, "added": [[24, -13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 6, "added": [], "removed": [[14, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 7, "added": [[-24, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 8, "added": [[-24, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 9, "added": [[24, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 10, "added": [], "removed": [[-19, -21]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 11, "added": [[-24, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 12, "added": [[-24, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 13, "added": [], "removed": [[-14, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 14, "added": [], "removed": [[-13, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 15, "added": [[-21, 20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 16, "added": [[-24, -11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 17, "added": [], "removed": [[13, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 18, "added": [[-24, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 19, "added": [], "removed": [[14, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 20, "added": [], "removed": [[-17, -22]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 21, "added": [], "removed": [[17, 23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 22, "added": [[24, -14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 23, "added": [], "removed": [[-12, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 24, "added": [[24, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 25, "added": [], "removed": [[-20, 21]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 26, "added": [], "removed": [[-13, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 27, "added": [[-24, -12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.23, "placement_y": 0.41, "event_index": 28, "added": [], "removed": [[12, 24]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 0, "added": [], "removed": [[21, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 1, "added": [], "removed": [[-11, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 2, "added": [[-33, -16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 3, "added": [], "removed": [[-14, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 4, "added": [], "removed": [[11, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 5, "added": [], "removed": [[-23, 32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 6, "added": [], "removed": [[-10, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 7, "added": [[-33, 17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 8, "added": [[33, -19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 9, "added": [], "removed": [[10, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 10, "added": [], "removed": [[14, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 11, "added": [], "removed": [[-9, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 12, "added": [[-32, 22]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 13, "added": [[34, 0], [34, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 14, "added": [[34, -1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 15, "added": [[34, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 16, "added": [[34, -2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 17, "added": [[34, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 18, "added": [[34, -3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 19, "added": [[34, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 20, "added": [], "removed": [[9, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 21, "added": [[34, -4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 22, "added": [[34, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 23, "added": [[34, -5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 24, "added": [[34, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 25, "added": [], "removed": [[20, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 26, "added": [], "removed": [[-8, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 27, "added": [[34, -6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 28, "added": [[34, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 29, "added": [], "removed": [[8, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 30, "added": [[34, -7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 31, "added": [[33, 20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 32, "added": [], "removed": [[-13, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 33, "added": [[34, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 34, "added": [], "removed": [[-7, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 35, "added": [], "removed": [[7, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 36, "added": [], "removed": [[-6, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 37, "added": [], "removed": [[6, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 38, "added": [[34, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 39, "added": [], "removed": [[-5, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 40, "added": [[34, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 41, "added": [], "removed": [[5, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 42, "added": [], "removed": [[-4, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 43, "added": [], "removed": [[4, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 44, "added": [], "removed": [[-3, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 45, "added": [], "removed": [[3, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 46, "added": [], "removed": [[-2, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 47, "added": [], "removed": [[2, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 48, "added": [], "removed": [[-1, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 49, "added": [], "removed": [[1, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 50, "added": [], "removed": [[0, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 51, "added": [], "removed": [[13, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 52, "added": [[34, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 53, "added": [[34, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 54, "added": [], "removed": [[-12, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 55, "added": [[34, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 56, "added": [[34, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 57, "added": [], "removed": [[-25, 31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 58, "added": [[-33, -17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 59, "added": [], "removed": [[12, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 60, "added": [], "removed": [[-20, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 61, "added": [[34, -11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 62, "added": [], "removed": [[-11, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 63, "added": [[34, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 64, "added": [[-33, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 65, "added": [], "removed": [[11, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 66, "added": [], "removed": [[-19, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 67, "added": [], "removed": [[-10, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 68, "added": [[34, -12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 69, "added": [], "removed": [[10, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 70, "added": [[-31, -24]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 71, "added": [[34, 13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 72, "added": [], "removed": [[-9, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 73, "added": [], "removed": [[9, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 74, "added": [], "removed": [[-8, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 75, "added": [], "removed": [[8, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 76, "added": [[-29, -27]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 77, "added": [], "removed": [[-7, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 78, "added": [], "removed": [[7, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 79, "added": [], "removed": [[-6, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 80, "added": [], "removed": [[23, 32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 81, "added": [], "removed": [[6, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 82, "added": [], "removed": [[-5, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 83, "added": [], "removed": [[5, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 84, "added": [], "removed": [[-4, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 85, "added": [], "removed": [[4, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 86, "added": [], "removed": [[-3, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 87, "added": [], "removed": [[3, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 88, "added": [], "removed": [[-2, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 89, "added": [], "removed": [[2, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 90, "added": [], "removed": [[-1, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 91, "added": [], "removed": [[1, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 92, "added": [], "removed": [[0, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 93, "added": [[34, -13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 94, "added": [], "removed": [[20, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 95, "added": [], "removed": [[27, 30]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 96, "added": [], "removed": [[-23, -31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 97, "added": [[34, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 98, "added": [], "removed": [[19, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 99, "added": [[33, -20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 100, "added": [[-33, -18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 101, "added": [[32, -23]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 102, "added": [[34, -14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 103, "added": [[33, 21]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 104, "added": [[34, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.23, "placement_y": 0.41, "event_index": 105, "added": [[-33, 19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 0, "added": [], "removed": [[8, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 1, "added": [[25, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 2, "added": [[25, 0]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 3, "added": [[25, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 4, "added": [[25, -1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 5, "added": [[25, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 6, "added": [[25, -2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 7, "added": [[25, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 8, "added": [], "removed": [[-6, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 9, "added": [[25, -3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 10, "added": [[25, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 11, "added": [[24, 16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 12, "added": [[25, -4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 13, "added": [], "removed": [[7, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 14, "added": [[25, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 15, "added": [[25, -5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 16, "added": [], "removed": [[-5, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 17, "added": [], "removed": [[6, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 18, "added": [], "removed": [[16, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 19, "added": [[25, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 20, "added": [[-23, -13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 21, "added": [], "removed": [[-4, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 22, "added": [], "removed": [[5, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 23, "added": [], "removed": [[-3, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 24, "added": [], "removed": [[4, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 25, "added": [[25, -6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 26, "added": [], "removed": [[-2, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 27, "added": [], "removed": [[3, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 28, "added": [], "removed": [[-1, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 29, "added": [], "removed": [[2, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 30, "added": [], "removed": [[0, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 31, "added": [], "removed": [[1, 25]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 32, "added": [[25, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 33, "added": [[25, -7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 34, "added": [], "removed": [[-12, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 35, "added": [[25, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 36, "added": [], "removed": [[-16, -22]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 37, "added": [[25, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 38, "added": [[25, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 39, "added": [], "removed": [[13, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 40, "added": [[-23, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 41, "added": [], "removed": [[-18, -21]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 42, "added": [[-22, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 43, "added": [[25, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 44, "added": [[25, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 45, "added": [[24, -15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 46, "added": [], "removed": [[-17, 23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 47, "added": [], "removed": [[-11, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 48, "added": [], "removed": [[-14, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 49, "added": [[25, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 50, "added": [], "removed": [[12, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 51, "added": [], "removed": [[17, -22]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 52, "added": [[25, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 53, "added": [[-23, -14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 54, "added": [], "removed": [[-10, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 55, "added": [], "removed": [[15, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 56, "added": [], "removed": [[11, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 57, "added": [[25, -11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 58, "added": [[-24, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 59, "added": [[-24, 0]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 60, "added": [[-24, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 61, "added": [[-24, -1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 62, "added": [[-24, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 63, "added": [[-24, -2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 64, "added": [[-24, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 65, "added": [[-24, -3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 66, "added": [[-24, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 67, "added": [[-24, -4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 68, "added": [[-24, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 69, "added": [[-24, -5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 0, "added": [[-33, -6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 1, "added": [], "removed": [[20, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 2, "added": [[-33, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 3, "added": [[-33, -7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 4, "added": [], "removed": [[22, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 5, "added": [[-33, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 6, "added": [[34, -15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 7, "added": [[-33, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 8, "added": [[-32, -19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 9, "added": [[-33, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 10, "added": [[33, 22]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 11, "added": [[-33, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 12, "added": [], "removed": [[-15, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 13, "added": [[-33, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 14, "added": [], "removed": [[28, 30]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 15, "added": [[-30, 26]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 16, "added": [[-33, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 17, "added": [[34, 17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 18, "added": [], "removed": [[16, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 19, "added": [[-33, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 20, "added": [], "removed": [[-22, -31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 21, "added": [[-33, -11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 22, "added": [[-31, 24]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 23, "added": [[-33, 13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 24, "added": [], "removed": [[-18, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 25, "added": [], "removed": [[-14, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 26, "added": [[34, -16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 27, "added": [[-33, -12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 28, "added": [[-32, 21]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 29, "added": [], "removed": [[15, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 30, "added": [[-33, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 31, "added": [], "removed": [[19, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 32, "added": [[34, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 33, "added": [], "removed": [[-13, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 34, "added": [], "removed": [[-20, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 35, "added": [[-33, -13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 36, "added": [[33, -21]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 37, "added": [[32, 25]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 38, "added": [], "removed": [[14, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 39, "added": [[-33, 15]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 40, "added": [], "removed": [[-23, 32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 41, "added": [], "removed": [[23, -31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 42, "added": [], "removed": [[-12, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 43, "added": [], "removed": [[13, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 44, "added": [[34, -17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 45, "added": [[-33, -14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 46, "added": [], "removed": [[-17, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 47, "added": [], "removed": [[-11, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 48, "added": [], "removed": [[-25, 31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 49, "added": [[-32, -20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 50, "added": [], "removed": [[21, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 51, "added": [], "removed": [[12, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 52, "added": [[-33, 16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 53, "added": [], "removed": [[-24, -30]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 54, "added": [], "removed": [[-10, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 55, "added": [], "removed": [[11, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 56, "added": [], "removed": [[18, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.6875, "placement_y": 0.75, "event_index": 57, "added": [], "removed": [[-9, 34]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 0, "added": [], "removed": [[14, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 1, "added": [[22, -18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 2, "added": [], "removed": [[15, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 3, "added": [], "removed": [[-17, -22]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 4, "added": [[24, -12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 5, "added": [[-24, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 6, "added": [[23, -16]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 7, "added": [[-24, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 8, "added": [[-24, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 9, "added": [], "removed": [[-13, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 10, "added": [[-24, -11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 11, "added": [[24, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 12, "added": [], "removed": [[17, -22]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 13, "added": [], "removed": [[13, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 14, "added": [], "removed": [[19, -21]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 15, "added": [[24, -13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 16, "added": [], "removed": [[-14, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 17, "added": [[-22, 19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 18, "added": [[-24, 13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 19, "added": [[-23, 17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 20, "added": [], "removed": [[14, 24]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 21, "added": [[-24, -12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 22, "added": [], "removed": [[-12, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 23, "added": [], "removed": [[12, -23]]}
+{"shape_n": 4.0, "scale_a0": 24.3, "placement_x": 0.13, "placement_y": 0.62, "event_index": 24, "added": [], "removed": [[-17, 23]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 0, "added": [], "removed": [[21, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 1, "added": [], "removed": [[-10, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 2, "added": [], "removed": [[20, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 3, "added": [], "removed": [[10, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 4, "added": [], "removed": [[-9, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 5, "added": [[-31, 25]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 6, "added": [], "removed": [[9, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 7, "added": [[32, -22]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 8, "added": [], "removed": [[-23, -31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 9, "added": [[-33, 18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 10, "added": [], "removed": [[-8, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 11, "added": [], "removed": [[8, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 12, "added": [], "removed": [[-14, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 13, "added": [], "removed": [[-7, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 14, "added": [], "removed": [[7, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 15, "added": [], "removed": [[-6, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 16, "added": [], "removed": [[6, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 17, "added": [], "removed": [[-5, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 18, "added": [], "removed": [[5, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 19, "added": [], "removed": [[-4, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 20, "added": [], "removed": [[14, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 21, "added": [], "removed": [[4, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 22, "added": [], "removed": [[-3, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 23, "added": [], "removed": [[3, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 24, "added": [], "removed": [[-2, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 25, "added": [], "removed": [[2, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 26, "added": [], "removed": [[-1, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 27, "added": [], "removed": [[1, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 28, "added": [], "removed": [[0, -33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 29, "added": [[-33, -17]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 30, "added": [], "removed": [[-27, 30]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 31, "added": [], "removed": [[-13, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 32, "added": [], "removed": [[13, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 33, "added": [[33, 20]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 34, "added": [[34, 0], [34, 1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 35, "added": [[34, 2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 36, "added": [[34, -1]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 37, "added": [[34, 3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 38, "added": [[34, -2]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 39, "added": [[34, 4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 40, "added": [[34, -3]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 41, "added": [[34, 5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 42, "added": [[34, -4]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 43, "added": [[34, 6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 44, "added": [[34, -5]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 45, "added": [[34, 7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 46, "added": [], "removed": [[-12, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 47, "added": [[34, -6]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 48, "added": [], "removed": [[23, -31]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 49, "added": [[34, 8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 50, "added": [[34, -7]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 51, "added": [], "removed": [[12, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 52, "added": [], "removed": [[-19, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 53, "added": [], "removed": [[-25, -30]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 54, "added": [[34, 9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 55, "added": [[34, -8]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 56, "added": [[33, -19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 57, "added": [[34, 10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 58, "added": [], "removed": [[-11, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 59, "added": [[34, -9]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 60, "added": [[-33, 19]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 61, "added": [], "removed": [[11, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 62, "added": [], "removed": [[-20, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 63, "added": [[34, 11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 64, "added": [], "removed": [[19, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 65, "added": [], "removed": [[-10, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 66, "added": [[-31, -24]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 67, "added": [[34, -10]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 68, "added": [[30, -26]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 69, "added": [], "removed": [[10, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 70, "added": [], "removed": [[-9, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 71, "added": [[-33, -18]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 72, "added": [], "removed": [[9, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 73, "added": [[34, 12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 74, "added": [[-32, 23]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 75, "added": [[34, -11]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 76, "added": [], "removed": [[-8, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 77, "added": [], "removed": [[8, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 78, "added": [], "removed": [[20, 33]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 79, "added": [], "removed": [[-7, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 80, "added": [], "removed": [[7, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 81, "added": [], "removed": [[-6, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 82, "added": [], "removed": [[6, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 83, "added": [], "removed": [[-5, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 84, "added": [], "removed": [[5, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 85, "added": [], "removed": [[-4, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 86, "added": [], "removed": [[4, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 87, "added": [], "removed": [[-3, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 88, "added": [], "removed": [[3, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 89, "added": [], "removed": [[-2, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 90, "added": [], "removed": [[2, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 91, "added": [], "removed": [[-1, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 92, "added": [], "removed": [[1, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 93, "added": [], "removed": [[0, 34]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 94, "added": [[34, 13]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 95, "added": [[34, -12]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 96, "added": [[34, 14]], "removed": []}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 97, "added": [], "removed": [[-18, -32]]}
+{"shape_n": 4.0, "scale_a0": 33.7, "placement_x": 0.13, "placement_y": 0.62, "event_index": 98, "added": [], "removed": [[-23, 32]]}
