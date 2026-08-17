@@ -1,88 +1,44 @@
 # Diploma Physics ML
 
-This repository contains the code, notebooks, reports, and thesis draft for a
-physics diploma project on conservative surrogate approximation of low-energy
-spectra of model quantum dots computed with Kwant.
+Code, notebooks, tests, reports and thesis materials for my diploma project on low-energy spectra of model quantum dots.
 
-## Current status
+The reference spectra are calculated directly with Kwant. A simple physics-informed Ridge model is used as a surrogate and compared with a small MLP under structured holdout tests. In the tested parameter range, the Ridge model was more stable and easier to interpret, so it remained the main surrogate.
 
-The main superellipse workflow is complete through:
+## What is in the repository
 
-- Stage 07: physical sanity checks.
-- Stage 08: tiny MLP ablation/control experiment.
-- Stage 09: Ridge residual analysis against edge-discretization diagnostics.
+- `src/` — Python code used by the analysis pipeline
+- `notebooks/` — executed analysis notebooks
+- `tests/` — unit and physical sanity checks
+- `data/` — generated datasets
+- `reports/` — tables, plots and audit outputs
+- `thesis/` — LaTeX thesis sources
 
-The LaTeX thesis draft/PDF scaffold is assembled under `thesis/`.
+## Dataset
 
-The current dense superellipse dataset contains 140 geometries:
+The main superellipse dataset contains 140 geometries:
 
 - `n = {1.2, 2.0, 3.0, 4.0}`
 - `a = {24, 27, 30, 33, 36}`
 - `aspect_ratio = {0.67, 0.72, 0.78, 0.83, 0.89, 0.94, 1.0}`
 
-Main generated reports and audit outputs are in `reports/`.
+The model uses square-lattice tight-binding Hamiltonians with onsite energy `0` and nearest-neighbor hopping `-1`. The main targets are `E0` and `dE1 = E1 - E0`. `dE2` is kept only as a diagnostic quantity because of degeneracy and level-ordering sensitivity.
 
-## Scientific conclusion
+## Main result
 
-Within the verified parameter range, the low-energy spectra are largely
-captured by physically motivated confinement descriptors. The
-physics-informed Ridge model remains the preferred surrogate: it is simpler,
-stable, interpretable, and physically grounded.
+Within the verified parameter range, low-energy spectra are captured well by physically motivated confinement descriptors. The small MLP did not show a robust advantage over the Ridge model under the structured validation used in the project.
 
-The small MLP ablation does not meet the pre-registered robust-success
-criterion. It improves some cells, especially for `E0` and LOARO, but it does
-not provide a robust advantage over physics-informed Ridge under structured
-LOAO/LOARO validation.
-
-The residual analysis does not support a global claim that simple
-edge-discretization diagnostics explain the remaining Ridge residuals.
-
-## Scope
-
-The project uses:
-
-- square-lattice tight-binding Hamiltonians with onsite energy `0` and
-  nearest-neighbor hopping `-1`;
-- direct Kwant calculations as the reference spectra;
-- fixed discrete-`n` superellipse quantum dots as the main geometry family;
-- `E0` and `dE1 = E1 - E0` as the main targets;
-- `dE2` only as a diagnostic quantity because of degeneracy and level-ordering
-  sensitivity.
-
-The rectangular quantum dot is used only as a validation/control calculation,
-not as the main research object.
-
-## Repository structure
-
-- `src/` - reusable Python code.
-- `notebooks/` - executed analysis notebooks.
-- `tests/` - unit and sanity tests.
-- `data/` - generated datasets.
-- `reports/` - CSV reports, plots, and integrity audits.
-- `thesis/` - LaTeX thesis draft and build files.
+The surrogate is not treated as a replacement for direct Kwant calculations. It is a compact approximation for this controlled model system.
 
 ## Reproducibility
 
-Tests pass in the `diplom-kwant` environment:
+Run the tests in the configured environment:
 
 ```powershell
 conda run -n diplom-kwant python -m pytest tests -q
 ```
 
-Current result: `30 passed` in the configured environment.
+Current repository state: 30 tests pass in the configured environment.
 
-If `conda` is not on `PATH` on Windows, use the local Miniforge/Conda path or
-activate the environment manually before running the command.
+## Scope
 
-## Not completed / future work
-
-The following are future extensions, not completed thesis results:
-
-- inverse design or inverse geometry search;
-- DFT/OpenMX or other material-specific calibration;
-- continuous-`n` generalization;
-- arbitrary-shape generalization;
-- claims that a surrogate replaces direct Kwant calculation.
-
-The project should be interpreted as a controlled model-nanostructure study,
-not as a material-specific prediction pipeline.
+This is a model-nanostructure study. Material-specific DFT calibration, inverse geometry search, continuous-`n` generalisation and arbitrary-shape generalisation are outside the completed diploma work.
